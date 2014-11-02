@@ -1,4 +1,4 @@
 jonathonreed.com
 ================
 
-Where the monsters live
+Working towards hosting jonathonreed.com independent from Tumblr.
