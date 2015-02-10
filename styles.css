@@ -3,6 +3,10 @@
   width: 25%;
 }
 
+.desc #spring {
+  color: #009900;
+}
+
 .desc #summer {
   color: #FFE800;
 }
