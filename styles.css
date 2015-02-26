@@ -53,7 +53,7 @@ p {
 
 .credit {
   display: block;
-  margin: 15px 0 0 10px;
+  margin: 15px 0 -65px 10px;
   font: italic 11px Helvetica, Arial, sans serif;
   line-height: 1.5;
   color: #dddddd;
