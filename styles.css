@@ -1,5 +1,5 @@
 .desc {
-  margin: 200px auto;
+  margin: 190px auto;
   width: 25%;
 }
 
@@ -36,6 +36,7 @@ h1 {
 
 p {
   font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  line-height: 1.2;
   font-size: 15px;
   font-weight: 400;
   font-style: italic;
