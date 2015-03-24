@@ -1,5 +1,5 @@
 .record {
-  margin: 115px auto;
+  margin: 115px auto 150px auto;
   width: 50%;
 }
 
@@ -32,6 +32,10 @@
 .music {
   margin: 10px auto;
   width: 1010px;
+}
+
+.space {
+  margin-bottom: 200px;
 }
 
 h1 {
