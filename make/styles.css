@@ -3,7 +3,6 @@ body {
   width: 100%;
   height: 100%;
   background: #C7D0D5 url('../img/make/slam.png') no-repeat center top;
-  margin: ;
 }
 
 h1 {
@@ -14,34 +13,50 @@ h1 {
   line-height:100px;
   text-transform: uppercase;
   text-align: center;
-  margin: 150px auto;
-  }
+  margin: 250px auto 150px auto;
+}
 
 h2 {
   font-family: 'Droid Serif', serif;
+  color: #38546B;
+  font-size: 20px;
   font-weight: 400;
   font-style: italic;
-  font-size: 20px;
   line-height: 23px;
-  margin: 0 0 23px 0;
-  }
+  margin: 46px 0 12px 0;
+}
 
 p {
   font-family: 'Droid Serif', serif;
   color: #546C7F;
   font-size: 15px;
   line-height: 23px;
-  margin: 0 0 23px 0;
-  }
-
-.container {
-  width: 75%;
-  height: auto;
-  margin: 25px auto;
-  overflow: hidden;
-  display: block;
+  margin: 0 0 12px 0;
 }
 
-.section-fir-tree h2 span { font: 48px/42px 'Stint Ultra Expanded', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: .05em; display: block; }
-.section-fir-tree .moral { width: 300px; padding: 0 0 0 20px; font: 400 22px/35px 'Stint Ultra Expanded'; text-align: right; color: #fff; display: inline-block; letter-spacing: .02em; vertical-align: top; }
-.section-fir-tree .fable { width: 290px; padding: 10px 20px 120px 20px; font: 15px/23px 'Slabo 13px'; color: #433; display: inline-block; vertical-align: top; }
+p .final {
+ font-family: 'Droid Serif', serif;
+  color: #546C7F;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 0 0 12px 0;
+  border-bottom: 150px;
+}
+
+a {
+  color: #38546B;
+}
+
+blockquote {
+  font-family: 'Droid Serif', serif;
+  color: #768997;
+  font-size: 15px;
+  font-style: italic;
+  padding: 5px 5px;
+}
+
+.container {
+  width: 65%;
+  margin: 25px auto;
+  border: 0 auto 150px auto;
+}
