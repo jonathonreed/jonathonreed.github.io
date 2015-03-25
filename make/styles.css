@@ -2,16 +2,19 @@
 body { 
   width: 100%;
   height: 100%;
-  background-color: #FFFAFA;
+  background: #C7D0D5 url('../img/make/slam.png') no-repeat center top;
+  margin: ;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
+  color: #38546B;
+  font-size: 85px;
   font-weight: 700;
   line-height:100px;
-  font-size: 65px;
   text-transform: uppercase;
-  margin: 200px auto 200px;
+  text-align: center;
+  margin: 150px auto;
   }
 
 h2 {
@@ -25,16 +28,16 @@ h2 {
 
 p {
   font-family: 'Droid Serif', serif;
+  color: #546C7F;
   font-size: 15px;
   line-height: 23px;
   margin: 0 0 23px 0;
   }
 
 .container {
-  background: url('../img/make/slam-grey.png') no-repeat;
-  width: 1200px;
+  width: 75%;
   height: auto;
-  margin: 0 auto;
+  margin: 25px auto;
   overflow: hidden;
   display: block;
 }
