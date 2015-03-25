@@ -1,0 +1,23 @@
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height:100px;
+  font-size: 65px;
+  text-transform: uppercase;
+  margin: 200px auto 200px;
+  }
+
+h2 {
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+  }
+p {
+  font-family: 'Droid Serif', serif;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+  }
