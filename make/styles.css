@@ -34,15 +34,6 @@ p {
   margin: 0 0 12px 0;
 }
 
-p .final {
- font-family: 'Droid Serif', serif;
-  color: #546C7F;
-  font-size: 15px;
-  line-height: 23px;
-  margin: 0 0 12px 0;
-  border-bottom: 150px;
-}
-
 a {
   color: #38546B;
 }
@@ -58,5 +49,5 @@ blockquote {
 .container {
   width: 65%;
   margin: 25px auto;
-  border: 0 auto 150px auto;
+  padding-bottom: 75px;
 }
