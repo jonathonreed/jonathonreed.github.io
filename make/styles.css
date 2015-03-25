@@ -1,3 +1,10 @@
+
+body { 
+  width: 100%;
+  height: 100%;
+  background-color: #FFFAFA;
+}
+
 h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -15,9 +22,23 @@ h2 {
   line-height: 23px;
   margin: 0 0 23px 0;
   }
+
 p {
   font-family: 'Droid Serif', serif;
   font-size: 15px;
   line-height: 23px;
   margin: 0 0 23px 0;
   }
+
+.container {
+  background: url('../img/make/slam.png') no-repeat;
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+}
+
+.section-fir-tree h2 span { font: 48px/42px 'Stint Ultra Expanded', 'Helvetica Neue', Helvetica, sans-serif; letter-spacing: .05em; display: block; }
+.section-fir-tree .moral { width: 300px; padding: 0 0 0 20px; font: 400 22px/35px 'Stint Ultra Expanded'; text-align: right; color: #fff; display: inline-block; letter-spacing: .02em; vertical-align: top; }
+.section-fir-tree .fable { width: 290px; padding: 10px 20px 120px 20px; font: 15px/23px 'Slabo 13px'; color: #433; display: inline-block; vertical-align: top; }
