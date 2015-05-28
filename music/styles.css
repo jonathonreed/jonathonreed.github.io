@@ -1,11 +1,80 @@
+#first {
+  margin-top: -15px;
+  padding-right: 10px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  background: #FFFFFF;
+}
+
+#extra {
+  height: 400px;
+}
+
+#second {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #FCFCFC;
+}
+
+#third {
+  height: 78vh;
+  position: relative;
+  z-index: 2;
+  background: #FFFFFF;
+  padding-top: 175px;
+}
+
 .record {
-  margin: 115px auto 150px auto;
+  margin: 152px auto 152px auto;
   width: 50%;
 }
 
+.record img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 .intro {
-  margin: 115px auto;
+  margin: 125px auto;
+  vertical-align: middle;
   width: 500px;
+}
+
+.intro p {
+  font-style: italic;
+}
+
+.concl {
+  margin: 115px auto;
+  width: 900px;
+}
+
+.concl p.quote {
+  font-family: 'Vollkorn', cursive;
+  font-size: 45px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  color: #000000;
+}
+
+.concl p.source {
+  margin-top: -15px;
+  padding-left: 100px;
+  font-family: 'Vollkorn', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
 
 .desc {
@@ -53,7 +122,6 @@ p {
   line-height: 1.2;
   font-size: 15px;
   font-weight: 400;
-  font-style: italic;
   text-align: center;
   color: #333333;
   -webkit-font-smoothing: antialiased;
@@ -73,9 +141,12 @@ a:hover {
 .credit {
   display: block;
   margin: 15px 0 -65px 10px;
+  padding-top: 15px;
   font: italic 11px Helvetica, Arial, sans serif;
   line-height: 1.5;
   color: #dddddd;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .credit a {
