@@ -82,6 +82,10 @@
   width: 25%;
 }
 
+.desc p {
+  font-style: italic;
+}
+
 .desc #spring {
   color: #009900;
 }
