@@ -1,7 +1,7 @@
 body { 
   width: 100%;
   height: 100%;
-  background: #C7D0D5 url('../img/make/slam.png') no-repeat center top;
+  background: #C7D0D5 url('../../img/make/slam.png') no-repeat center top;
 }
 
 h1 {

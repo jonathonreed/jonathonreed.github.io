@@ -1,23 +1,23 @@
 body { 
   width: 100%;
   height: 100%;
-  background: #C7D0D5 url('../img/make/twitter.png') no-repeat center top;
+  background: #E1E8ED url('../../img/make/twitter-400.png') no-repeat center top;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  color: #38546B;
+  color: #292F33;
   font-size: 85px;
   font-weight: 700;
   line-height:100px;
   text-transform: uppercase;
   text-align: center;
-  margin: 250px auto 200px auto;
+  margin: 160px auto 150px auto;
 }
 
 h2 {
   font-family: 'Droid Serif', serif;
-  color: #38546B;
+  color: #292F33;
   font-size: 20px;
   font-weight: 400;
   font-style: italic;
@@ -27,19 +27,19 @@ h2 {
 
 p {
   font-family: 'Droid Serif', serif;
-  color: #546C7F;
+  color: #66757F;
   font-size: 15px;
   line-height: 23px;
   margin: 0 0 12px 0;
 }
 
 a {
-  color: #38546B;
+  color: #292F33;
 }
 
 blockquote {
   font-family: 'Droid Serif', serif;
-  color: #768997;
+  color: #869097;
   font-size: 15px;
   font-style: italic;
   padding: 5px 5px;
