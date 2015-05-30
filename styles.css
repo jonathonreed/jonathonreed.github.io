@@ -1,0 +1,22 @@
+#first {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background: url("http://jonathonreed.github.io/img/landing/IMG_1479-1280-web.jpg");
+}
+
+#extra {
+  height: 700px;
+}
+
+#second {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: url("http://jonathonreed.github.io/img/landing/IMG_1479-1280-web.jpg");
+}
