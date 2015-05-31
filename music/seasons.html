@@ -1,6 +1,24 @@
 <link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
 <link href="styles.css" rel="stylesheet" type="text/css">
 
+<script src="http://static.tumblr.com/shrl2lc/Kb0kl4vtp/jquery.js" type="text/javascript" charset="utf-8">
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+	$("body").keydown(function(e){ var key = e.charCode || e.keyCode || 0; if(key == "37" && $(".prev").length !== 0){ location.href = $(".prev").attr("href")} if(key == "39" && $(".next").length !== 0){ location.href = $(".next").attr("href") } })
+    $("body").prepend("<h2></h2>")
+    $("h2").before($("#cred").css({"margin-bottom":"20px"}).hide())
+    $("h2").click(function(){ $("#cred").slideToggle(500) })
+    })
+</script>
+<script>
+	$(window).scroll(function() {
+		var theta = $(window).scrollTop() / 100 % Math.PI;
+	$('#spin').css({ transform: 'rotate(' + theta + 'rad)' });
+	$('#spin').css({ transform: 'rotate(-' + theta + 'rad)' });
+	});
+</script>
+
 <html>
 
 <head>
@@ -13,7 +31,15 @@
 
 <div class="credit">
 	<a href="http://staging.jonathonreed.com/music">Built with love by Jonathon</a><br>
-	<a href="">Credit</a>
+	<div id="cred">
+		<p>Leaf icon by <a href="https://thenounproject.com/evanschris">Chris Evans</a> on The Noun Project<br>
+		<p>Sun icon by <a href="https://thenounproject.com/misirlou">misirlou</a> on The Noun Project<br>
+		<p>Acorn icon by <a href="https://thenounproject.com/grrrauf">Agne Alesiute</a> on The Noun Project<br>
+		<p>Snowflake icon by <a href="https://thenounproject.com/gilad1">Gilad Fried</a> on The Noun Project</p>
+		<p>Font combination from <a href="http://femmebot.github.io/google-type/">Google Fonts Typography</a> by <a href="http://femmebot.github.io/">femmebot</a></p>
+	</div>
+	<h2>Credit</h2>
+</div>
 </div>
 
 <div class="desc">
