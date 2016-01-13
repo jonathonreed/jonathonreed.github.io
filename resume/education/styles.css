@@ -42,6 +42,23 @@ last {
   left: 00px;
 }
 
+final {
+  width: calc(100% + 40px);
+  font-family: 'Archivo Black', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #F4F200;
+  font-size: 175px;
+  line-height: 400px;
+  letter-spacing: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  left: -40px;
+  bottom: 0px;
+}
+
 .boring {
   font-family: 'Montserrat', serif;
   font-size: 12px;
@@ -57,7 +74,7 @@ last {
   margin-right: auto;
   color: #151515;
   border: 2px dashed #151515;
-  margin-top: 150px;
+  margin-top: 75px;
   margin-bottom: 75px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -119,6 +136,10 @@ h3 {
   text-transform: uppercase;
 }
 
+h3:hover {
+  color: #990099;
+}
+
 p {
   font-family: 'Martel', serif;
   font-size: 15px;
@@ -145,7 +166,7 @@ blockquote {
 img {
   display: block;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .container {
@@ -158,8 +179,8 @@ img {
 
 .content {
   width: 60%;
-  margin: 0 auto 25px auto;
+  margin: 0 auto -50px auto;
   padding-top: 0px;
-  padding-bottom: 75px;
+  padding-bottom: -75px;
   overflow-x: hidden;
 }
