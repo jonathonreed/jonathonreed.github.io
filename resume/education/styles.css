@@ -151,7 +151,12 @@ p {
 }
 
 a {
-  color: #680148;
+  color: #151515;
+  text-decoration:underline;
+}
+
+a:hover {
+  color: #990099;
 }
 
 blockquote {
