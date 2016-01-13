@@ -1,0 +1,63 @@
+body { 
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+}
+
+h1 {
+  font-family: 'Playfair Display SC', serif;
+  color: #151515;
+  font-size: 2em;
+  line-height: 2em;
+  letter-spacing: 10px;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: .75em;
+  line-height: 3em;
+  text-align: left;
+  color: #151515;
+  position: relative;
+  text-align: center;
+}
+
+p {
+  font-family: 'Old Standard TT', serif;
+  font-size: 1.1em;
+  line-height: 2em;
+  text-align: left;
+  color: #151515;
+  position: relative;
+  margin-top: 20px;
+}
+
+a {
+  color: #680148;
+}
+
+blockquote {
+  font-family: 'Droid Serif', serif;
+  color: #7DB4B5;
+  font-size: 15px;
+  font-style: italic;
+  padding: 5px 5px;
+  text-align: left;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.container {
+  width: 65%;
+  margin: 25px auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
