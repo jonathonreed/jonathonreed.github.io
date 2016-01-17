@@ -1,0 +1,26 @@
+body { 
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    border: 0px;
+}
+
+th {
+    height: 75px;
+    width: 75px;
+    background-color: #AAA;
+    border: 0px;
+}
