@@ -181,7 +181,7 @@ blockquote {
 
 img {
   display: block;
-  margin: 0 auto;
+  margin: -75px auto 0 auto;
   padding-bottom: 100px;
 }
 
