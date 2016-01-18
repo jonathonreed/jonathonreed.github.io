@@ -66,14 +66,15 @@ final {
   letter-spacing: 5px;  
   text-align: center;
   text-transform: uppercase;
+  text-align: justify;
 }
 
 .commentary {
-  width: 150px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
   color: #151515;
-  border: 2px dashed #151515;
+  border: 1px solid #151515;
   margin-top: 75px;
   margin-bottom: 75px;
   padding-top: 30px;
@@ -84,7 +85,7 @@ final {
 
 .commentary:hover {
   color: #990099;
-  border: 2px dashed #990099;
+  border: 1px solid #990099;
 }
 
 h1 {
@@ -150,6 +151,16 @@ p {
   margin-top: 20px;
 }
 
+ul {
+  font-family: 'Martel', serif;
+  font-size: 15px;
+  line-height: 23 px;
+  text-align: left;
+  color: #151515;
+  position: relative;
+  margin-top: 20px;
+}
+
 a {
   color: #151515;
   text-decoration:underline;
@@ -174,11 +185,19 @@ img {
   padding-bottom: 100px;
 }
 
-.container {
+.firstcontainer {
   width: 65%;
   margin: 25px auto 0 auto;
-  padding-top: 75px;
+  padding-top: 150px;
   padding-bottom: 75px;
+  overflow-x: hidden;
+}
+
+.lastcontainer {
+  width: 65%;
+  margin: 0 auto 0 auto;
+  padding-top: 125px;
+  padding-bottom: 100px;
   overflow-x: hidden;
 }
 
