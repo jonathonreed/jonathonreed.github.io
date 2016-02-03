@@ -1,1 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+
 Redirect 301 /updates http://tinyletter.com/jonathonreed/
