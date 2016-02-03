@@ -1,6 +1,6 @@
 [code autolinks=”false”]
 RewriteEngine On
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^www.tinyletter.com/jonathonreed/
+RewriteCond %{HTTP_HOST} ^www.tinyletter.com/
 RewriteRule ^updates/(.*)$ http://www.jonathonreed.com/$1 [L,R=301]
 [/code]
