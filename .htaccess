@@ -1,6 +1,4 @@
-[code autolinks=”false”]
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www.tinyletter.com/
-RewriteRule ^updates/(.*)$ http://www.jonathonreed.com/$1 [L,R=301]
-[/code]
+#301 Redirects for .htaccess
+
+#Redirect a single page:
+Redirect 301 /updates/index.html http://www.tinyletter.com/jonathonreed
