@@ -1,4 +1,6 @@
 #301 Redirects for .htaccess
 
-#Redirect a sub folder to another site
-Redirect 301 /updates http://www.google.com/
+#Redirect to www location with subdirectory
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^/updates/(.*)$
+RewriteRule ^(.*)$ http://www.tinyletter.com/jonathonreed/index.html [R=301,NC]
