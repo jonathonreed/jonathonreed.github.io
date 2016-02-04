@@ -1,4 +1,4 @@
 #301 Redirects for .htaccess
 
-#Redirect a single page:
-Redirect 301 /updates/index.html http://www.tinyletter.com/jonathonreed
+#Redirect a sub folder to another site
+Redirect 301 /updates http://www.google.com/
