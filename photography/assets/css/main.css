@@ -829,14 +829,15 @@
 	}
 
 		#footer .copyright {
-			list-style: none;
 			padding: 0;
+			font-weight: 300;
+			list-style: none;
 		}
 
 			#footer .copyright li {
 				display: inline-block;
 				font-size: 0.8em;
-				padding: 0;
+				padding: 0 0 1em 0;
 			}
 
 /* Thumbnails */
