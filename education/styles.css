@@ -181,8 +181,7 @@ blockquote {
 
 img {
   display: block;
-  margin: -75px auto 0 auto;
-  padding-bottom: 100px;
+  padding: 25px 0 25px 0px;
 }
 
 .firstcontainer {
@@ -191,6 +190,12 @@ img {
   padding-top: 150px;
   padding-bottom: 75px;
   overflow-x: hidden;
+}
+
+.firstcontainer img {
+  display: block;
+  margin: -100px auto 0 auto;
+  padding-bottom: 100px;
 }
 
 .lastcontainer {
