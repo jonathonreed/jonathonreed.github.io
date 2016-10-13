@@ -716,7 +716,7 @@
 		margin: 0 0 2em 0;
 	}
 
-	#adventure h1, h2, h3, h4, h5, h6 {
+	#adventure h1, #adventure h2, #adventure h3, #adventure h4, #adventure h5, #adventure h6 {
 		color: #ffffff;
 		font-weight: 700;
 		line-height: 1.65;
