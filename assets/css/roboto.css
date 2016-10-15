@@ -613,6 +613,99 @@
 			color: #fff;
 		}
 
+			@media screen and (max-width: 1200px) {
+				#landing-left {
+					top: 40%;
+				}
+			}
+
+			@media screen and (max-width: 1200px) {
+				#landing-left h1 {
+					width: 30em;
+					margin: 0 auto;
+					text-align: left;
+					overflow: visible;
+				}
+			}
+
+			@media screen and (max-width: 1200px) {
+				#landing-left p {
+					width: 30em;
+					margin: 1em auto;
+					text-align: left;
+				}
+			}
+
+			@media screen and (max-width: 1200px) {
+				#landing-left ul {
+					width: 30em;
+					margin: 0 auto;
+					text-align: left;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing-left {
+					top: 40%;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing-left h1 {
+					width: 30em;
+					margin: 0 auto;
+					text-align: left;
+					overflow: visible;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing-left p {
+					width: 30em;
+					margin: 1em auto;
+					text-align: left;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing-left ul {
+					width: 30em;
+					margin: 0 auto;
+					text-align: left;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing-left {
+					top: 40%;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing-left h1 {
+					width: 15em;
+					margin: 0 auto;
+					text-align: left;
+					overflow: visible;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing-left p {
+					width: 15em;
+					margin: 1em auto;
+					text-align: left;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing-left ul {
+					width: 15em;
+					margin: 0 auto;
+					text-align: left;
+				}
+			}
+
 	#landing-right {
 		position: absolute;
 		width: 30%;
@@ -633,6 +726,57 @@
 			text-align: right;
 			color: #fff;
 		}
+
+			@media screen and (max-width: 1200px) {
+				#landing-right {
+					left: 2.5em;
+					padding-top: 11em;
+					margin: 0 auto;
+					width: 30em;
+					text-align: left;
+				}
+			}
+
+			@media screen and (max-width: 1200px) {
+				#landing-right h3 {
+					text-align: left;
+					margin: 0 auto;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing-right {
+					left: 2.5em;
+					padding-top: 11em;
+					margin: 0 auto;
+					width: 30em;
+					text-align: left;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing-right h3 {
+					text-align: left;
+					margin: 0 auto;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing-right {
+					left: 2.5em;
+					padding-top: 17em;
+					margin: 0 auto;
+					width: 15em;
+					text-align: left;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing-right h3 {
+					text-align: left;
+					margin: 0 auto;
+				}
+			}
 
 /* /adventure BASIC */
 
