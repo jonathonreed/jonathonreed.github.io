@@ -677,7 +677,7 @@
 
 			@media screen and (max-width: 480px) {
 				#landing-left {
-					top: 40%;
+					top: 20%;
 				}
 			}
 
@@ -764,7 +764,7 @@
 			@media screen and (max-width: 480px) {
 				#landing-right {
 					left: 2.5em;
-					padding-top: 17em;
+					padding-top: 9em;
 					margin: 0 auto;
 					width: 15em;
 					text-align: left;
