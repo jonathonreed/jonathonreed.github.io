@@ -582,136 +582,144 @@
 
 /* /landing */
 
-	#landing-left {
-		position: absolute;
-		top: 20em;
-		left: 10em;
-		width: 30%;
-		text-align: left;
+	#landing {
+		position: relative;
+		padding: 25% 0 0 10%;
+		overflow: visible;
 	}
 
-		#landing-left a:hover {
+		@media screen and (max-width: 1200px) {
+			#landing {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			padding: 25% 0;
+			text-align: center;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#landing {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			padding: 25% 0;
+			text-align: center;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#landing {
+			width: 18em;
+			padding: 25% 0;
+			text-align: left;
+			}
+		}
+
+		#landing a:hover {
 			color: #DFF2FF;
 		}
 
-		#landing-left h1 {
+		#landing h1 {
 			font-size: 2.05em;
 			font-weight: 700;
 			text-align: left;
 			color: #fff;
 		}
 
-		#landing-left p {
+			@media screen and (max-width: 1200px) {
+				#landing h1 {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing h1 {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				font-size: 2.05em;
+				text-align: center;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing h1 {
+				display: block;
+				text-align: left;
+				margin: 0 0.85em;
+				font-size: 2.05em;
+				}
+			}
+
+		#landing p {
 			text-align: left;
 			color: #fff;
 		}
 
-		#landing-left ul {
+			@media screen and (max-width: 1200px) {
+				#landing p {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				padding: 1em 0 0 10%;
+				text-align: center;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing p {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				padding: 1em 0 0 10%;
+				text-align: center;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing p {
+				width: 100%;
+				text-align: left;
+				font-size: 1em;
+				}
+			}
+
+		#landing ul {
 			text-align: left;
 			color: #fff;
 		}
 
 			@media screen and (max-width: 1200px) {
-				#landing-left {
-					top: 8em;
-					left: 5em;
-					width: 80%;
-				}
-			}
-
-			@media screen and (max-width: 1200px) {
-				#landing-left h1 {
-					width: 15em;
-					margin-left: 0;
-				}
-			}
-
-			@media screen and (max-width: 1200px) {
-				#landing-left p {
-					width: 15em;
-					margin: 1em 0;
-				}
-			}
-
-			@media screen and (max-width: 1200px) {
-				#landing-left ul {
-					width: 15em;
-					margin: 1em 0;
+				#landing ul {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				padding: 1em 0 0 10%;
+				text-align: center;
 				}
 			}
 
 			@media screen and (max-width: 736px) {
-				#landing-left {
-					top: 10em;
-					left: 5em;
-					width: 80%;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing-left h1 {
-					width: 15em;
-					margin-left: 0;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing-left p {
-					width: 15em;
-					margin: 1em 0;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing-left ul {
-					width: 15em;
-					margin: 1em 0;
+				#landing ul {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				padding: 1em 0 0 10%;
+				text-align: center;
 				}
 			}
 
 			@media screen and (max-width: 480px) {
-				#landing-left {
-					top: 10em;
-					left: 2em;
-					width: 90%;
+				#landing ul {
+				text-align: left;
 				}
 			}
 
-			@media screen and (max-width: 480px) {
-				#landing-left h1 {
-					width: 15em;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing-left p {
-					width: 15em;
-					margin: 1em 0;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing-left ul {
-					width: 15em;
-					margin: 1em 0;
-				}
-			}
-
-	#landing-right {
-		position: absolute;
-		width: 30%;
-		top: 20em;
-		right: 10em;
-		text-align: right;
-	}
-
-		#landing-right a:hover {
-			color: #DFF2FF;
-		}
-
-		#landing-right h3 {
-			width: 100%;
-			padding-bottom: 0.25em;
+		#landing h3 {
 			font-size: 2em;
 			font-weight: 100;
 			text-align: right;
@@ -719,50 +727,51 @@
 		}
 
 			@media screen and (max-width: 1200px) {
-				#landing-right {
-					width: 15em;
-					padding-top: 6em;
-					margin: 0;
-					overflow: hidden;
-				}
-			}
-
-			@media screen and (max-width: 1200px) {
-				#landing-right h3 {
-					text-align: left;
-					margin: 0 0 0 0;
+				#landing h3 {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0.5em 0 0 10%;
+				text-align: center;
 				}
 			}
 
 			@media screen and (max-width: 736px) {
-				#landing-right {
-					width: 15em;
-					padding-top: 12em;
-					margin: 1em	0;
-					overflow: hidden;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing-right h3 {
-					text-align: left;
-					margin: 0 0 0 1em;
+				#landing h3 {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0.5em 0 0 10%;
+				text-align: center;
 				}
 			}
 
 			@media screen and (max-width: 480px) {
-				#landing-right {
-					width: 15em;
-					padding-top: 8em;
-					margin: 1em 0;
-					overflow: hidden;
+				#landing h3 {
+				text-align: left;
 				}
 			}
 
+		#landing-left {
+			display: inline-block;
+			width: 30em;
+		}
+
 			@media screen and (max-width: 480px) {
-				#landing-right h3 {
-					text-align: left;
-					margin: 0;
+				#landing-left {
+				width: 100%;
+				}
+			}
+
+		#landing-right {
+			display: inline-block;
+			width: 30em;
+			vertical-align: top;
+		}
+
+			@media screen and (max-width: 480px) {
+				#landing-right {
+				width: 100%;
 				}
 			}
 
