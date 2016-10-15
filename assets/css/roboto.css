@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Bungee+Inline|Bungee+Hairline");
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Bungee|Bungee+Inline|Bungee+Hairline");
 
 
 /* Reset */
@@ -4009,6 +4009,30 @@
 			line-height: 1em;
 		}
 
+		@media screen and (max-width: 1200px) {
+			#f16-header h1 {
+				padding: 0.6em 0 0.25em 0.2em;
+				font-family: "Bungee";
+				font-size: 5.5em;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#f16-header h1 {
+				padding: 0.6em 0 0.2em 0.2em;
+				font-family: "Bungee";
+				font-size: 4em;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#f16-header h1 {
+				padding: 0.6em 0 0.4em 0.2em;
+				font-family: "Bungee";
+				font-size: 2.5em;
+			}
+		}
+
 	#f16-header h3 {
 		margin: -0.75em auto 1.5em auto;
 		width: 50%;
@@ -4018,6 +4042,52 @@
 		font-weight: 300;
 		text-align: center;
 	}
+
+		@media screen and (max-width: 1200px) {
+			#f16-header h3 {
+				padding-bottom: 1em;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#f16-header h3 {
+				padding-bottom: 0.4em;
+				font-size: 1.75em;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#f16-header h3 {
+				padding-bottom: 0.1em;
+				font-size: 1.75em;
+			}
+		}
+
+#f16-embed {
+	display: block;
+	margin: 1em auto;
+	padding: 0 3em;
+	width: 75%;
+	text-align: center;
+	}
+
+		@media screen and (max-width: 1200px) {
+			#f16-embed {
+			width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#f16-embed {
+			width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#f16-embed {
+			width: 100%;
+			}
+		}
 
 #f16-thumbnails article {
 	position: relative;
@@ -4044,10 +4114,23 @@
 		text-align: justify;
 	}
 
-#instafeed {
-		width: 100%;
-		margin: 5em auto 1em auto;
+@media screen and (max-width: 1280px) {
+	#thumbnails .pixels-photo {
+		width: 50%;
 	}
+}
+
+@media screen and (max-width: 736px) {
+	#thumbnails p {
+		width: 5em;
+	}
+}
+
+#instafeed {
+	width: 100%;
+	margin: 5em auto 1em auto;
+	text-align: center;
+}
 
 	#instafeed img {
   		height: 306px;
