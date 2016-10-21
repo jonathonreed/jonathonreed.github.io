@@ -4255,6 +4255,20 @@
 		text-align: justify;
 	}
 
+	#f16-thumbnails article img {
+		width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#f16-thumbnails article img.center {
+		display: block;
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
 @media screen and (max-width: 1280px) {
 	#thumbnails .pixels-photo {
 		width: 50%;
