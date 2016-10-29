@@ -143,7 +143,7 @@ var main = (function($) { var _ = {
 			_.$body = $('body');
 
 		// Thumbnails.
-			_.$thumbnails = $('#thumbnails');
+			_.$thumbnails = $('#photography-thumbnails');
 
 		// Viewer.
 			_.$viewer = $(
@@ -161,7 +161,7 @@ var main = (function($) { var _ = {
 			_.$navPrevious = _.$viewer.find('.nav-previous');
 
 		// Main wrapper.
-			_.$main = $('#main');
+			_.$main = $('#photography-main');
 
 		// Toggle.
 			$('<div class="toggle"></div>')
