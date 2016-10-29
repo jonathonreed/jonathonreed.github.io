@@ -645,34 +645,6 @@
 		overflow: hidden;
 	}
 
-		@media screen and (max-width: 1200px) {
-			#landing {
-			display: block;
-			width: 100%;
-			margin: 0 auto;
-			padding: 25% 0;
-			text-align: center;
-			}
-		}
-
-		@media screen and (max-width: 736px) {
-			#landing {
-			display: block;
-			width: 100%;
-			margin: 0 auto;
-			padding: 25% 0;
-			text-align: center;
-			}
-		}
-
-		@media screen and (max-width: 480px) {
-			#landing {
-			width: 18em;
-			padding: 25% 0;
-			text-align: left;
-			}
-		}
-
 		#landing a:hover {
 			color: #A7DBFF;
 		}
@@ -685,98 +657,16 @@
 			text-shadow: 0 0 1.5em rgba(150, 150, 150, 1);
 		}
 
-			@media screen and (max-width: 1200px) {
-				#landing h1 {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				text-align: center;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing h1 {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				font-size: 2.05em;
-				text-align: center;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing h1 {
-				display: block;
-				text-align: left;
-				margin: 0 0.85em;
-				font-size: 2.05em;
-				}
-			}
-
 		#landing p {
 			text-align: left;
 			color: #fff;
 			text-shadow: 0 0 0.85em rgba(150, 150, 150, 1);
 		}
 
-			@media screen and (max-width: 1200px) {
-				#landing p {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				padding: 1em 0 0 10%;
-				text-align: center;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing p {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				padding: 1em 0 0 10%;
-				text-align: center;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing p {
-				width: 100%;
-				text-align: left;
-				font-size: 1em;
-				}
-			}
-
 		#landing ul {
 			text-align: left;
 			color: #fff;
 		}
-
-			@media screen and (max-width: 1200px) {
-				#landing ul {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				padding: 1em 0 0 10%;
-				text-align: center;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing ul {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				padding: 1em 0 0 10%;
-				text-align: center;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing ul {
-				text-align: left;
-				}
-			}
 
 		#landing h3 {
 			font-size: 2em;
@@ -784,32 +674,6 @@
 			text-align: right;
 			color: #fff;
 		}
-
-			@media screen and (max-width: 1200px) {
-				#landing h3 {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				padding: 0.5em 0 0 10%;
-				text-align: center;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing h3 {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				padding: 0.5em 0 0 10%;
-				text-align: center;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing h3 {
-				text-align: left;
-				}
-			}
 
 		#landing-left {
 			display: table-cell;
@@ -820,9 +684,21 @@
 			text-align: left;
 		}
 
+			@media screen and (max-width: 1200px) {
+				#landing-left {
+					padding: 3em;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing-left {
+					padding: 2em;
+				}
+			}
+
 			@media screen and (max-width: 480px) {
 				#landing-left {
-				width: 100%;
+					padding: 1em;
 				}
 			}
 
@@ -835,6 +711,24 @@
 			text-align: right;
 		}
 
+			@media screen and (max-width: 1200px) {
+				#landing-right {
+					padding: 3em;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#landing-right {
+					padding: 2em;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				#landing-right {
+					padding: 1em;
+				}
+			}
+
 			#landing-right h3 {
 				text-shadow: 0 0 1em rgba(150, 150, 150, 1);
 				margin-bottom: 0;
@@ -843,12 +737,6 @@
 			#landing-right h3 a:hover {
 				color: #A7DBFF;
 				text-shadow: 0 0 2em rgba(255, 255, 255, 1);
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing-right {
-				width: 100%;
-				}
 			}
 
 /* /freelancing TYPE */
