@@ -617,10 +617,32 @@
 
 /* /landing BASIC */
 
-	#landing {
+#freelancing-links {
+		display: table;
 		position: relative;
-		padding: 25% 0 0 10%;
-		overflow: visible;
+		height: 100vh;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	#freelancing-links .cell-box {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+
+	#landing {
+		display: table;
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
 	}
 
 		@media screen and (max-width: 1200px) {
@@ -660,7 +682,7 @@
 			font-weight: 700;
 			text-align: left;
 			color: #fff;
-			text-shadow: 0 0 1.35em rgba(150, 150, 150, 1);
+			text-shadow: 0 0 1.5em rgba(150, 150, 150, 1);
 		}
 
 			@media screen and (max-width: 1200px) {
@@ -790,8 +812,12 @@
 			}
 
 		#landing-left {
-			display: inline-block;
-			width: 30em;
+			display: table-cell;
+			height: 100%;
+			width: 35em;
+			padding: 0 0 0 10em;
+			vertical-align: middle;
+			text-align: left;
 		}
 
 			@media screen and (max-width: 480px) {
@@ -801,11 +827,18 @@
 			}
 
 		#landing-right {
-			display: inline-block;
-			width: 30em;
-			vertical-align: top;
-			text-shadow: 0 0 1em rgba(150, 150, 150, 1);
+			display: table-cell;
+			height: 100%;
+			width: 35em;
+			padding: 0 10em 0 0;
+			vertical-align: middle;
+			text-align: right;
 		}
+
+			#landing-right h3 {
+				text-shadow: 0 0 1em rgba(150, 150, 150, 1);
+				margin-bottom: 0;
+			}
 
 			#landing-right h3 a:hover {
 				color: #A7DBFF;
