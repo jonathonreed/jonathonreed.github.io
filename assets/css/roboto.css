@@ -409,7 +409,7 @@
 			#thumbnails article h2 {
 				display: block;
 				position: absolute;
-				padding: 2em 2em 1em 1.6em ;
+				padding: 2em 2em 0.3em 1.6em;
 				width: 800px;
 				bottom: 50px;
 				color: #fff;
@@ -457,7 +457,7 @@
 					#thumbnails article .light:hover h2 {
 						display: block;
 						position: absolute;
-						padding: 2em 2em 1em 1.6em ;
+						padding: 2em 2em 0.3em 1.6em ;
 						width: 800px;
 						bottom: 51px;
 						color: #000;
@@ -501,7 +501,7 @@
 					#thumbnails article .dark:hover h2 {
 						display: block;
 						position: absolute;
-						padding: 2em 2em 1em 1.6em ;
+						padding: 2em 2em 0.3em 1.6em;
 						width: 800px;
 						bottom: 51px;
 						color: #fff;
@@ -616,25 +616,6 @@
 			}
 
 /* /landing BASIC */
-
-#freelancing-links {
-		display: table;
-		position: relative;
-		height: 100vh;
-		width: 100%;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-
-	#freelancing-links .cell-box {
-		display: table-cell;
-		height: 100%;
-		width: 100%;
-		margin: 0 auto;
-		vertical-align: middle;
-		text-align: center;
-	}
-
 
 	#landing {
 		display: table;
@@ -800,6 +781,10 @@
 	#photography h1, h2, h3, h4, h5, h6 {
 		margin: 0 0 0.5em 0;
 		line-height: 1.25;
+	}
+
+	#photography h2 {
+		margin: 0 0 -0.3em 0;
 	}
 
 /* /freelancing/photography MAIN */
@@ -1349,6 +1334,37 @@
 				}
 
 		}
+
+/* /freelancing/design HEADER */
+	
+	#design-header {
+		margin: 0px auto;
+		padding: 3em 2.25em 1.75em 2.25em ;
+		width: 500px;
+	}
+
+	#design-header h1 {
+		margin: 0 auto;
+		font-size: 2.05em;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	#design-header h2 {
+		font-size: 1.25em;
+	}
+
+	#design-header h3 {
+		font-size: 2.05em;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	#design-header p {
+		width: 25em;
+		text-align: center;
+	}
+
 
 /* /adventure BASIC */
 
