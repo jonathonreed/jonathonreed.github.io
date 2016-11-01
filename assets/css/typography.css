@@ -213,7 +213,7 @@ footer p {
   position: relative;
   height: 20rem;
   padding: 15rem 0;
-  background: #362819 url('../img/typography/new-york-web.jpg') no-repeat;
+  background: #362819 url('../../img/typography/new-york-web.jpg') no-repeat;
   background-size: 100%;
 }
 
@@ -263,7 +263,7 @@ footer p {
   position: relative;
   height: 80rem;
   padding: 9rem 0;
-  background: #FFF url('../img/typography/pragser-wildsee-web.jpg') no-repeat;
+  background: #FFF url('../../img/typography/pragser-wildsee-web.jpg') no-repeat;
   background-size: 100%;
   z-index: 2;
 }
@@ -319,7 +319,7 @@ footer p {
   background-size: contain;
   height: 20rem;
   padding: 15rem 0;
-  background: #999999 url('../img/typography/bergen-web.jpg') no-repeat;
+  background: #999999 url('../../img/typography/bergen-web.jpg') no-repeat;
   background-size: 100%;
 }
 
