@@ -720,652 +720,6 @@
 				text-shadow: 0 0 2em rgba(255, 255, 255, 1);
 			}
 
-/* /freelancing TYPE */
-
-#freelancing-links {
-		display: table;
-		position: relative;
-		height: 100vh;
-		width: 100%;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-
-	#freelancing-links .cell-box {
-		display: table-cell;
-		height: 100%;
-		width: 100%;
-		margin: 0 auto;
-		vertical-align: middle;
-		text-align: center;
-	}
-
-		#freelancing-links i {
-			display: inline;
-			padding-right: 0.35em;
-		}
-
-		#freelancing-links h1 {
-			display: inline;
-			width: 100%;
-			margin: 0 2em;
-			font-size: 1.5em;
-			font-weight: 300;
-			text-transform: none !important;
-			text-align: center;
-			vertical-align: middle;
-		}
-
-			@media screen and (max-width: 800px) {
-			#freelancing-links h1 {
-				display: block;
-				margin: 2em auto;
-			}
-		}
-
-/* /freelancing/photography BASIC */
-
-	#photography body.is-loading-0 *, body.is-loading-0 *:before, body.is-loading-0 *:after {
-		-moz-animation: none !important;
-		-webkit-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-		-moz-transition: none !important;
-		-webkit-transition: none !important;
-		-ms-transition: none !important;
-		transition: none !important;
-	}
-
-/* /freelancing/photography TYPE */
-	
-	#photography h1, h2, h3, h4, h5, h6 {
-		margin: 0 0 0.5em 0;
-		line-height: 1.25;
-	}
-
-	#photography h2 {
-		margin: 0 0 -0.3em 0;
-	}
-
-/* /freelancing/photography MAIN */
-
-	#photography-main {
-		-moz-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
-		-webkit-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
-		-ms-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
-		transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
-		-webkit-overflow-scrolling: touch;
-		position: fixed;
-		top: 0;
-		width: 22.5em;
-		height: 100%;
-		background: #fff;
-		outline: 0;
-		overflow-x: hidden;
-		overflow-y: auto;
-		text-align: right;
-		visibility: visible;
-		z-index: 10000;
-		right: 0;
-	}
-
-		#photography-main .toggle {
-			-webkit-tap-highlight-color: transparent;
-			position: absolute;
-			top: 0;
-			width: 4em;
-			height: 4em;
-			background-image: url("images/close-small-alt.svg");
-			background-repeat: no-repeat;
-			background-size: 32px 32px;
-			cursor: pointer;
-			display: none;
-			z-index: 1;
-			background-position: 0.5em 0.5em;
-			left: 0;
-		}
-
-		#photography body.fullscreen #photography-main {
-			visibility: hidden;
-			right: -22.5em;
-		}
-
-		#photography body.is-loading-1 #photography-main {
-			opacity: 0;
-			right: -2em;
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#photography-main {
-				width: 19em;
-			}
-
-				body.fullscreen #main {
-					right: -19em;
-				}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#photography-main {
-				background: rgba(255, 255, 255, 0.925);
-			}
-
-				#photography-main .toggle {
-					display: block;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#photography-main {
-				-moz-transition: opacity 0.5s ease, visibility 0.5s;
-				-webkit-transition: opacity 0.5s ease, visibility 0.5s;
-				-ms-transition: opacity 0.5s ease, visibility 0.5s;
-				transition: opacity 0.5s ease, visibility 0.5s;
-				width: 100%;
-				background: #fff;
-				text-align: center;
-			}
-
-				#photography body.is-loading-1 #photography-main {
-					left: auto !important;
-					right: auto !important;
-				}
-
-				#photography body.fullscreen #photography-main {
-					left: auto !important;
-					right: auto !important;
-					opacity: 0;
-				}
-
-				#photography-main .toggle {
-					display: none;
-				}
-
-		}
-
-/* /freelancing/photography HEADER */
-
-	#photography-header {
-			padding: 3em 2.25em 1.75em 2.25em ;
-		}
-
-			#photography-header h1 {
-				margin-bottom: 0px;
-				font-size: 2.05em;
-				font-weight: 700;
-				text-align: right;
-			}
-
-			#photography-header h3 {
-				font-size: 2.05em;
-				font-weight: 300;
-				text-align: right;
-			}
-
-			#photography-header p {
-				margin: 0 0 1.25em 0;
-				text-align: right;
-			}
-
-			#photography-header ul {
-				text-align: right;
-			}
-
-/* /freelancing/photography FOOTER */
-
-	#photography-footer {
-		padding: 2.25em 2.25em 1em 2.25em ;
-	}
-
-		#photography-footer .copyright {
-			padding: 0;
-			font-weight: 300;
-			list-style: none;
-			text-align: right;
-		}
-
-			#photography-footer .copyright li {
-				display: inline-block;
-				font-size: 0.8em;
-				padding: 0 0 1em 0;
-			}
-
-/* /freelancing/photography THUMBNAILS */
-
-	#photography-thumbnails {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		padding: 0 0.75em;
-	}
-
-		#photography-thumbnails article {
-			position: relative;
-			width: 50%;
-			background: #101010;
-			outline: 0;
-		}
-
-			#photography-thumbnails article .thumbnail {
-				-webkit-tap-highlight-color: transparent;
-				display: block;
-				position: relative;
-				border: 0;
-				outline: 0;
-			}
-
-				#photography-thumbnails article .thumbnail img {
-					display: block;
-					width: 100%;
-				}
-
-				#photography-thumbnails article .thumbnail:before {
-					-moz-pointer-events: none;
-					-webkit-pointer-events: none;
-					-ms-pointer-events: none;
-					pointer-events: none;
-					-moz-transition: opacity 0.25s ease;
-					-webkit-transition: opacity 0.25s ease;
-					-ms-transition: opacity 0.25s ease;
-					transition: opacity 0.25s ease;
-					content: '';
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					height: 100%;
-					box-shadow: inset 0 0 0 2px #0083D5, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
-					opacity: 0;
-					z-index: 1;
-				}
-
-				#photography-thumbnails article .thumbnail:focus:before {
-					opacity: 0.5;
-				}
-
-			#photography-thumbnails article h2, #photography-thumbnails article p {
-				display: none;
-			}
-
-			#photography-thumbnails article.active .thumbnail:before {
-				opacity: 1;
-			}
-
-		@media screen and (max-width: 480px) {
-
-			#photography-thumbnails article .thumbnail:before {
-				display: none;
-			}
-
-		}
-
-/* /freelancing/photography VIEWER */
-
-	@-moz-keyframes spinner {
-		0% {
-			-moz-transform: rotate(0deg);
-			-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-
-		100% {
-			-moz-transform: rotate(360deg);
-			-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-			transform: rotate(360deg);
-		}
-	}
-
-	@-webkit-keyframes spinner {
-		0% {
-			-moz-transform: rotate(0deg);
-			-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-
-		100% {
-			-moz-transform: rotate(360deg);
-			-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-			transform: rotate(360deg);
-		}
-	}
-
-	@-ms-keyframes spinner {
-		0% {
-			-moz-transform: rotate(0deg);
-			-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-
-		100% {
-			-moz-transform: rotate(360deg);
-			-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-			transform: rotate(360deg);
-		}
-	}
-
-	@keyframes spinner {
-		0% {
-			-moz-transform: rotate(0deg);
-			-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-
-		100% {
-			-moz-transform: rotate(360deg);
-			-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-			transform: rotate(360deg);
-		}
-	}
-
-	#viewer {
-		-moz-transition: opacity 0.75s ease, width 0.75s ease;
-		-webkit-transition: opacity 0.75s ease, width 0.75s ease;
-		-ms-transition: opacity 0.75s ease, width 0.75s ease;
-		transition: opacity 0.75s ease, width 0.75s ease;
-		position: absolute;
-		top: 0;
-		width: calc(100% - 22.5em);
-		height: 100%;
-		left: 0;
-	}
-
-		#viewer .inner {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 2;
-		}
-
-			#viewer .inner > * {
-				-moz-pointer-events: auto;
-				-webkit-pointer-events: auto;
-				-ms-pointer-events: auto;
-				pointer-events: auto;
-			}
-
-			#viewer .inner:before {
-				background-image: -moz-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), -moz-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
-				background-image: -webkit-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), -webkit-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
-				background-image: -ms-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), -ms-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
-				background-image: linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
-				content: '';
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-
-			#viewer .inner .toggle {
-				-webkit-tap-highlight-color: transparent;
-				position: absolute;
-				top: 0;
-				width: 4em;
-				height: 4em;
-				background-image: url("images/close.svg");
-				background-repeat: no-repeat;
-				background-size: 64px 64px;
-				cursor: pointer;
-				z-index: 1;
-				right: 0;
-				background-position: calc(100% - 0.75em) 0.75em;
-			}
-
-			#viewer .inner .nav-next,
-			#viewer .inner .nav-previous {
-				-webkit-tap-highlight-color: transparent;
-				position: absolute;
-				top: 50%;
-				width: 6em;
-				height: 6em;
-				margin-top: -3em;
-				background-image: url("images/arrow.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				cursor: pointer;
-			}
-
-			#viewer .inner .nav-previous {
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-				left: 0;
-			}
-
-			#viewer .inner .nav-next {
-				right: 0;
-			}
-
-		#viewer .slide {
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 1;
-			z-index: 1;
-		}
-
-			#viewer .slide .caption {
-				background-image: -moz-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: -webkit-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: -ms-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				padding: 2em 2em 0.75em 2em ;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				color: rgba(255, 255, 255, 0.5);
-				z-index: 1;
-			}
-
-				#viewer .slide .caption h2, #viewer .slide .caption h3, #viewer .slide .caption h4, #viewer .slide .caption h5, #viewer .slide .caption h6 {
-					color: #fff;
-				}
-
-			#viewer .slide .image {
-				-moz-transition: opacity 0.5s ease-in-out;
-				-webkit-transition: opacity 0.5s ease-in-out;
-				-ms-transition: opacity 0.5s ease-in-out;
-				transition: opacity 0.5s ease-in-out;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-repeat: no-repeat;
-				background-size: cover;
-				opacity: 0;
-			}
-
-			#viewer .slide:before {
-				-moz-animation: spinner 1s linear infinite;
-				-webkit-animation: spinner 1s linear infinite;
-				-ms-animation: spinner 1s linear infinite;
-				animation: spinner 1s linear infinite;
-				-moz-transition: opacity 0.5s ease-in-out;
-				-webkit-transition: opacity 0.5s ease-in-out;
-				-ms-transition: opacity 0.5s ease-in-out;
-				transition: opacity 0.5s ease-in-out;
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: 3em;
-				height: 3em;
-				background-image: url("images/spinner.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				margin: -1.5em 0 0 -1.5em;
-				opacity: 0;
-			}
-
-			#viewer .slide.loading:before {
-				opacity: 1;
-			}
-
-			#viewer .slide.active .image {
-				opacity: 1;
-			}
-
-		body.fullscreen #viewer {
-			width: 100%;
-		}
-
-			body.fullscreen #viewer .inner .toggle {
-				background-image: url("images/open.svg");
-			}
-
-		#photography body.is-loading-1 #viewer {
-			opacity: 0;
-		}
-
-		#photography body.is-loading-2 #viewer .slide {
-			opacity: 0;
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#viewer {
-				width: calc(100% - 19em);
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#viewer {
-				width: 100%;
-			}
-
-				#viewer .inner .toggle {
-					-moz-transition: opacity 0.75s ease;
-					-webkit-transition: opacity 0.75s ease;
-					-ms-transition: opacity 0.75s ease;
-					transition: opacity 0.75s ease;
-					background-image: url("images/open.svg");
-					opacity: 0;
-					right: 0;
-				}
-
-				body.fullscreen #viewer .inner .toggle {
-					opacity: 1;
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#viewer .inner .toggle {
-				background-size: 32px 32px;
-			}
-
-			#viewer .inner .nav-next,
-			#viewer .inner .nav-previous {
-				background-image: url("images/arrow-small.svg");
-				background-size: 32px 32px;
-			}
-
-			body.fullscreen #viewer .inner .toggle {
-				background-image: url("images/open-small.svg");
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#viewer {
-				-moz-transition: opacity 0.5s ease;
-				-webkit-transition: opacity 0.5s ease;
-				-ms-transition: opacity 0.5s ease;
-				transition: opacity 0.5s ease;
-				-moz-transition-delay: 0s;
-				-webkit-transition-delay: 0s;
-				-ms-transition-delay: 0s;
-				transition-delay: 0s;
-				opacity: 0;
-			}
-
-				#viewer .inner .toggle {
-					background-image: url("images/close-small.svg") !important;
-					background-size: 32px 32px;
-				}
-
-				body.fullscreen #viewer {
-					-moz-transition-delay: 0.5s;
-					-webkit-transition-delay: 0.5s;
-					-ms-transition-delay: 0.5s;
-					transition-delay: 0.5s;
-					opacity: 1;
-				}
-
-		}
-
-/* /freelancing/design HEADER */
-	
-	#design-header {
-		margin: 0px auto;
-		padding: 3em 2.25em 1.75em 2.25em ;
-		width: 500px;
-	}
-
-	#design-header h1 {
-		margin: 0 auto;
-		font-size: 2.05em;
-		font-weight: 700;
-		text-align: center;
-	}
-
-	#design-header h2 {
-		font-size: 1.25em;
-	}
-
-	#design-header h3 {
-		font-size: 2.05em;
-		font-weight: 300;
-		text-align: center;
-	}
-
-	#design-header p {
-		width: 25em;
-		text-align: center;
-	}
-
-
 /* /adventure BASIC */
 
 	#adventure body {
@@ -4910,4 +4264,908 @@
 }
 	#f16-links a {
 		border-bottom: transparent;
+	}
+
+/* /freelancing TYPE */
+
+#freelancing-links {
+		display: table;
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	#freelancing-links .cell-box {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+		#freelancing-links i {
+			display: inline;
+			padding-right: 0.35em;
+		}
+
+		#freelancing-links h1 {
+			display: inline;
+			width: 100%;
+			margin: 0 2em;
+			font-size: 1.5em;
+			font-weight: 300;
+			text-transform: none !important;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+			@media screen and (max-width: 800px) {
+			#freelancing-links h1 {
+				display: block;
+				margin: 2em auto;
+			}
+		}
+
+/* /freelancing/photography BASIC */
+
+	#photography body.is-loading-0 *, body.is-loading-0 *:before, body.is-loading-0 *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+/* /freelancing/photography TYPE */
+	
+	#photography h1, h2, h3, h4, h5, h6 {
+		margin: 0 0 0.5em 0;
+		line-height: 1.25;
+	}
+
+	#photography h2 {
+		margin: 0 0 -0.3em 0;
+	}
+
+/* /freelancing/photography MAIN */
+
+	#photography-main {
+		-moz-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
+		-webkit-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
+		-ms-transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
+		transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
+		-webkit-overflow-scrolling: touch;
+		position: fixed;
+		top: 0;
+		width: 22.5em;
+		height: 100%;
+		background: #fff;
+		outline: 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		text-align: right;
+		visibility: visible;
+		z-index: 10000;
+		right: 0;
+	}
+
+		#photography-main .toggle {
+			-webkit-tap-highlight-color: transparent;
+			position: absolute;
+			top: 0;
+			width: 4em;
+			height: 4em;
+			background-image: url("images/close-small-alt.svg");
+			background-repeat: no-repeat;
+			background-size: 32px 32px;
+			cursor: pointer;
+			display: none;
+			z-index: 1;
+			background-position: 0.5em 0.5em;
+			left: 0;
+		}
+
+		#photography body.fullscreen #photography-main {
+			visibility: hidden;
+			right: -22.5em;
+		}
+
+		#photography body.is-loading-1 #photography-main {
+			opacity: 0;
+			right: -2em;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#photography-main {
+				width: 19em;
+			}
+
+				body.fullscreen #main {
+					right: -19em;
+				}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#photography-main {
+				background: rgba(255, 255, 255, 0.925);
+			}
+
+				#photography-main .toggle {
+					display: block;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#photography-main {
+				-moz-transition: opacity 0.5s ease, visibility 0.5s;
+				-webkit-transition: opacity 0.5s ease, visibility 0.5s;
+				-ms-transition: opacity 0.5s ease, visibility 0.5s;
+				transition: opacity 0.5s ease, visibility 0.5s;
+				width: 100%;
+				background: #fff;
+				text-align: center;
+			}
+
+				#photography body.is-loading-1 #photography-main {
+					left: auto !important;
+					right: auto !important;
+				}
+
+				#photography body.fullscreen #photography-main {
+					left: auto !important;
+					right: auto !important;
+					opacity: 0;
+				}
+
+				#photography-main .toggle {
+					display: none;
+				}
+
+		}
+
+/* /freelancing/photography HEADER */
+
+	#photography-header {
+			padding: 3em 2.25em 1.75em 2.25em ;
+		}
+
+			#photography-header h1 {
+				margin-bottom: 0px;
+				font-size: 2.05em;
+				font-weight: 700;
+				text-align: right;
+			}
+
+			#photography-header h3 {
+				font-size: 2.05em;
+				font-weight: 300;
+				text-align: right;
+			}
+
+			#photography-header p {
+				margin: 0 0 1.25em 0;
+				text-align: right;
+			}
+
+			#photography-header ul {
+				text-align: right;
+			}
+
+/* /freelancing/photography FOOTER */
+
+	#photography-footer {
+		padding: 2.25em 2.25em 1em 2.25em ;
+	}
+
+		#photography-footer .copyright {
+			padding: 0;
+			font-weight: 300;
+			list-style: none;
+			text-align: right;
+		}
+
+			#photography-footer .copyright li {
+				display: inline-block;
+				font-size: 0.8em;
+				padding: 0 0 1em 0;
+			}
+
+/* /freelancing/photography THUMBNAILS */
+
+	#photography-thumbnails {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		padding: 0 0.75em;
+	}
+
+		#photography-thumbnails article {
+			position: relative;
+			width: 50%;
+			background: #101010;
+			outline: 0;
+		}
+
+			#photography-thumbnails article .thumbnail {
+				-webkit-tap-highlight-color: transparent;
+				display: block;
+				position: relative;
+				border: 0;
+				outline: 0;
+			}
+
+				#photography-thumbnails article .thumbnail img {
+					display: block;
+					width: 100%;
+				}
+
+				#photography-thumbnails article .thumbnail:before {
+					-moz-pointer-events: none;
+					-webkit-pointer-events: none;
+					-ms-pointer-events: none;
+					pointer-events: none;
+					-moz-transition: opacity 0.25s ease;
+					-webkit-transition: opacity 0.25s ease;
+					-ms-transition: opacity 0.25s ease;
+					transition: opacity 0.25s ease;
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					box-shadow: inset 0 0 0 2px #0083D5, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
+					opacity: 0;
+					z-index: 1;
+				}
+
+				#photography-thumbnails article .thumbnail:focus:before {
+					opacity: 0.5;
+				}
+
+			#photography-thumbnails article h2, #photography-thumbnails article p {
+				display: none;
+			}
+
+			#photography-thumbnails article.active .thumbnail:before {
+				opacity: 1;
+			}
+
+		@media screen and (max-width: 480px) {
+
+			#photography-thumbnails article .thumbnail:before {
+				display: none;
+			}
+
+		}
+
+/* /freelancing/photography VIEWER */
+
+	@-moz-keyframes spinner {
+		0% {
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	@-webkit-keyframes spinner {
+		0% {
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	@-ms-keyframes spinner {
+		0% {
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes spinner {
+		0% {
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+
+	#viewer {
+		-moz-transition: opacity 0.75s ease, width 0.75s ease;
+		-webkit-transition: opacity 0.75s ease, width 0.75s ease;
+		-ms-transition: opacity 0.75s ease, width 0.75s ease;
+		transition: opacity 0.75s ease, width 0.75s ease;
+		position: absolute;
+		top: 0;
+		width: calc(100% - 22.5em);
+		height: 100%;
+		left: 0;
+	}
+
+		#viewer .inner {
+			-moz-pointer-events: none;
+			-webkit-pointer-events: none;
+			-ms-pointer-events: none;
+			pointer-events: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+		}
+
+			#viewer .inner > * {
+				-moz-pointer-events: auto;
+				-webkit-pointer-events: auto;
+				-ms-pointer-events: auto;
+				pointer-events: auto;
+			}
+
+			#viewer .inner:before {
+				background-image: -moz-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), -moz-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
+				background-image: -webkit-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), -webkit-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
+				background-image: -ms-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), -ms-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
+				background-image: linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			#viewer .inner .toggle {
+				-webkit-tap-highlight-color: transparent;
+				position: absolute;
+				top: 0;
+				width: 4em;
+				height: 4em;
+				background-image: url("images/close.svg");
+				background-repeat: no-repeat;
+				background-size: 64px 64px;
+				cursor: pointer;
+				z-index: 1;
+				right: 0;
+				background-position: calc(100% - 0.75em) 0.75em;
+			}
+
+			#viewer .inner .nav-next,
+			#viewer .inner .nav-previous {
+				-webkit-tap-highlight-color: transparent;
+				position: absolute;
+				top: 50%;
+				width: 6em;
+				height: 6em;
+				margin-top: -3em;
+				background-image: url("images/arrow.svg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				cursor: pointer;
+			}
+
+			#viewer .inner .nav-previous {
+				-moz-transform: scaleX(-1);
+				-webkit-transform: scaleX(-1);
+				-ms-transform: scaleX(-1);
+				transform: scaleX(-1);
+				left: 0;
+			}
+
+			#viewer .inner .nav-next {
+				right: 0;
+			}
+
+		#viewer .slide {
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			-ms-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+			z-index: 1;
+		}
+
+			#viewer .slide .caption {
+				background-image: -moz-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
+				background-image: -webkit-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
+				background-image: -ms-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
+				background-image: linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
+				padding: 2em 2em 0.75em 2em ;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				color: rgba(255, 255, 255, 0.5);
+				z-index: 1;
+			}
+
+				#viewer .slide .caption h2, #viewer .slide .caption h3, #viewer .slide .caption h4, #viewer .slide .caption h5, #viewer .slide .caption h6 {
+					color: #fff;
+				}
+
+			#viewer .slide .image {
+				-moz-transition: opacity 0.5s ease-in-out;
+				-webkit-transition: opacity 0.5s ease-in-out;
+				-ms-transition: opacity 0.5s ease-in-out;
+				transition: opacity 0.5s ease-in-out;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-repeat: no-repeat;
+				background-size: cover;
+				opacity: 0;
+			}
+
+			#viewer .slide:before {
+				-moz-animation: spinner 1s linear infinite;
+				-webkit-animation: spinner 1s linear infinite;
+				-ms-animation: spinner 1s linear infinite;
+				animation: spinner 1s linear infinite;
+				-moz-transition: opacity 0.5s ease-in-out;
+				-webkit-transition: opacity 0.5s ease-in-out;
+				-ms-transition: opacity 0.5s ease-in-out;
+				transition: opacity 0.5s ease-in-out;
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 3em;
+				height: 3em;
+				background-image: url("images/spinner.svg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				margin: -1.5em 0 0 -1.5em;
+				opacity: 0;
+			}
+
+			#viewer .slide.loading:before {
+				opacity: 1;
+			}
+
+			#viewer .slide.active .image {
+				opacity: 1;
+			}
+
+		body.fullscreen #viewer {
+			width: 100%;
+		}
+
+			body.fullscreen #viewer .inner .toggle {
+				background-image: url("images/open.svg");
+			}
+
+		#photography body.is-loading-1 #viewer {
+			opacity: 0;
+		}
+
+		#photography body.is-loading-2 #viewer .slide {
+			opacity: 0;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#viewer {
+				width: calc(100% - 19em);
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#viewer {
+				width: 100%;
+			}
+
+				#viewer .inner .toggle {
+					-moz-transition: opacity 0.75s ease;
+					-webkit-transition: opacity 0.75s ease;
+					-ms-transition: opacity 0.75s ease;
+					transition: opacity 0.75s ease;
+					background-image: url("images/open.svg");
+					opacity: 0;
+					right: 0;
+				}
+
+				body.fullscreen #viewer .inner .toggle {
+					opacity: 1;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#viewer .inner .toggle {
+				background-size: 32px 32px;
+			}
+
+			#viewer .inner .nav-next,
+			#viewer .inner .nav-previous {
+				background-image: url("images/arrow-small.svg");
+				background-size: 32px 32px;
+			}
+
+			body.fullscreen #viewer .inner .toggle {
+				background-image: url("images/open-small.svg");
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#viewer {
+				-moz-transition: opacity 0.5s ease;
+				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
+				transition: opacity 0.5s ease;
+				-moz-transition-delay: 0s;
+				-webkit-transition-delay: 0s;
+				-ms-transition-delay: 0s;
+				transition-delay: 0s;
+				opacity: 0;
+			}
+
+				#viewer .inner .toggle {
+					background-image: url("images/close-small.svg") !important;
+					background-size: 32px 32px;
+				}
+
+				body.fullscreen #viewer {
+					-moz-transition-delay: 0.5s;
+					-webkit-transition-delay: 0.5s;
+					-ms-transition-delay: 0.5s;
+					transition-delay: 0.5s;
+					opacity: 1;
+				}
+
+		}
+
+/* /freelancing/design HEADER */
+	
+	#design-header {
+		margin: 0px auto;
+		padding: 3em 2.25em 1.75em 2.25em ;
+		width: 500px;
+	}
+
+	#design-header h1 {
+		margin: 0 auto;
+		font-size: 2.05em;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	#design-header h2 {
+		font-size: 1.25em;
+	}
+
+	#design-header h3 {
+		font-size: 2.05em;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	#design-header p {
+		width: 25em;
+		text-align: center;
+	}
+
+/* /typography */
+
+	#typography .credit-light {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+		color: #FFF;
+		font: 300 0.75rem/1rem Roboto;
+		text-transform: uppercase;
+		opacity: 0.45;
+	}
+
+	#typography .credit-light:hover {
+		opacity: 1;
+	}
+
+	#typography .credit-light a {
+		color: #FFF;
+		font: 300 0.75rem/1rem Roboto;
+		text-transform: uppercase;
+	}
+
+	#typography .credit-dark {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+		color: #000;
+		font: 300 0.75rem/1rem Roboto;
+		text-transform: uppercase;
+ 		opacity: 0.35;
+	}
+
+	#typography .credit-dark:hover {
+		opacity: 1;
+	}
+
+	#typography .credit-dark a {
+		color: #000;
+		font: 300 0.75rem/1rem Roboto;
+		text-transform: uppercase;
+	}
+
+	#typography .sample#title {
+		width: 100%;
+		padding: 8rem 0 16rem 0;
+		background: #FFF;
+	}
+
+	#typography .sample#title .text {
+		width: 50rem; 
+		margin: 0 auto;
+		padding: 0 0 0 3rem;
+	}
+  
+	#typography .sample#title h1 {
+		color: #000;
+		font: 100 1.5rem/4rem 'Roboto';
+	}
+
+	#typography .sample#title h2 {
+		margin-bottom: 2rem;
+		color: #000;
+		font: 700 5.5rem/4.5rem 'Expletus Sans';
+		text-transform: uppercase;
+		letter-spacing: 0.5rem; 
+	}
+
+	#typography .sample#title h3 {
+		width: 40rem;
+		margin: 0 0 4rem 0;
+		color: #666;
+		font: 300 2rem/3rem 'Open Sans';
+	}
+    
+	#typography .sample#title h3 a:hover {
+		color: #222;
+		font-weight: 700; 
+	}
+
+	#typography .sample#title p, .sample#title ul {
+		float: left;
+		width: 28rem;
+		margin: 0 3rem 0 0;
+		color: #888;
+		font: 300 0.9rem/1.3rem 'Roboto';
+	}
+
+	#typography .sample#title p a {
+		font: 300 0.9rem/1.3rem 'Roboto';
+	}
+
+	#typography .sample#title ul {
+		position: relative;
+		top: 0px;
+		width: 18.5rem;
+		height: 1rem; 
+		margin: 0;
+	}
+    
+	#typography .sample#title ul li a {
+		position: relative;
+		font: 300 0.7rem/0.7rem 'Roboto';
+		text-transform: uppercase;
+		vertical-align: middle;
+	}
+
+	#typography .sample#title ul li a:hover {
+		color: #222;
+		font: 700 0.7rem/0.7rem 'Roboto';
+	}
+      
+	#typography .sample#title ul li i {
+		line-height: 0.8rem;
+	}
+
+	#typography .sample#raleway {
+		position: relative;
+		height: 20rem;
+		padding: 15rem 0;
+		background: #362819 url('../assets/img/typography/new-york-web.jpg') no-repeat;
+		background-size: 100%;
+	}
+
+	#typography .sample#raleway .text {
+		position: relative;
+		width: 62.5rem; 
+		margin: 0 auto;
+		padding: 0 0;
+  	}
+
+	#typography .sample#raleway h2 {
+		margin: 1rem 32rem 0 1.2rem;
+		color: #FFFF00;
+		font: 900 5rem/6rem 'Raleway';
+		text-align: right;
+		letter-spacing: 0.2rem;
+	}
+
+	#typography .sample#raleway .first {
+		position: relative;
+		top: 0;
+		left: 5rem;
+		z-index: 10;
+	}
+
+	#typography .sample#raleway .second {
+		position: relative;
+		top: -8.5rem;
+		left: -1.4rem;
+		z-index: 5;
+	}
+	
+	#typography .sample#raleway .first:hover, .first:not(:hover) + .second { 
+		opacity: 0 
+	}
+  
+	#typography .sample#raleway h3 {
+		position: relative;
+		width: 45rem;
+		margin: -6rem 0 0 12rem;
+		color: #FFF;
+		font: 300 1.2rem/1.4 'Merriweather';
+		text-align: justify;
+	}
+
+	#typography .sample#alegreya {
+		position: relative;
+		height: 80rem;
+		padding: 9rem 0;
+		background: #FFF url('../assets/img/typography/pragser-wildsee-web.jpg') no-repeat;
+		background-size: 100%;
+		z-index: 2;
+	}
+
+	#typography .sample#alegreya .text {
+		position: relative;
+		width: 70rem; 
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#typography .sample#alegreya h2 span {
+		position: relative;
+		display: inline;
+		width: 70rem;
+		top: 2rem;
+		margin: 0 auto 2rem auto;
+		color: #E3170D;
+		font: 900 8rem/12rem 'Alegreya Sans';
+		letter-spacing: 3rem;
+		text-transform: uppercase;
+		opacity: 0.75;
+	}
+
+	#typography .sample#alegreya h2 span:hover {
+		background-color: rgba(227, 23, 13, 0.25);
+		-webkit-box-shadow: -1rem 0px 0px rgba(227, 23, 13, 0.25);
+		box-shadow: -1rem 0px 0px rgba(227, 23, 13, 0.25);
+		box-decoration-break: clone;
+		opacity: 1;
+	}
+
+	#typography .sample#alegreya h3 {
+		position: relative;
+		top: 2rem;
+		width: 20rem;
+		margin: 1.5rem auto;
+		padding: 2rem;
+    	color: #FFF;
+		font: 700 1rem/1.5rem 'Alegreya Sans';
+		text-align: center;
+		letter-spacing: 0.4rem;
+		text-transform: uppercase;
+		opacity: 0.7;
+	}
+
+	#typography .sample#alegreya h3:hover {
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+
+	#typography .sample#monsieur {
+		position: relative;
+		background-size: contain;
+		height: 20rem;
+		padding: 15rem 0;
+		background: #999999 url('../assets/img/typography/bergen-web.jpg') no-repeat;
+		background-size: 100%;
+	}
+
+	#typography .sample#monsieur .text {
+		position: relative;
+		width: 70rem; 
+		margin: 0 auto;
+		opacity: 0.75;
+	}
+
+	#typography .sample#monsieur .text:hover {
+		opacity: 1;
+	}
+
+	#typography .sample#monsieur h2 {
+		position: relative;
+		top: 2rem;
+		color: #000;
+		font: 300 3.5rem/6rem 'Monsieur La Doulaise';
+		text-align: center;
+	}
+
+	#typography .sample#monsieur h3 {
+		position: relative;
+		top: 2rem;
+		width: 23rem;
+		margin: 0 auto;
+		color: #000;
+		font: 200 1rem/1.5rem 'EB Garamond';
+		text-align: center;
+		opacity: 0.7;
 	}
