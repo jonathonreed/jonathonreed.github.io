@@ -337,7 +337,7 @@ footer {
 		.sample#monsieur h2 {
 			position: relative;
 			top: 2rem;
-			color: #000;
+			color: #FFD700;
 			font: 300 3.5rem/6rem 'Monsieur La Doulaise';
 			text-align: center;
 		}
@@ -347,7 +347,7 @@ footer {
 			top: 2rem;
 			width: 23rem;
 			margin: 0 auto;
-			color: #000;
+			color: #FFD700;
 			font: 200 1rem/1.5rem 'EB Garamond';
 			text-align: center;
 			opacity: 0.7;
