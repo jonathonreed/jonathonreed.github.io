@@ -5509,6 +5509,8 @@
 
 		@media screen and (max-width: 480px) {
 			#typography .sample#monsieur .text {
+				margin-top: -5rem;
+				width: 100%;
 			}
 		}
 
@@ -5523,6 +5525,29 @@
 		text-align: center;
 	}
 
+		@media screen and (max-width: 1200px) {
+			#typography .sample#monsieur h2 {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#typography .sample#monsieur h2 {
+				top: 0;
+				width: 100%;
+				padding: 2rem;
+				color: #fff;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#typography .sample#monsieur h2 {
+				width: 100%;
+				padding: 2rem;
+				color: #fff;
+			}
+		}
+
 	#typography .sample#monsieur h3 {
 		position: relative;
 		top: 2rem;
@@ -5532,3 +5557,26 @@
 		text-align: center;
 		opacity: 0.7;
 	}
+
+		@media screen and (max-width: 1200px) {
+			#typography .sample#monsieur h3 {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#typography .sample#monsieur h3 {
+				width: 100%;
+				margin: 0 auto;
+				color: #fff;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#typography .sample#monsieur h3 {
+				width: 100%;
+				margin: 0 auto;
+				padding: 2rem;
+				color: #fff;
+			}
+		}
