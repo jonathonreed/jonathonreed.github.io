@@ -5568,6 +5568,7 @@
 			#typography .sample#monsieur h3 {
 				width: 100%;
 				margin: 0 auto;
+				padding: 2rem;
 				color: #fff;
 			}
 		}
@@ -5580,3 +5581,137 @@
 				color: #fff;
 			}
 		}
+
+#typography .sample#angelow {
+	position: relative;
+	background-size: contain;
+	height: 75rem;
+	padding: 15rem 0;
+	background: #f9f9f9 url('../../img/typography/portugal.jpeg') no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+}
+
+	@media screen and (max-width: 1200px) {
+		#typography .sample#angelow {
+			background-size: auto 100%;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		#typography .sample#angelow {
+			background-size: auto 100%;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		#typography .sample#angelow {
+			background-size: auto 100%;
+		}
+	}
+
+	#typography .sample#angelow .text {
+		position: relative;
+		width: 70rem; 
+		margin: 0 auto;
+		color: #000;
+	}
+
+		@media screen and (max-width: 1200px) {
+			#typography .sample#angelow .text {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#typography .sample#angelow .text {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#typography .sample#angelow .text {
+				margin-top: -5rem;
+				width: 100%;
+			}
+		}
+
+	#typography .sample#angelow h2 {
+		position: relative;
+		top: 2rem;
+		font: 400 1.5em/6rem 'Josefin Slab';
+		text-align: center;
+		letter-spacing: 1rem;
+		text-transform: uppercase;
+		opacity: 1;
+	}
+
+		@media screen and (max-width: 1200px) {
+			#typography .sample#angelow h2 {
+				width: 100%;
+				margin: 0 auto;
+				font-size: 1em;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#typography .sample#angelow h2 {
+				width: 100%;
+				margin: 0 auto;
+				font-size: 0.8em;
+				line-height: 1.5em;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#typography .sample#angelow h2 {
+				width: 100%;
+				margin: 0 auto;
+				padding: 2rem;
+				line-height: 1.5em;
+			}
+		}
+
+	#typography .sample#angelow h3 {
+		position: relative;
+		top: 1.25rem;
+		width: 100%;
+		margin: 0 auto;
+		-ms-transform: rotate(-5deg);
+    	-webkit-transform: rotate(-5deg);
+    	transform: rotate(-5deg);
+		font: 200 9em/1.5rem 'Angelow Regular';
+		color: #00CDCD;
+		letter-spacing: -0.02em;
+		text-align: center;
+		opacity: 0.7;
+	}
+
+		@media screen and (max-width: 1200px) {
+			#typography .sample#angelow h3 {
+				width: 100%;
+				margin: 0 auto;
+				font-size: 6em;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#typography .sample#angelow h3 {
+				width: 90%;
+				margin: 0 auto;
+				font-size: 5.5em;
+				line-height: 0.75em;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			#typography .sample#angelow h3 {
+				top: 0.25rem;
+				width: 100%;
+				margin: 0 auto;
+				line-height: 0.75em;
+			}
+		}
+
+		#typography .sample#angelow h3:hover {
+			color: #EE0000;
