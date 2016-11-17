@@ -208,11 +208,8 @@
 			}
 
 	blockquote {
-		padding: 5px 5px;
-		font-family: 'Droid Serif', serif;
-		color: #7DB4B5;
-		font-size: 15px;
-		font-style: italic;
+		padding: 0 5px 0 20px;
+		border-left: 4px solid #dddddd;
 		text-align: left;
 	}
 
