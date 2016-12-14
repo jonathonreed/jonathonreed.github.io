@@ -2049,6 +2049,32 @@
 			position: relative;
 			z-index: 2;
 		}
+			
+			#one .inner h3 {
+				text-align: left;
+			}
+
+			#one .inner p {
+				width: 100%;
+				color: #fff;
+				font-size: 1em;
+				font-weight: 300;
+				text-align: left;
+			}
+
+				#one .inner p a {
+					border-bottom: 1px solid #fff;
+				}
+
+				#one .inner p a:hover {
+					border-bottom-color: #F4F200;
+				}
+
+			#one .inner blockquote {
+				border-left: 2px #666 solid;
+				color: #fff;
+				font-weight: 300;
+			}
 
 			#two .inner p {
 				width: 100%;
