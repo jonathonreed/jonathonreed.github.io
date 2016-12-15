@@ -2071,7 +2071,7 @@
 				}
 
 			#one .inner blockquote {
-				border-left: 2px #666 solid;
+				border-left: 0px #fff solid;
 				color: #fff;
 				font-weight: 300;
 			}
