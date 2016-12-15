@@ -790,7 +790,7 @@
 		}
 
 		#adventure a:active {
-			color: #53e3fb !important;
+			color: #F4F200 !important;
 		}
 
 	#adventure strong, b {
@@ -1240,8 +1240,8 @@
 		button:active,
 		.button:active {
 			background-color: rgba(155, 241, 255, 0.1);
-			box-shadow: inset 0 0 0 2px #53e3fb;
-			color: #53e3fb;
+			box-shadow: inset 0 0 0 2px #F4F200;
+			color: #F4F200;
 		}
 
 		input[type="submit"].icon:before,
@@ -1385,7 +1385,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #53e3fb;
+				background-color: #F4F200;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -1722,7 +1722,7 @@
 					}
 
 					#adventure-header .logo:active strong {
-						background-color: #53e3fb;
+						background-color: #f86767;
 					}
 
 			#adventure-header .logo strong {
@@ -1743,7 +1743,7 @@
 			}
 
 			#adventure-header .logo:active strong {
-				background-color: #53e3fb;
+				background-color: #F4F200;
 			}
 
 		#adventure-header nav {
