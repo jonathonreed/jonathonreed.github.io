@@ -1,0 +1,152 @@
+/* RESET */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+	pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+	small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, 
+	label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+	embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, 
+	mark, audio, video {
+		margin: 0;
+		padding: 0;
+		vertical-align: baseline;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+		-webkit-text-size-adjust: none;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+/* BASIC */
+
+	body {
+	}
+
+	.space {
+		height: 8em;
+	}
+
+/* TYPE */
+
+	h1 {
+		padding: 0.1em;
+		font-family: 'Open Sans';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 2em;
+		color: #000000;
+	}
+
+	h2 {
+		padding: 0.2em 0.2em 1em 0.2em;
+		font-family: 'Gentium Basic';
+		font-weight: 300;
+		font-style: italic;
+		font-size: 2em;
+		color: #000000;
+	}
+
+	p {
+		padding: 1em;
+		font-family: 'Open Sans';
+		font-weight: 300;
+		font-size: 1.25em;
+		line-height: 1.25;
+		text-align: justify;
+		text-align-last: center;
+		color: #000000;
+	}
+
+/* HEADER */
+	
+	#header {
+	width: 100%;
+	height: 100vh;
+	background-color: #ff9900;
+	}
+
+	#header .header-table {
+		display: table;
+		height: 100vh;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+		z-index: 2;
+	}
+
+	#header .header-cell {
+		display: table-cell;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+/* FULL-WIDTH PHOTOS */
+
+	#full-photo {
+		width: 100%;
+	}
+
+	#full-photo img {
+		width: inherit;
+	}
+
+/* SUBHEADER */
+	
+	#subheader {
+		position: relative;
+		width: 60%;
+		margin: 0 auto;
+		padding: 8em;
+		background-color: #fff;
+	}
+
+	#subheader h1,h2 {
+		text-align: center;
+	}
+
+	#subheader p.navigation {
+		padding-top: 2em;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+/* WHAT WE DO */
+
+	#what-we-do {
+		height: 10em;
+		background-color: #ddd;
+	}
+
+/* CURRENT PROJECT */
+
+#current-project {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+	padding: 8em;
+	background-color: #fff;
+	text-align: center;
+}
+
+#current-project img {
+	max-width: 700px;
+	margin: 0 auto 5em auto;
+}
+
+#current-project h1 {
+	font-size: 2em;
+	text-align: center;
+}
