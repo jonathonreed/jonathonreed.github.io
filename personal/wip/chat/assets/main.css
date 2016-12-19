@@ -532,7 +532,7 @@
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		border-radius: 3px;
-		background-color: #FFB039;
+		background-color: #FFC164;
 		font-family: 'Open Sans';
 		font-weight: 300;
 		font-size: 1em;
@@ -541,7 +541,7 @@
 	}
 
 	#mc_embed_signup input.button:hover {
-		background-color: #FFC164;
+		background-color: #FFB039;
 	}
 
 	#mc_embed_signup .button:hover {
