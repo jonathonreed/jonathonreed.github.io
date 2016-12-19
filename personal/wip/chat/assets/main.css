@@ -149,7 +149,7 @@
 	#orange-footer {
 		width: 100%;
 		height: 100vh;
-		background: #ff9900 url(/img/CHAT-logo-blank-350-web.jpg) center no-repeat;
+		background: #ff9900 url('img/CHAT-logo-blank-350-web.jpg') center no-repeat;
 	}
 
 		#orange-footer h1 {
