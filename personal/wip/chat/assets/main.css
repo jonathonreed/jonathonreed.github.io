@@ -146,6 +146,10 @@
 		background-color: #ff9900;
 	}
 
+	#orange h3 {
+		text-align: center;
+	}
+
 	#orange-footer {
 		width: 100%;
 		height: 100vh;
