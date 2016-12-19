@@ -146,10 +146,6 @@
 		background-color: #ff9900;
 	}
 
-	#orange h3 {
-		text-align-last: center;
-	}
-
 	#orange-footer {
 		width: 100%;
 		height: 100vh;
@@ -178,7 +174,7 @@
 			text-align: center;
 		}
 
-		.orange-cell h1,h2,h3 {
+		.orange-cell h1,h2 {
 			text-align: center;
 			width: 60%;
 			margin: 0 auto;
@@ -187,12 +183,14 @@
 		.orange-cell p {
 			width: 60%;
 			margin: 0 auto;
+			text-align-last: center;
 		}
 
 			.orange-cell p.navigation {
 				padding: 2em 0 0 0;
 				font-weight: 300;
 				text-transform: uppercase;
+				text-align: center;
 			}
 
 				.orange-cell p.navigation a {
