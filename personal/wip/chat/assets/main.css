@@ -309,16 +309,45 @@
 					background-color: rgba(0, 0, 0, 0.35);
 				}
 
-			@media screen and (max-width: 736px) {
+				@media screen and (max-width: 980px) {
 
-				.list li {
-					padding: 3em 0 1em 0 ;
-					background-color: transparent !important;
-					border-top: solid 2px #fff;
+					#what-we-do .list li {
+						padding: 3em 2em 1em 2em ;
+						text-align: center;
+					}
+
+						#what-we-do .list li:before {
+							left: 0;
+							margin: 0 0 1em 0;
+							position: relative;
+							top: 0;
+						}
+					
+					#what-we-do .list h3 {
+						padding: 0;
+						margin: 1em 0 0 0;
+						text-align: center;
+					}
+					
+					#what-we-do .list p {
+						margin: 0;
+						padding: 0.75em 0;
+						text-align-last: left;
+			}
+
+			}
+
+			@media screen and (max-width: 768px) {
+
+				#what-we-do .list li {
+					display: block;
 					width: 100%;
+					padding: 3em 0 1em 0;
+					border-top: solid 2px #000;
+					background-color: transparent !important;
 				}
 
-					.list li:first-child {
+					#what-we-do .list li:first-child {
 						border-top: 0;
 					}
 
@@ -340,6 +369,14 @@
 			margin: 0 auto 5em auto;
 		}
 
+		@media (max-width: 768px) {
+			
+			#current-project img {
+				width: 100%;
+			}
+			
+		}
+
 		#current-project h1 {
 			font-size: 4em;
 		}
@@ -358,32 +395,134 @@
 
 	#mc_embed_signup {
 		clear:left;
+		width:100%;
 		padding: 2em 0 0 0;
 		font-family: 'Open Sans';
 		font-size: 1em;
-		width:100%;
 	}
+
+	#mc_embed_signup form {
+		padding: 1em 0;
+		text-align: center;
+	}
+
+	.mc-field-group {
+		display: inline-block;
+	} /* positions input field horizontally */
 
 	#mc_embed_signup input.email {
-		border-color: #fff;
+		box-sizing: border-box;
+		display: inline-block;
+		width: 25em;
+		height: 2em;
+		padding: 0px 0.4em;
+		margin: 0;
+		border: none;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		background-color: #fff;
+		font-family: 'Open Sans';
+		font-size: 1em;
+		color: #343434;
+		vertical-align: top;
 	}
 
-		#mc_embed_signup input.email::-webkit-input-placeholder {
-			font-family: 'Open Sans';
-			font-weight: 300;
-			font-size: 1em;
-			color: #999;
-		}
+	#mc_embed_signup label {
+		display: block;
+		padding-bottom: 1em;
+		font-size: 1em;
+		font-weight: bold;
+	}
 
-	#mc_embed_signup input.button {
+	#mc_embed_signup .clear {
+		display: inline-block;
+	} /* positions button horizontally in line with input */
+
+	#mc_embed_signup .button {
+		box-sizing:border-box;
+		display: inline-block;
+		height:2em;
+		margin: 0;
+		padding: 0 1.2em;
+		border: none;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
 		background-color: #FFB039;
-		border-color: #FFC164;
 		font-family: 'Open Sans';
 		font-weight: 300;
 		font-size: 1em;
 		color: #000;
+		transition: all 0.2s ease-in-out 0s;
 	}
 
-#mc_embed_signup input.button:hover {
-	background-color: #FFC164;
-}
+	#mc_embed_signup input.button:hover {
+		background-color: #FFC164;
+	}
+
+	#mc_embed_signup .button:hover {
+		background-color: #777;
+		cursor: pointer;
+	}
+
+	#mc_embed_signup div#mce-responses {
+		float: left;
+		clear: both;
+		top: -1.4em;
+		width: 90%;
+		margin: 0 5%;
+		padding: 0em .5em 0em .5em;
+		overflow: hidden;
+	}
+	
+	#mc_embed_signup div.response {
+		float: left;
+		top: -1.5em;
+		width:80%;
+		margin: 1em 0;
+		padding: 1em .5em .5em 0;
+		font-weight: bold;
+		z-index: 1;
+	}
+
+	#mc_embed_signup #mce-error-response {
+		display:none;
+	}
+
+	#mc_embed_signup #mce-success-response {
+		display:none;
+		color: #529214;
+	}
+	
+	#mc_embed_signup label.error {
+		display: block;
+		float: none;
+		width: auto;
+		margin-left: 1.05em;
+		padding: .5em 0;
+		text-align: left;
+	}
+
+	@media (max-width: 768px) {
+    
+		#mc_embed_signup input.email {
+			width:80%;
+			margin-bottom: 0 auto;
+			padding: 0.3em;
+			text-align: center;
+		}
+		
+    	#mc_embed_signup .clear {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+			padding: 0.3em;
+		}
+		
+    	#mc_embed_signup .button {
+			width: 100%;
+			margin:0 auto;
+		}
+		
+	}
