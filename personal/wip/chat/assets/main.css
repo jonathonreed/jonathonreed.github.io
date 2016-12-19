@@ -36,10 +36,23 @@
 		height: 8em;
 	}
 
+	.small-space {
+		height: 4em;
+	}
+
 /* TYPE */
 
-	h1 {
+	h1 { 
 		padding: 0.1em;
+		font-family: 'Open Sans';
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 4em;
+		color: #000;
+	}
+	
+	h2 {
+		padding: 0.1em 0;
 		font-family: 'Open Sans';
 		font-weight: 700;
 		text-transform: uppercase;
@@ -47,8 +60,8 @@
 		color: #000000;
 	}
 
-	h2 {
-		padding: 0.2em 0.2em 1em 0.2em;
+	h3 {
+		padding: 0.2em 0 1em 0;
 		font-family: 'Gentium Basic';
 		font-weight: 300;
 		font-style: italic;
@@ -56,10 +69,10 @@
 		color: #000000;
 	}
 
-	h3 {
+	h4 {
 		font-family: 'Open Sans';
 		font-weight: 700;
-		font-size: 1.25em;
+		font-size: 1.5em;
 		text-transform: uppercase;
 		color: #000000;
 	}
@@ -73,6 +86,14 @@
 		text-align: justify;
 		text-align-last: center;
 		color: #000000;
+	}
+
+	i {
+		font-style: italic;
+	}
+
+	a {
+		border-bottom: 1px #ff9900 solid;
 	}
 
 /* LIST */
@@ -152,7 +173,7 @@
 		background: #ff9900 url("../img/CHAT-logo-blank-350-web.jpg") center no-repeat;
 	}
 
-		#orange-footer h1 {
+		#orange-footer h2 {
 			padding-bottom: 0.5em;
 		}
 
@@ -174,7 +195,7 @@
 			text-align: center;
 		}
 
-		.orange-cell h1,h2 {
+		.orange-cell h2,h3 {
 			text-align: center;
 			width: 60%;
 			margin: 0 auto;
@@ -217,7 +238,6 @@
 	}
 
 		#what-we-do h1 {
-			font-size: 4em;
 			text-align: center;
 		}
 
@@ -246,10 +266,10 @@
 			margin: 0 auto;
 		}
 
-			#what-we-do .list h3 {
+			#what-we-do .list h4 {
 				width: 100%;
 				padding: 0;
-				margin: -1.05em 0 0 2em;
+				margin: -0.95em 0 0 1.65em;
 				text-align: left;
 			}
 
@@ -323,7 +343,7 @@
 							top: 0;
 						}
 					
-					#what-we-do .list h3 {
+					#what-we-do .list h4 {
 						padding: 0;
 						margin: 1em 0 0 0;
 						text-align: center;
@@ -381,8 +401,7 @@
 			font-size: 4em;
 		}
 
-		#current-project h3 {
-			font-size: 2em;
+		#current-project h2 {
 			text-align: center;
 		}
 
@@ -390,6 +409,70 @@
 			text-decoration: none;
 			color: #000;
 		}
+
+/* PAGE */
+
+	#page {
+		position: relative;
+		width: 70%;
+		margin: 0 auto;
+		padding: 10em 0;
+		background-color: #fff;
+		text-align: center;
+	}
+
+		#page .float-left img {
+			float: left;
+			max-width: 500px;
+			margin: 0 2em 0 0;
+		}
+
+		#page .float-right img {
+			float: right;
+			max-width: 500px;
+			margin: 0 0 0 2em;
+		}
+
+		@media (max-width: 768px) {
+			
+			#page img {
+				width: 100%;
+			}
+			
+		}
+
+		#page h2 {
+			width: 100%;
+			text-align: left;
+		}
+
+		#page h3 {
+			width: 100%;
+			padding: 0 0 1em 0;
+			font-size: 2em;
+			text-align: left;
+		}
+
+		#page h4 {
+			padding: 0 0 1em 0;
+			text-align: left;
+		}
+
+		#page p {
+			padding: 0 0 1em 0;
+			text-align-last: left;
+		}
+
+		#page a {
+			border-bottom: 1px #555 solid;
+			text-decoration: none;
+			color: #000;
+			transition: all 0.2s ease-in-out 0s;
+		}
+
+			#page a:hover {
+				border-bottom-color: #ff9900;
+			}
 
 /* PLUGINS */
 
