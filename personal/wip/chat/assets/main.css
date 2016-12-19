@@ -149,7 +149,7 @@
 	#orange-footer {
 		width: 100%;
 		height: 100vh;
-		background: #ff9900 url('img/CHAT-logo-blank-350-web.jpg') center no-repeat;
+		background: #ff9900 url("../img/CHAT-logo-blank-350-web.jpg") center no-repeat;
 	}
 
 		#orange-footer h1 {
@@ -174,7 +174,7 @@
 			text-align: center;
 		}
 
-		.orange-cell h1,h2 {
+		.orange-cell h1,h2,h3 {
 			text-align: center;
 			width: 60%;
 			margin: 0 auto;
@@ -233,8 +233,10 @@
 		}
 
 			#what-we-do .list h3 {
+				width: 100%;
 				padding: 0;
 				margin: -1.05em 0 0 2em;
+				text-align: left;
 			}
 
 			#what-we-do .list p {
@@ -292,6 +294,21 @@
 				.list li:nth-child(10) {
 					background-color: rgba(0, 0, 0, 0.35);
 				}
+
+			@media screen and (max-width: 736px) {
+
+				.list li {
+					padding: 3em 0 1em 0 ;
+					background-color: transparent !important;
+					border-top: solid 2px #fff;
+					width: 100%;
+				}
+
+					.list li:first-child {
+						border-top: 0;
+					}
+
+			}
 
 /* CURRENT PROJECT */
 
