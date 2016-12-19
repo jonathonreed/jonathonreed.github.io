@@ -92,6 +92,10 @@
 		font-style: italic;
 	}
 
+	strong {
+		font-weight: 600;
+	}
+
 	a {
 		border-bottom: 1px #ff9900 solid;
 	}
@@ -435,8 +439,16 @@
 
 		@media (max-width: 768px) {
 			
-			#page img {
+			#page .float-left img {
 				width: 100%;
+				float: none;
+				margin: 0 auto 1em auto;
+			}
+			
+			#page .float-right img {
+				width: 100%;
+				float: none;
+				margin: 0 auto 1em auto;
 			}
 			
 		}
