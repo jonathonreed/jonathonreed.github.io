@@ -1,5 +1,48 @@
 @import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Bungee|Bungee+Inline|Bungee+Hairline");
 
+/* TOC 
+	
+	RESET
+	BOX MODEL
+	BASIC
+	TYPE
+	ICON
+	LIST
+	THUMBNAILS
+	FOOTER
+
+	/landing BASIC
+
+	/adventure BASIC
+	/adventure TYPE
+	/adventure SECTION AND ARTICLE 
+	/adventure ICON
+	/adventure LIST
+	/adventure BUTTON
+	/adventure TILES
+	/adventure HEADER
+	/adventure BANNER
+	/adventure MAIN
+	/adventure FOOTER
+	/adventure WRAPPER
+	/adventure MENU
+	/adventure GRID
+
+	/adventure/f16 
+
+	/freelancing/photography BASIC
+	/freelancing/photography MAIN
+	/freelancing/photography HEADER
+	/freelancing/photography FOOTER
+	/freelancing/photography THUMBNAILS
+	/freelancing/photography VIEWER
+
+	/freelancing/design HEADER
+
+	/typography CREDIT
+	/typography SAMPLE
+
+*/
 
 /* RESET */
 
@@ -240,6 +283,10 @@
 
 	.align-right {
 		text-align: right;
+	}
+
+	.space {
+		height: 1em;
 	}
 
 	#header {
@@ -4933,8 +4980,58 @@
 
 #design-header p {
 	width: 25em;
-	text-align: center;
+	text-align: justify;
+	text-align-last: center;
 }
+
+/* /writing BASIC */
+
+#writing {
+	margin: 0;
+	padding: 3em 3.25em 3em 3.25em ;
+	width: 100%;
+	text-align: justify;
+	text-align-last: left;
+}
+
+#writing h1 {
+	margin: 0 auto;
+	font-size: 2.05em;
+	font-weight: 700;
+}
+
+#writing h2 {
+	font-size: 1.25em;
+}
+
+#writing h3 {
+	margin: 0;
+	font-size: 2.05em;
+	font-weight: 300;
+}
+
+#writing p {
+}
+
+#writing i.light {
+	opacity: .5;
+	font-style: normal;
+}
+
+#writing p a {
+	border-bottom: 1px solid #aaa;
+	color: inherit;
+	-moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+	-webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+	-ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+	transition: color 0.25s ease, border-bottom-color 0.25s ease;
+	text-decoration: none;
+}
+
+		#writing p a:hover {
+			border-bottom-color: #0083d5;
+			color: #0083d5;
+		}
 
 /* /typography CREDIT */
 
