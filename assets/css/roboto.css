@@ -4998,19 +4998,27 @@
 	margin: 0 auto;
 	font-size: 2.05em;
 	font-weight: 700;
+	text-align: justify;
+	text-align-last: left;
 }
 
 #writing h2 {
 	font-size: 1.25em;
+	text-align: justify;
+	text-align-last: left;
 }
 
 #writing h3 {
 	margin: 0;
 	font-size: 2.05em;
 	font-weight: 300;
+	text-align: justify;
+	text-align-last: left;
 }
 
 #writing p {
+	text-align: justify;
+	text-align-last: left;
 }
 
 #writing i.light {
