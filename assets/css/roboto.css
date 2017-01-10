@@ -709,7 +709,7 @@
 		color: #888;
 	}
 
-		#footer-left-inner a:hover {
+		#footer-left-inner .inner a:hover {
 			color: #555 !important;
 		}
 
