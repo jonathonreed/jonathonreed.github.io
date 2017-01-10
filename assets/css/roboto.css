@@ -23,7 +23,6 @@
 	/adventure HEADER
 	/adventure BANNER
 	/adventure MAIN
-	/adventure FOOTER
 	/adventure WRAPPER
 	/adventure MENU
 	/adventure GRID
@@ -33,11 +32,8 @@
 	/freelancing/photography BASIC
 	/freelancing/photography MAIN
 	/freelancing/photography HEADER
-	/freelancing/photography FOOTER
 	/freelancing/photography THUMBNAILS
 	/freelancing/photography VIEWER
-
-	/freelancing/design HEADER
 
 	/typography CREDIT
 	/typography SAMPLE
@@ -180,7 +176,6 @@
 	p {
 		margin: 1em auto 1em auto;
 		font-weight: 300;
-		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -196,8 +191,8 @@
 	}
 
 	h1 {
-		margin: 0 auto;
-		text-align: center;
+		font-size: 2.05em;
+		font-weight: 700;
 	}
 
 	h2 {
@@ -207,7 +202,6 @@
 	h3 {
 		font-size: 2.05em;
 		font-weight: 300;
-		text-align: center;
 	}
 
 	h4 {
@@ -273,6 +267,11 @@
 		margin: 1.875em 0;
 	}
 
+	i.light {
+	opacity: .5;
+	font-style: normal;
+	}
+
 	.align-left {
 		text-align: left;
 	}
@@ -288,6 +287,67 @@
 	.space {
 		height: 1em;
 	}
+
+	#header-center {
+		padding: 3em 2.25em 1.75em 2.25em ;
+	}
+
+		#header-center h1 {
+			text-align: center;
+		}
+
+		#header-center h2 {
+			text-align: center;
+		}
+
+		#header-center h3 {
+			text-align: center;
+		}
+
+		#header-center p {
+			width: 25em;
+			text-align: justify;
+			text-align-last: center;
+		}
+
+	#heading-left {
+		padding: 3em 3.25em 3em 3.25em ;
+	}
+
+		#heading-left h1 {
+			text-align: justify;
+			text-align-last: left;
+		}
+
+		#heading-left h2 {
+			text-align: justify;
+			text-align-last: left;
+		}
+
+		#heading-left h3 {
+			text-align: justify;
+			text-align-last: left;
+		}
+
+		#heading-left p {
+			text-align: justify;
+			text-align-last: left;
+		}
+
+		#heading-left p a {
+			border-bottom: 1px solid #aaa;
+			color: inherit;
+			-moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+			-webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+			-ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
+			transition: color 0.25s ease, border-bottom-color 0.25s ease;
+			text-decoration: none;
+		}
+
+				#heading-left p a:hover {
+					border-bottom-color: #0083d5;
+					color: #0083d5;
+				}
 
 	#header {
 		margin: 0 auto 0 auto;
@@ -614,52 +674,83 @@
 
 /* FOOTER */
 
-	#footer {
-		margin: 5em auto 2em auto;
-		padding: 2.25em 2.25em 2.25em 2.25em;
+	footer {
+		margin: 5em auto;
+		padding: 0;
 	}
 
-		#footer p {
+		footer p {
 			font-size: 0.8em;
 		}
 
-		#footer .copyright {
+		.copyright {
 			padding: 0;
 			font-weight: 300;
 			list-style: none;
 		}
 
-			#footer .copyright li {
+			.copyright li {
 				display: inline-block;
-				padding: 0 0 1em 0;
+				padding: 0;
 				font-size: 0.8em;
 			}
 
-	#footer-center {
+	#footer-absolute {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		margin: 5em auto 0 auto;
-		padding: 2.25em 2.25em 2.25em 2.25em;
+		margin: 3em 0;
 		text-align: center;
 	}
-	
-		#footer-center p {
-			font-size: 0.8em;
-			text-align: center;
+
+	#footer-left-inner {
+		margin: 0;
+		background: #fff;
+		color: #888;
+	}
+
+		#footer-left-inner a:hover {
+			color: #555 !important;
 		}
 
-		#footer-center .copyright {
+		#footer-left-inner ul {
+			text-align: left;
+		}
+
+		#footer-left-inner .copyright {
 			padding: 0;
-			font-weight: 300;
-			list-style: none;
+			text-align: left;
 		}
 
-			#footer-center .copyright li {
-				display: inline-block;
-				padding: 0 0 1em 0;
-				font-size: 0.8em;
+			#footer-left-inner .copyright li {
+				padding: 0;
 			}
+
+				#footer-left-inner .copyright li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+				}
+
+		@media screen and (max-width: 480px) {
+
+			#footer-left-inner .copyright li {
+				display: block;
+				border-left: 0;
+				margin-left: 0;
+				padding-left: 0;
+				line-height: inherit;
+			}
+
+		}
+
+	#footer-right {
+			padding: 2.25em 2.25em 0.5em 2.25em;
+		}
+
+		#footer-right .copyright {
+			text-align: right;
+		}
 
 /* /landing BASIC */
 
@@ -2321,52 +2412,6 @@
 			background-color: transparent;
 			border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 		}
-
-/* /adventure FOOTER */
-
-	#adventure-footer {
-		background: #fff;
-		color: #888;
-		text-align: left !important;
-	}
-
-		#adventure-footer a:hover {
-			color: #555 !important;
-		}
-
-		#adventure-footer .inner ul {
-			text-align: left;
-		}
-
-		#adventure-footer .copyright {
-			padding: 0;
-			font-weight: 300;
-			list-style: none;
-		}
-
-			#adventure-footer .copyright li {
-				display: block;
-				font-size: 0.8em;
-				padding: 0 0 1em 0;
-			}
-
-				#adventure-footer .copyright li:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-
-	@media screen and (max-width: 480px) {
-
-		#adventure-footer .copyright li {
-			display: block;
-			border-left: 0;
-			margin-left: 0;
-			padding-left: 0;
-			line-height: inherit;
-		}
-
-	}
 
 /* /adventure WRAPPER */
 
@@ -4157,7 +4202,7 @@
 }
 
 	#f16-header h1 {
-			padding: 0.6em 0 0 0;
+			padding: 0.6em 0;
 			color: #f86767;
 			font-family: 'Bungee Inline';
 			font-size: 7.3em;
@@ -4165,6 +4210,7 @@
 			letter-spacing: 0.25em;
 			text-transform: uppercase;
 			line-height: 1em;
+			text-align: center;
 		}
 
 		@media screen and (max-width: 1200px) {
@@ -4532,25 +4578,6 @@
 
 			#photography-header ul {
 				text-align: right;
-			}
-
-/* /freelancing/photography FOOTER */
-
-	#photography-footer {
-		padding: 2.25em 2.25em 1em 2.25em ;
-	}
-
-		#photography-footer .copyright {
-			padding: 0;
-			font-weight: 300;
-			list-style: none;
-			text-align: right;
-		}
-
-			#photography-footer .copyright li {
-				display: inline-block;
-				font-size: 0.8em;
-				padding: 0 0 1em 0;
 			}
 
 /* /freelancing/photography THUMBNAILS */
@@ -4953,92 +4980,9 @@
 
 	}
 
-/* /freelancing/design HEADER */
-	
-#design-header {
-	margin: 0px auto;
-	padding: 3em 2.25em 1.75em 2.25em ;
-	width: 500px;
-}
-
-#design-header h1 {
-	margin: 0 auto;
-	font-size: 2.05em;
-	font-weight: 700;
-	text-align: center;
-}
-
-#design-header h2 {
-	font-size: 1.25em;
-}
-
-#design-header h3 {
-	font-size: 2.05em;
-	font-weight: 300;
-	text-align: center;
-}
-
-#design-header p {
-	width: 25em;
-	text-align: justify;
-	text-align-last: center;
-}
-
 /* /writing BASIC */
 
-#writing {
-	margin: 0;
-	padding: 3em 3.25em 3em 3.25em ;
-	width: 100%;
-	text-align: justify;
-	text-align-last: left;
-}
 
-#writing h1 {
-	margin: 0 auto;
-	font-size: 2.05em;
-	font-weight: 700;
-	text-align: justify;
-	text-align-last: left;
-}
-
-#writing h2 {
-	font-size: 1.25em;
-	text-align: justify;
-	text-align-last: left;
-}
-
-#writing h3 {
-	margin: 0;
-	font-size: 2.05em;
-	font-weight: 300;
-	text-align: left;
-}
-
-#writing p {
-	text-align: justify;
-	text-align-last: left;
-}
-
-#writing i.light {
-	opacity: .5;
-	font-style: normal;
-}
-
-#writing p a {
-	border-bottom: 1px solid #aaa;
-	color: inherit;
-	-moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-	-webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-	-ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-	transition: color 0.25s ease, border-bottom-color 0.25s ease;
-	text-decoration: none;
-}
-
-		#writing p a:hover {
-			border-bottom-color: #0083d5;
-			color: #0083d5;
-		}
 
 /* /typography CREDIT */
 
