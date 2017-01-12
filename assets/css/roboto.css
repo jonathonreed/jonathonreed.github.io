@@ -35,6 +35,8 @@
 	/freelancing/photography THUMBNAILS
 	/freelancing/photography VIEWER
 
+	/joto
+
 	/typography CREDIT
 	/typography SAMPLE
 
@@ -4980,8 +4982,54 @@
 
 	}
 
-/* /writing BASIC */
+/* /joto */
 
+#joto {
+	display: table;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url('../../img/joto/IMG_5328-JCR-1920-web.jpg') no-repeat fixed center;
+}
+
+	#joto .text {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	#joto p.title {
+		margin: 0 auto -0.1em auto;
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 10em;
+		letter-spacing: 0.3em;
+		color: #fff;
+		position: relative;
+		text-transform: uppercase;
+		text-align: center;
+		text-shadow: 6px 6px 0 #cc2827;
+		z-index: 2;
+	}
+
+#joto p.description {
+	margin: 0 auto;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 3em;
+	letter-spacing: 0.6em;
+	color: #fff;
+	text-transform: uppercase;
+	font-style: italic;
+	opacity: 0.6;
+}
+
+#joto h3 {
+	color: #fff;
+}
 
 
 /* /typography CREDIT */
