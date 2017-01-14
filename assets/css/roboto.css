@@ -100,6 +100,39 @@
 		background-color: #fff;
 	}
 
+	#table {
+	display: table;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+	#table .cell {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	#hundred {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#eighty {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#sixty {
+		width: 60%;
+		margin: 0 auto;
+	}
+
 /* TYPE */
 
 	html {
@@ -467,6 +500,71 @@
 				ul.icons li .icon:before {
 					font-size: 1.5rem;
 				}
+
+/* SLIDESHOW */
+
+	.slideshow-container {
+		max-width: 100%;
+		position: relative;
+		margin: auto;
+	}
+
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -1.4em;
+		padding: 1em;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.4em;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		opacity: 0.5;
+	}
+
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.5);
+		color: #fff;
+		opacity: 1;
+	}
+
+	.dots {
+		position: absolute;
+		bottom: 0.5em;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.dot {
+		cursor:pointer;
+		display: inline-block;
+		height: 0.8em;
+		width: 0.8em;
+		margin: 0 0.1em;
+		padding: 0;
+		background-color: transparent;
+		border-radius: 50%;
+		border: 1px #fff solid;
+		transition: background-color 0.6s ease;
+		opacity: 0.5;
+	}
+
+	.dot:hover {
+		opacity: 1;
+	}
+
+	.active {
+		background-color: #fff;
+		opacity: 1;
+	}
 
 /* THUMBNAILS */
 
@@ -5005,9 +5103,11 @@
 
 	#joto p.title {
 		margin: 0 auto -0.1em auto;
-		font-family: 'Fjalla One', sans-serif;
-		font-size: 10em;
-		letter-spacing: 0.3em;
+		padding: 0;
+		font-family: 'Oswald', sans-serif;
+		font-size: 9em;
+		font-weight: 400;
+		letter-spacing: 0.4em;
 		color: #fff;
 		position: relative;
 		text-transform: uppercase;
@@ -5016,21 +5116,35 @@
 		z-index: 2;
 	}
 
-#joto p.description {
-	margin: 0 auto;
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 3em;
-	letter-spacing: 0.6em;
-	color: #fff;
-	text-transform: uppercase;
-	font-style: italic;
-	opacity: 0.6;
-}
+	#joto p.description {
+		margin: 0 auto;
+		margin-left: -0.7em;
+		font-family: 'Oswald', sans-serif;
+		font-size: 2.5em;
+		font-weight: 400;
+		letter-spacing: 0.9em;
+		color: #fff;
+		text-transform: uppercase;
+		font-style: italic;
+		opacity: 0.6;
+	}
 
-#joto h3 {
-	color: #fff;
-}
+	.joto-subtitle {
+		margin: 2em auto;
+		padding: 0;
+		font-family: 'Oswald', sans-serif;
+		font-size: 2.5em;
+		font-weight: 400;
+		letter-spacing: 0.9em;
+		color: #404040;
+		text-transform: uppercase;
+		font-style: italic;
+		text-align: center;
+	}
 
+	#joto h3 {
+		color: #fff;
+	}
 
 /* /typography CREDIT */
 
