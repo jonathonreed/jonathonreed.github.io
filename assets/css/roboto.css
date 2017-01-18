@@ -130,7 +130,12 @@
 
 	#sixty {
 		width: 60%;
-		margin: 0 auto;
+		margin: 5em auto;
+	}
+
+	#sixty-pre-footer {
+		width: 60%;
+		margin: 5em auto 0 auto;
 	}
 
 /* TYPE */
