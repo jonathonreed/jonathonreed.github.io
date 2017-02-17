@@ -138,6 +138,11 @@
 		margin: 5em auto 0 auto;
 	}
 
+	#forty {
+		width: 40%;
+		margin: 0 auto;
+	}
+
 /* TYPE */
 
 	html {
@@ -910,6 +915,12 @@
 			vertical-align: middle;
 			text-align: left;
 		}
+
+			#landing-left p {
+				position: relative;
+				margin: 1em 0;
+				width: 80%;
+			}
 
 			@media screen and (max-width: 1200px) {
 				#landing-left {
