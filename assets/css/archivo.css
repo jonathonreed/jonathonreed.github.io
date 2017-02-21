@@ -125,6 +125,10 @@
 		text-transform: uppercase;
 	}
 
+		h1 a {
+			text-decoration: none;
+		}
+
 	h2 {
 		font-family: 'Archivo Black', sans-serif;
 		letter-spacing: 8px;

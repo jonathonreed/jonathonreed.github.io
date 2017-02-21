@@ -1,0 +1,90 @@
+<link href='http://fonts.googleapis.com/css?family=Unica+One|Neuton:200' rel='stylesheet' type='text/css'>
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+<script src="http://static.tumblr.com/shrl2lc/Kb0kl4vtp/jquery.js" type="text/javascript" charset="utf-8">
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+	$("body").keydown(function(e){ var key = e.charCode || e.keyCode || 0; if(key == "37" && $(".prev").length !== 0){ location.href = $(".prev").attr("href")} if(key == "39" && $(".next").length !== 0){ location.href = $(".next").attr("href") } })
+    $("body").prepend("<h2></h2>")
+    $("h2").before($("#cred").css({"margin-bottom":"20px"}).hide())
+    $("h2").click(function(){ $("#cred").slideToggle(500) })
+    })
+</script>
+<script>
+	$(window).scroll(function() {
+		var theta = $(window).scrollTop() / 100 % Math.PI;
+	$('#spin').css({ transform: 'rotate(' + theta + 'rad)' });
+	$('#spin').css({ transform: 'rotate(-' + theta + 'rad)' });
+	});
+</script>
+
+<html>
+
+<head>
+
+<title>For the Seasons</title>
+
+</head>
+
+<body>
+
+<div class="credit">
+	<a href="./index.html">Built with love by Jonathon</a><br>
+	<div id="cred">
+		<p>Leaf icon by <a href="https://thenounproject.com/evanschris">Chris Evans</a> on The Noun Project<br>
+		<p>Sun icon by <a href="https://thenounproject.com/misirlou">misirlou</a> on The Noun Project<br>
+		<p>Acorn icon by <a href="https://thenounproject.com/grrrauf">Agne Alesiute</a> on The Noun Project<br>
+		<p>Snowflake icon by <a href="https://thenounproject.com/gilad1">Gilad Fried</a> on The Noun Project</p>
+		<p>Font combination from <a href="http://femmebot.github.io/google-type/">Google Fonts Typography</a> by <a href="http://femmebot.github.io/">femmebot</a></p>
+	</div>
+	<h2>Credit</h2>
+</div>
+</div>
+
+<div class="desc">
+	<img src="../img/playlists/spring-100.png">
+	<h1 id="spring">Spring</h1>
+	<p>For those days when the air feels good to breathe and the morning sun rises earlier than it used to, this playlist is lit with apricity. This is the rhythm of the awakening forest. When the birds begin to return from the south, play the hopeful songs of The Paper Kites, Imagine Dragons and Release the Sunbird, and let their music melt the lingering snow.</p>
+</div>
+
+<img src="../img/playlists/budding-trees.jpg">
+<div class="music">
+	<iframe src="http://8tracks.com/mixes/1614062/player_v3_universal" width="1010" height="150"></iframe>
+</div>
+
+<div class="desc">
+	<img src="../img/playlists/summer-100.png">
+	<h1 id="summer">Summer</h1>
+	<p>This music hovers around the smell of juniper and sun-gold grasses, a set of songs that is meant to be played above the late-afternoon buzz of cicadas in the field. Musicians like James Vincent McMorrow, Angus & Julia Stone and Noah Gunderson have been carefully arranged to pass on the quiet melody of leaves in the wind.</p>
+</div>
+
+<img src="../img/playlists/summer-sighs.jpg">
+<div class="music">
+	<iframe src="http://8tracks.com/mixes/3657109/player_v3_universal" width="1010" height="150"></iframe>
+</div>
+
+<div class="desc">
+	<img src="../img/playlists/autumn-100.png">
+	<h1 id="autumn">Autumn</h1>
+	<p>A playlist for cold mornings and falling leaves, for the days when you can feel a chill in the air and the sun doesn't trail her fingers across your skin quite like she used to. Take a moment, find that cup of tea and old familiar sweater, and let the songs of Roo Panes, Old Man Canyon and Alexi Murdoch hold you until the warm days come again.</p>
+</div>
+
+<img src="../img/playlists/autumn-leaves.jpg">
+<div class="music">
+	<iframe src="http://8tracks.com/mixes/4980456/player_v3_universal" width="1010" height="150"></iframe>
+</div>
+
+<div class="desc">
+	<img src="../img/playlists/winter-100.png">
+	<h1 id="winter">Winter</h1>
+	<p>A playlist for cold mornings and falling leaves, for the days when you can feel a chill in the air and the sun doesn't trail her fingers across your skin quite like she used to. Take a moment, find that cup of tea and old familiar sweater, and let the songs of Roo Panes, Old Man Canyon and Alexi Murdoch hold you until the warm days come again.</p>
+</div>
+
+<img src="../img/playlists/autumn-leaves.jpg">
+<div class="music">
+	<iframe src="http://8tracks.com/mixes/4980456/player_v3_universal" width="1010" height="150"></iframe>
+</div>
+
+</body>
+</html>
