@@ -1455,10 +1455,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease;
-		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease;
-		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease;
-		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease;
+		-moz-transition: 0.2s ease-in-out;
+		-webkit-transition: 0.2s ease-in-out;
+		-ms-transition: 0.2s ease-in-out;
+		transition: 0.2s ease-in-out;
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
@@ -1476,6 +1476,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		opacity: 1;
 	}
 
 		input[type="submit"]:hover, input[type="submit"]:active,
@@ -1489,6 +1490,11 @@
 		.button:active {
 			box-shadow: inset 0 0 0 2px #F4F200;
 			color: #F4F200;
+			-moz-transition: 0.2s ease-in-out;
+			-webkit-transition: 0.2s ease-in-out;
+			-ms-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
+			background-color: transparent;
 		}
 
 		input[type="submit"]:active,
@@ -1555,10 +1561,10 @@
 			button.next:after,
 			.button.next:before,
 			.button.next:after {
-				-moz-transition: opacity 0.2s ease;
-				-webkit-transition: opacity 0.2s ease;
-				-ms-transition: opacity 0.2s ease;
-				transition: opacity 0.2s ease;
+				-moz-transition: opacity 0.2s ease-in-out;
+				-webkit-transition: opacity 0.2s ease-in-out;
+				-ms-transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in-out;
 				background-position: center right;
 				background-repeat: no-repeat;
 				background-size: 36px 24px;
@@ -1689,10 +1695,10 @@
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
-			-moz-transition: -moz-transform 0.25s ease-in-out, opacity 0.25s ease-in-out, -moz-filter 1s ease-in-out, -webkit-filter 1s ease;
-			-webkit-transition: -webkit-transform 0.25s ease-in-out, opacity 0.25s ease-in-out, -webkit-filter 1s ease-in-out, -webkit-filter 1s ease;
-			-ms-transition: -ms-transform 0.25s ease-in-out, opacity 0.25s ease-in-out, -ms-filter 1s ease-in-out, -webkit-filter 1s ease;
-			transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out, filter 1s ease-in-out, -webkit-filter 1s ease;
+			-moz-transition: 0.2s ease-in-out;
+			-webkit-transition: 0.2s ease-in-out;
+			-ms-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
 			padding: 4em 4em 2em 4em ;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -1744,10 +1750,10 @@
 			}
 
 			#adventure .tiles article:before {
-				-moz-transition: opacity 0.5s ease;
-				-webkit-transition: opacity 0.5s ease;
-				-ms-transition: opacity 0.5s ease;
-				transition: opacity 0.5s ease;
+				-moz-transition: opacity 0.2s ease;
+				-webkit-transition: opacity 0.2s ease;
+				-ms-transition: opacity 0.2s ease;
+				transition: opacity 0.2s ease;
 				bottom: 0;
 				content: '';
 				display: block;
@@ -1788,7 +1794,7 @@
 			}
 
 			#adventure .tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
-				width: 60%;
+				width: 60% !important;
 			}
 
 			#adventure .tiles article:nth-child(6n - 5):before {
@@ -1960,10 +1966,10 @@
 				}
 
 				#adventure-header.alt .logo-f16 strong {
-					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease;
-					-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease;
-					-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease;
-					transition: background-color 0.2s ease-in-out, color 0.2s ease;
+					-moz-transition: 0.2s ease-in-out;
+					-webkit-transition: 0.2s ease-in-out;
+					-ms-transition: 0.2s ease-in-out;
+					transition: 0.2s ease-in-out;
 					margin-right: 0.65em;
 					padding: 0 0.125em 0 0.375em;
 					background-color: #fff;
@@ -1983,10 +1989,10 @@
 					}
 
 			#adventure-header .logo strong {
-				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease;
-				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease;
-				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease;
-				transition: background-color 0.2s ease-in-out, color 0.2s ease;
+				-moz-transition: 0.2s ease-in-out;
+				-webkit-transition: 0.2s ease-in-out;
+				-ms-transition: 0.2s ease-in-out;
+				transition: 0.2s ease-in-out;
 				margin-right: 0.65em;
 				padding: 0 0.125em 0 0.375em;
 				background-color: #ffffff;
@@ -2056,10 +2062,10 @@
 					}
 
 					#adventure-header nav a[href="#adventure-menu"]:after {
-						-moz-transition: opacity 0.2s ease-in-out;
-						-webkit-transition: opacity 0.2s ease-in-out;
-						-ms-transition: opacity 0.2s ease-in-out;
-						transition: opacity 0.2s ease-in-out;
+						-moz-transition: 0.2s ease-in-out;
+						-webkit-transition: 0.2s ease-in-out;
+						-ms-transition: 0.2s ease-in-out;
+						transition: 0.2s ease-in-out;
 						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23F4F200%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						opacity: 0;
 						z-index: 1;
@@ -2298,10 +2304,10 @@
 		}
 
 		#adventure-banner > .inner {
-			-moz-transition: opacity 1.5s ease-in-out, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease-in-out, -webkit-filter 0.5s ease;
-			-webkit-transition: opacity 1.5s ease-in-out, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease-in-out, -webkit-filter 0.5s ease;
-			-ms-transition: opacity 1.5s ease-in-out, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease-in-out, -webkit-filter 0.5s ease;
-			transition: opacity 1.5s ease-in-out, transform 0.5s ease-out, filter 0.5s ease-in-out, -webkit-filter 0.5s ease;
+			-moz-transition: 0.2s ease-in-out;
+			-webkit-transition: 0.2s ease-in-out;
+			-ms-transition: 0.2s ease-in-out;
+			transition: opacity 1.5s ease-in-out, transform 0.2s ease-in-out;
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
@@ -2536,10 +2542,10 @@
 /* /adventure WRAPPER */
 
 	#adventure-wrapper {
-		-moz-transition: -moz-filter 0.35s ease-in-out, -webkit-filter 0.35s ease-in-out, opacity 0.375s ease-out;
-		-webkit-transition: -webkit-filter 0.35s ease-in-out, -webkit-filter 0.35s ease-in-out, opacity 0.375s ease-out;
-		-ms-transition: -ms-filter 0.35s ease-in-out, -webkit-filter 0.35s ease-in-out, opacity 0.375s ease-out;
-		transition: filter 0.35s ease-in-out, -webkit-filter 0.35s ease-in-out, opacity 0.375s ease-out;
+		-moz-transition: 0.2s ease-in-out;
+		-webkit-transition: 0.2s ease-in-out;
+		-ms-transition: 0.2s ease-in-out;
+		transition: 0.2s ease-in-out;
 		padding-top: 3.25em;
 	}
 
@@ -2574,10 +2580,10 @@
 /* /adventure MENU */
 
 	#adventure-menu {
-		-moz-transition: -moz-transform 0.35s ease-in-out, opacity 0.35s ease-in-out, visibility 0.35s;
-		-webkit-transition: -webkit-transform 0.35s ease-in-out, opacity 0.35s ease-in-out, visibility 0.35s;
-		-ms-transition: -ms-transform 0.35s ease-in-out, opacity 0.35s ease-in-out, visibility 0.35s;
-		transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out, visibility 0.35s;
+		-moz-transition: 0.2s ease-in-out;
+		-webkit-transition: 0.2s ease-in-out;
+		-ms-transition: 0.2s ease-in-out;
+		transition: 0.2s ease-in-out;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -2609,10 +2615,10 @@
 	}
 
 		#adventure-menu .inner {
-			-moz-transition: -moz-transform 0.35s ease-out, opacity 0.35s ease-in-out, visibility 0.35s;
-			-webkit-transition: -webkit-transform 0.35s ease-out, opacity 0.35s ease-in-out, visibility 0.35s;
-			-ms-transition: -ms-transform 0.35s ease-out, opacity 0.35s ease-in-out, visibility 0.35s;
-			transition: transform 0.35s ease-out, opacity 0.35s ease-in-out, visibility 0.35s;
+			-moz-transition: 0.2s ease-in-out;
+			-webkit-transition: 0.2s ease-in-out;
+			-ms-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
 			-moz-transform: rotateX(20deg);
 			-webkit-transform: rotateX(20deg);
 			-ms-transform: rotateX(20deg);
@@ -4303,10 +4309,10 @@
 .override-links-f16 a {
 		border-bottom: 1px solid #aaa;
 		color: inherit;
-		-moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-		-webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-		-ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-		transition: color 0.25s ease, border-bottom-color 0.25s ease;
+		-moz-transition: 0.2s ease-in-out;
+		-webkit-transition: 0.2s ease-in-out;
+		-ms-transition: 0.2s ease-in-out;
+		transition: 0.2s ease-in-out;
 		text-decoration: none;
 	}
 
