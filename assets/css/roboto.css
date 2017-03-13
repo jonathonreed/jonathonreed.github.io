@@ -4615,12 +4615,12 @@
 		left: 0;
 	}
 
-	#photography body.fullscreen #photography-main {
+	body.fullscreen #photography-main {
 		visibility: hidden;
 		right: -22.5em;
 	}
 
-	#photography body.is-loading-1 #photography-main {
+	body.is-loading-1 #photography-main {
 		opacity: 0;
 		right: -2em;
 	}
