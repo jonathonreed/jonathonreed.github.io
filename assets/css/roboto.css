@@ -197,10 +197,10 @@
 	a {
 		border-bottom: none;
 		color: inherit;
-		-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease;
-		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease;
-		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease;
-		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease;
+		-moz-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		-webkit-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		-ms-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
 		text-decoration: none;
 	}
 
@@ -382,10 +382,10 @@
 		#heading-left p a {
 			border-bottom: 1px solid #aaa;
 			color: inherit;
-			-moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-			-webkit-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-			-ms-transition: color 0.25s ease, border-bottom-color 0.25s ease;
-			transition: color 0.25s ease, border-bottom-color 0.25s ease;
+			-moz-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+			-webkit-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+			-ms-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+			transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
 			text-decoration: none;
 		}
 
@@ -580,212 +580,6 @@
 		opacity: 1;
 	}
 
-/* THUMBNAILS */
-
-	#thumbnails {
-		display: block;
-		margin: 0 auto;
-		padding: 0 0.75em;
-		width: 100%;
-		text-align: center;
-	}
-
-	#thumbnails .inner:before {
-				background-image: -moz-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), 
-					-moz-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
-				background-image: -webkit-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), 
-					-webkit-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
-				background-image: -ms-linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), 
-					-ms-linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
-				background-image: linear-gradient(left, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0)), 
-					linear-gradient(right, rgba(16,16,16,0.2), rgba(16,16,16,0) 10em, rgba(16,16,16,0));
-				content: '';
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-
-		#thumbnails article {
-			position: relative;
-			margin: 0 auto 2em auto;
-			width: 800px;
-			outline: 0;
-		}
-
-			#thumbnails article .thumbnail {
-				display: block;
-				position: relative;
-				-webkit-tap-highlight-color: transparent;
-				border: 0;
-				outline: 0;
-			}
-
-				#thumbnails article .thumbnail img {
-				}
-
-			#thumbnails article h2 {
-				display: block;
-				position: absolute;
-				padding: 2em 2em 0.3em 1.6em;
-				width: 800px;
-				bottom: 50px;
-				color: #fff;
-				text-align: left;
-				z-index: 2;
-			}
-
-			#thumbnails article p {
-				position: absolute;
-				padding: 2em 2em 0.75em 2em ;
-				width: 100%;
-				height: 125px;
-				bottom: -12px;
-				color: rgba(255, 255, 255, 0.5);
-				vertical-align: baseline;
-				background-image: -moz-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: -webkit-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: -ms-linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				background-image: linear-gradient(bottom, rgba(16,16,16,0.75), rgba(16,16,16,0.25) 80%, rgba(16,16,16,0));
-				z-index: 0.5;
-			}
-
-				#thumbnails article p.text {
-					position: absolute;
-					padding-top: 72px;
-					text-align: left;
-				}
-
-			#thumbnails article .light {
-				background-color: #fff;
-			}
-
-				#thumbnails article .light:hover {
-				}
-
-				#thumbnails article .light:hover img {
-					background-color: #fff;
-					opacity: 0.1;
-				}
-
-				#thumbnails article .light h2 {
-					display: none;
-				}
-
-					#thumbnails article .light:hover h2 {
-						display: block;
-						position: absolute;
-						padding: 2em 2em 0.3em 1.6em ;
-						width: 800px;
-						bottom: 51px;
-						color: #000;
-						text-align: left;
-						z-index: 2;
-					}
-
-				#thumbnails article .light p {
-					background: none;
-					display: none;
-				}
-
-				#thumbnails article .light:hover p {
-					display: block;
-					position: absolute;
-					padding: 2em 2em 0.75em 2em ;
-					width: 100%;
-					height: 125px;
-					bottom: -53px;
-					left: -1px;
-					color: #000;
-					vertical-align: baseline;
-				}
-
-			#thumbnails article .dark {
-			background-color: #000;
-			}
-
-				#thumbnails article .dark:hover {
-				}
-
-				#thumbnails article .dark:hover img {
-					background-color: #fff;
-					opacity: 0.4;
-				}
-
-				#thumbnails article .dark h2 {
-					display: none;
-				}
-
-					#thumbnails article .dark:hover h2 {
-						display: block;
-						position: absolute;
-						padding: 2em 2em 0.3em 1.6em;
-						width: 800px;
-						bottom: 51px;
-						color: #fff;
-						text-align: left;
-						z-index: 2;
-					}
-
-				#thumbnails article .dark p {
-					background: none;
-					display: none;
-				}
-
-				#thumbnails article .dark:hover p {
-					display: block;
-					position: absolute;
-					padding: 2em 2em 0.75em 2em ;
-					width: 100%;
-					height: 125px;
-					bottom: -53px;
-					left: -1px;
-					color: #fff;
-					vertical-align: baseline;
-				}
-
-			#thumbnails article .thumbnail:before {
-				display: block;
-				position: absolute;
-				margin: -1.5em 0 0 -1.5em;
-				width: 3em;
-				height: 3em;
-				top: 50%;
-				left: 50%;
-				background-image: url("images/spinner.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				-moz-animation: spinner 1s linear infinite;
-				-webkit-animation: spinner 1s linear infinite;
-				-ms-animation: spinner 1s linear infinite;
-				animation: spinner 1s linear infinite;
-				-moz-transition: opacity 0.5s ease-in-out;
-				-webkit-transition: opacity 0.5s ease-in-out;
-				-ms-transition: opacity 0.5s ease-in-out;
-				transition: opacity 0.5s ease-in-out;
-				content: '';
-				opacity: 0;
-			}
-
-					#thumbnails article .thumbnail:focus:before {
-						opacity: 1;
-					}
-
-					#thumbnails article.active .thumbnail:before {
-						opacity: 1;
-					}
-
-	@media screen and (max-width: 480px) {
-
-		#thumbnails article .thumbnail:before {
-			display: none;
-		}
-
-	}
-
 /* FOOTER */
 
 	footer {
@@ -974,7 +768,6 @@
 
 			#landing-right h3 a:hover {
 				color: #A7DBFF;
-				text-shadow: 0 0 2em rgba(255, 255, 255, 1);
 			}
 
 /* /adventure BASIC */
@@ -1034,10 +827,10 @@
 		}
 
 	#adventure a {
-		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease;
-		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease;
-		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease;
-		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease;
+		-moz-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		-webkit-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		-ms-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -1104,10 +897,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-moz-transition: background-color 0.1s ease-out, box-shadow 0.1s ease-out, color 0.1s ease-out;
+		-webkit-transition: background-color 0.1s ease-out, box-shadow 0.1s ease-out, color 0.1s ease-out;
+		-ms-transition: background-color 0.1s ease-out, box-shadow 0.1s ease-out, color 0.1s ease-out;
+		transition: background-color 0.1s ease-out, box-shadow 0.1s ease-out, color 0.1s ease-out;
 		color: #888 !important;
 	}
 
@@ -1233,10 +1026,10 @@
 		}
 
 	#adventure a.icon.alt:before {
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
+		-moz-transition: background-color 0.1s ease-out;
+		-webkit-transition: background-color 0.1s ease-out;
+		-ms-transition: background-color 0.1s ease-out;
+		transition: background-color 0.1s ease-out;
 	}
 
 	#adventure a.icon.alt:hover:before {
@@ -1455,10 +1248,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: all 0.2s ease-in-out;
-		-webkit-transition: all 0.2s ease-in-out;
-		-ms-transition: all 0.2s ease-in-out;
-		transition: all 0.2s ease-in-out !important;
+		-moz-transition: all 0.1s ease-out;
+		-webkit-transition: all 0.1s ease-out;
+		-ms-transition: all 0.1s ease-out;
+		transition: all 0.1s ease-out !important;
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
@@ -1490,10 +1283,10 @@
 		.button:active {
 			box-shadow: inset 0 0 0 2px #F4F200;
 			color: #F4F200;
-			-moz-transition: 0.2s ease-in-out;
-			-webkit-transition: 0.2s ease-in-out;
-			-ms-transition: 0.2s ease-in-out;
-			transition: 0.2s ease-in-out;
+			-moz-transition: 0.1s ease-out;
+			-webkit-transition: 0.1s ease-out;
+			-ms-transition: 0.1s ease-out;
+			transition: 0.1s ease-out;
 			background-color: transparent;
 		}
 
@@ -1561,10 +1354,10 @@
 			button.next:after,
 			.button.next:before,
 			.button.next:after {
-				-moz-transition: opacity 0.2s ease-in-out;
-				-webkit-transition: opacity 0.2s ease-in-out;
-				-ms-transition: opacity 0.2s ease-in-out;
-				transition: opacity 0.2s ease-in-out;
+				-moz-transition: opacity 0.1s ease-out;
+				-webkit-transition: opacity 0.1s ease-out;
+				-ms-transition: opacity 0.1s ease-out;
+				transition: opacity 0.1s ease-out;
 				background-position: center right;
 				background-repeat: no-repeat;
 				background-size: 36px 24px;
@@ -1695,10 +1488,10 @@
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
-			-moz-transition: 0.2s ease-in-out;
-			-webkit-transition: 0.2s ease-in-out;
-			-ms-transition: 0.2s ease-in-out;
-			transition: 0.2s ease-in-out;
+			-moz-transition: 0.1s ease-out;
+			-webkit-transition: 0.1s ease-out;
+			-ms-transition: 0.1s ease-out;
+			transition: 0.1s ease-out;
 			padding: 4em 4em 2em 4em ;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -1750,10 +1543,10 @@
 			}
 
 			#adventure .tiles article:before {
-				-moz-transition: opacity 0.2s ease;
-				-webkit-transition: opacity 0.2s ease;
-				-ms-transition: opacity 0.2s ease;
-				transition: opacity 0.2s ease;
+				-moz-transition: opacity 0.25s ease-out;
+				-webkit-transition: opacity 0.25s ease-out;
+				-ms-transition: opacity 0.25s ease-out;
+				transition: opacity 0.25s ease-out;
 				bottom: 0;
 				content: '';
 				display: block;
@@ -1966,10 +1759,10 @@
 				}
 
 				#adventure-header.alt .logo-f16 strong {
-					-moz-transition: 0.2s ease-in-out;
-					-webkit-transition: 0.2s ease-in-out;
-					-ms-transition: 0.2s ease-in-out;
-					transition: 0.2s ease-in-out;
+					-moz-transition: 0.1s ease-out;
+					-webkit-transition: 0.1s ease-out;
+					-ms-transition: 0.1s ease-out;
+					transition: 0.1s ease-out;
 					margin-right: 0.65em;
 					padding: 0 0.125em 0 0.375em;
 					background-color: #fff;
@@ -1989,10 +1782,10 @@
 					}
 
 			#adventure-header .logo strong {
-				-moz-transition: 0.2s ease-in-out;
-				-webkit-transition: 0.2s ease-in-out;
-				-ms-transition: 0.2s ease-in-out;
-				transition: 0.2s ease-in-out;
+				-moz-transition: 0.1s ease-out;
+				-webkit-transition: 0.1s ease-out;
+				-ms-transition: 0.1s ease-out;
+				transition: 0.1s ease-out;
 				margin-right: 0.65em;
 				padding: 0 0.125em 0 0.375em;
 				background-color: #ffffff;
@@ -2062,10 +1855,10 @@
 					}
 
 					#adventure-header nav a[href="#adventure-menu"]:after {
-						-moz-transition: 0.2s ease-in-out;
-						-webkit-transition: 0.2s ease-in-out;
-						-ms-transition: 0.2s ease-in-out;
-						transition: 0.2s ease-in-out;
+						-moz-transition: 0.1s ease-out;
+						-webkit-transition: 0.1s ease-out;
+						-ms-transition: 0.1s ease-out;
+						transition: 0.1s ease-out;
 						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23F4F200%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						opacity: 0;
 						z-index: 1;
@@ -2304,10 +2097,10 @@
 		}
 
 		#adventure-banner > .inner {
-			-moz-transition: 0.2s ease-in-out;
-			-webkit-transition: 0.2s ease-in-out;
-			-ms-transition: 0.2s ease-in-out;
-			transition: opacity 1.5s ease-in-out, transform 0.2s ease-in-out;
+			-moz-transition: 0.1s ease-out;
+			-webkit-transition: 0.1s ease-out;
+			-ms-transition: 0.1s ease-out;
+			transition: opacity 1.5s ease, transform 0.1s ease-out;
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
@@ -2542,10 +2335,10 @@
 /* /adventure WRAPPER */
 
 	#adventure-wrapper {
-		-moz-transition: 0.2s ease-in-out;
-		-webkit-transition: 0.2s ease-in-out;
-		-ms-transition: 0.2s ease-in-out;
-		transition: 0.2s ease-in-out;
+		-moz-transition: 0.1s ease-out;
+		-webkit-transition: 0.1s ease-out;
+		-ms-transition: 0.1s ease-out;
+		transition: 0.1s ease-out;
 		padding-top: 3.25em;
 	}
 
@@ -2580,10 +2373,10 @@
 /* /adventure MENU */
 
 	#adventure-menu {
-		-moz-transition: 0.2s ease-in-out;
-		-webkit-transition: 0.2s ease-in-out;
-		-ms-transition: 0.2s ease-in-out;
-		transition: 0.2s ease-in-out;
+		-moz-transition: 0.1s ease-out;
+		-webkit-transition: 0.1s ease-out;
+		-ms-transition: 0.1s ease-out;
+		transition: 0.1s ease-out;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -2615,10 +2408,10 @@
 	}
 
 		#adventure-menu .inner {
-			-moz-transition: 0.2s ease-in-out;
-			-webkit-transition: 0.2s ease-in-out;
-			-ms-transition: 0.2s ease-in-out;
-			transition: 0.2s ease-in-out;
+			-moz-transition: 0.1s ease-out;
+			-webkit-transition: 0.1s ease-out;
+			-ms-transition: 0.1s ease-out;
+			transition: 0.1s ease-out;
 			-moz-transform: rotateX(20deg);
 			-webkit-transform: rotateX(20deg);
 			-ms-transform: rotateX(20deg);
@@ -2677,10 +2470,10 @@
 					}
 
 		#adventure-menu .close {
-			-moz-transition: color 0.2s ease-in-out;
-			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out;
+			-moz-transition: color 0.1s ease-out;
+			-webkit-transition: color 0.1s ease-out;
+			-ms-transition: color 0.1s ease-out;
+			transition: color 0.1s ease-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
 			cursor: pointer;
@@ -2700,10 +2493,10 @@
 		}
 
 			#adventure-menu .close:before, #adventure-menu .close:after {
-				-moz-transition: opacity 0.2s ease-in-out;
-				-webkit-transition: opacity 0.2s ease-in-out;
-				-ms-transition: opacity 0.2s ease-in-out;
-				transition: opacity 0.2s ease-in-out;
+				-moz-transition: opacity 0.1s ease-out;
+				-webkit-transition: opacity 0.1s ease-out;
+				-ms-transition: opacity 0.1s ease-out;
+				transition: opacity 0.1s ease-out;
 				background-position: center;
 				background-repeat: no-repeat;
 				content: '';
@@ -4309,10 +4102,10 @@
 .override-links-f16 a {
 		border-bottom: 1px solid #aaa;
 		color: inherit;
-		-moz-transition: 0.2s ease-in-out;
-		-webkit-transition: 0.2s ease-in-out;
-		-ms-transition: 0.2s ease-in-out;
-		transition: 0.2s ease-in-out;
+		-moz-transition: 0.1s ease-out;
+		-webkit-transition: 0.1s ease-out;
+		-ms-transition: 0.1s ease-out;
+		transition: 0.1s ease-out;
 		text-decoration: none;
 	}
 
@@ -4485,8 +4278,8 @@
 	}
 
 	#instafeed img:hover {
-		-webkit-transition: opacity .2s ease-in-out;
-    	transition: opacity .2s ease-in-out;
+		-webkit-transition: opacity 0.1s ease-out;
+    	transition: opacity 0.1s ease-out;
 		opacity: 0.8;
 	}
 
@@ -5105,6 +4898,63 @@
 			}
 
 	}
+
+/* /freelancing/design THUMBNAILS */
+
+#design-thumbnails {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+	#design-thumbnails article {
+		position: relative;
+		margin: 0 auto 2em auto;
+		width: 800px;
+		outline: 0;
+	}
+
+		#design-thumbnails article .caption {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			background: rgba(255,255,255,0.9);
+			-moz-transition: opacity 0.25s ease-out;
+			-webkit-transition: opacity 0.25s ease-out;
+			-ms-transition: opacity 0.25s ease-out;
+			transition: opacity 0.25s ease-out;
+			opacity: 0;
+		}
+
+			#design-thumbnails article .caption:hover {
+				opacity: 1;
+			}
+
+			#design-thumbnails article .caption h2 {
+				position: absolute;
+				padding: 2em 2em 0.3em 1.6em ;
+				width: 800px;
+				bottom: 51px;
+				color: #000;
+				text-align: left;
+				z-index: 2;
+			}
+
+			#design-thumbnails article .caption p {
+				position: absolute;
+				padding: 2em 2em 0.75em 2em;
+				width: 100%;
+				height: 125px;
+				bottom: -53px;
+				left: 0;
+				color: #000;
+				vertical-align: baseline;
+				text-align: left;
+			}
+
+@media screen and (max-width: 480px) {
+}
 
 /* /joto */
 
