@@ -1,0 +1,308 @@
+/* RESET */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+	pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+	small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, 
+	label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+	embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, 
+	mark, audio, video {
+		margin: 0;
+		padding: 0;
+		vertical-align: baseline;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+		-webkit-text-size-adjust: none;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+/* LAYOUT */
+
+#header {
+	height: 100vh;
+	width: 100vw;
+	margin: 3em auto 0;
+	text-align: center;
+}
+
+#container {
+	width: 100vw;
+	margin: 0 auto;
+}
+
+.about-content {
+	background-color: #18c8df;
+}
+
+.creative-content {
+	background-color: #447d1c;
+}
+
+#container a.content-link {
+	cursor: default;
+}
+
+.content {
+	max-width: 100vw;
+	padding: 3em 5em;	
+}
+
+.clients-logos {
+	width: 100%;
+	margin: 1em 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+.content .clients-logos img {
+	display: inline;
+	margin: 0;
+}
+
+.content .programs-left {
+	position: relative;
+	display: inline-block;
+	margin: 0 1em 0 0;
+	width: 48%;
+	vertical-align: top;
+}
+
+.content .programs-right {
+	position: relative;
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+}
+
+/* TYPE */
+
+h1 {
+	font-family: 'Lato';
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+h2 {
+	font-family: 'Lato';
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+h3 {
+	margin: 1em 0;
+	font-family: 'Lato';
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+p {
+	margin: 1em 0;
+	font-family: 'Lato';
+	font-size: 1.05em;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+ul {
+	margin: 1em 0 1em 1.25em;
+	font-family: 'Lato';
+	font-size: 1.05em;
+	font-weight: 300;
+	line-height: 1.25;
+}
+
+li {
+	list-style-type: disc;
+}
+
+#header h1 {
+	font-size: 4em;
+}
+
+#header h2 {
+	margin: 0.5em 0 0 0;
+	font-size: 2em;
+	color: #3d3d3d;
+	text-align: center;
+}
+
+#header h2 a {
+	text-decoration: none;
+	color: #3d3d3d;
+}
+
+#header h2 a:hover {
+	border-bottom: 8px #3d3d3d solid;
+}
+
+h1.slideshow {
+	position: absolute;
+	bottom: 20;
+	margin: 0.1em 1em;
+	font-size: 5em;
+	color: #fff;
+	text-align: center;
+	z-index: 10;
+}
+
+h1.no-slideshow {
+	position: relative;
+	margin: 0;
+	font-size: 5em;
+	color: #3d3d3d;
+	text-align: left;
+}
+
+h1.about-header {
+	color: #e9e442;
+}
+
+h1.creative-header {
+	color: #fa6491;
+}
+
+.content h2 {
+	font-size: 2em;
+	color: #3d3d3d;
+}
+
+.content h2 a {
+	text-decoration: none;
+	color: #3d3d3d;
+}
+
+.content h2 a:hover {
+	border-bottom: 5px #3d3d3d solid;
+}
+
+.about-content h2 {
+	color: #e9e442;
+}
+
+.about-content h2 a {
+	color: #e9e442;
+}
+
+.about-content h2 a:hover {
+	border-bottom: 5px #e9e442 solid;
+}
+
+.creative-content h2 {
+	color: #fa6491;
+}
+
+.programs-left h3 {
+	color: #fa6491;
+}
+
+.programs-right h3 {
+	color: #fa6491;
+}
+
+.content h3 {
+	font-size: 1em;
+	color: #1d1d1d;
+}
+
+.content p {
+	width: 85%;
+	color: #1d1d1d;
+}
+
+.content ul {
+	width: 85%;
+}
+
+.content ul li {
+	color: #1d1d1d;
+}
+
+.content p a {
+	text-decoration: none;
+	color: color: #1d1d1d;
+}
+
+/* SLIDESHOW */
+
+	.slideshow-container {
+		max-width: 100%;
+		height: 100vh;
+		position: relative;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	.mySlides {
+		display: none;
+	}
+
+creativeSlides {
+	display: none;
+}
+
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -1.4em;
+		padding: 1em;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.4em;
+		border-radius: 0 3px 3px 0;
+		opacity: 0.5;
+	}
+
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.5);
+		color: #fff;
+		opacity: 1;
+	}
+
+	.dots {
+		position: absolute;
+		bottom: 0.5em;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.dot {
+		cursor:pointer;
+		display: inline-block;
+		height: 0.7em;
+		width: 0.7em;
+		margin: 0 0.1em;
+		padding: 0;
+		background-color: transparent;
+		border-radius: 50%;
+		border: 1px #fff solid;
+		transition: background-color 0.6s ease;
+		opacity: 0.5;
+	}
+
+	.dot:hover {
+		opacity: 1;
+	}
+
+	.active {
+		background-color: #fff;
+		opacity: 1;
+	}
