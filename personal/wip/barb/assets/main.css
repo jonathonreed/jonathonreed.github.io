@@ -90,7 +90,7 @@
 .content {
 	display: relative;
 	max-width: 100vw;
-	padding: 3em 5em;	
+	padding: 3em 10%;	
 }
 
 img.programs {
@@ -113,18 +113,37 @@ img.programs {
 .content .programs-left {
 	position: relative;
 	display: inline-block;
-	margin: 1em 1em 0 0;
+	margin: -1em 2em 0 0;
 	width: 48%;
 	vertical-align: top;
+}
+
+.content .programs-left p {
+	width: 100%;
+}
+
+.content .programs-left ul {
+	width: 95%;
+	padding-left: 1.5em;
 }
 
 .content .programs-right {
 	position: relative;
 	display: inline-block;
-	margin: 1em 0 0 0;
+	margin: -1em 0 0 0;
 	width: 48%;
 	vertical-align: top;
 }
+
+.content .programs-right p {
+	width: 100%;
+}
+
+.content .programs-right ul {
+	width: 95%;
+	padding-left: 1.5em;
+}
+
 
 /* TYPE */
 
@@ -148,11 +167,14 @@ h3 {
 }
 
 p {
-	margin: 1em 0;
+	width: 70%;
+	margin: 1em auto;
 	font-family: 'Lato';
 	font-size: 1.05em;
 	font-weight: 300;
 	line-height: 1.4;
+	text-align: justify;
+	text-align-last: left;
 }
 
 ul {
@@ -190,7 +212,7 @@ li {
 h1.slideshow {
 	position: absolute;
 	bottom: 20;
-	margin: 0.1em 1em;
+	margin: 0.1em 10%;
 	font-size: 5em;
 	color: #fff;
 	text-align: center;
@@ -216,7 +238,7 @@ h1.creative-header {
 .content h2 {
 	font-size: 2em;
 	color: #333;
-	margin: 1em 0 0 0;
+	margin: 1em 0 0 10%;
 }
 
 .content h2 a {
@@ -273,11 +295,13 @@ h1.creative-header {
 }
 
 .content ul {
-	width: 85%;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .content ul li {
 	color: #1d1d1d;
+	margin-le	ft: 1.5em;
 }
 
 .content p a {
@@ -364,7 +388,7 @@ creativeSlides {
 
 input[type=text], select, textarea {
     display: block;
-	width: 80%; /* Full width */
+	width: 100%; /* Full width */
     padding: 0.5em; /* Some padding */  
     border: 1px solid #fff; /* Gray border */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -397,7 +421,8 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .form-container {
 	display: relative;
-    margin: 1em 0;
+	width: 80%;
+    margin: 1em auto;
     background-color: transparent;
     padding: 0;
 }
