@@ -29,6 +29,8 @@
 
 	/adventure/f16 
 
+	/masculinity BASIC
+
 	/freelancing/photography BASIC
 	/freelancing/photography MAIN
 	/freelancing/photography HEADER
@@ -221,11 +223,13 @@
 	p {
 		margin: 1em auto 1em auto;
 		font-weight: 300;
+		text-align: justify;
+		text-align-last: left;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		margin: 0 auto;
-		color: #555;
+		color: #151515;
 		font-weight: 400;
 		line-height: 1.25;
 	}
@@ -237,17 +241,22 @@
 
 	h1 {
 		font-size: 2.05em;
-		font-weight: 700;
+		font-weight: 900;
 	}
 
 	h2 {
-		font-size: 1.25em;
+		font-size: 2em;
+		text-transform: uppercase;
+		font-weight: 900;
+		letter-spacing: 0.1em;
 	}
 
-	h3 {
-		font-size: 2.05em;
-		font-weight: 300;
-	}
+		h3 {
+			font-size: 1em;
+			font-weight: 900;
+			text-transform: uppercase;
+			letter-spacing: 0.15em;
+		}
 
 	h4 {
 		font-size: 0.9em;
@@ -666,7 +675,7 @@
 		display: table;
 		position: relative;
 		height: 100vh;
-		width: 100%;
+		width: 32em;
 		margin: 0 auto;
 		overflow: hidden;
 	}
@@ -676,15 +685,25 @@
 		}
 
 		#landing h1 {
-			font-size: 2.05em;
+			font-size: 2.5em;
 			font-weight: 700;
-			text-align: left;
+			text-align: justify;
+			text-align-last: justify;
+			text-transform: uppercase;
+			letter-spacing: 0.25em;
 			color: #fff;
 			text-shadow: 0 0 1.5em rgba(150, 150, 150, 1);
 		}
 
+		#landing h3 {
+			text-align: justify;
+			text-align-last: justify;
+			color: #fff;
+		}
+
 		#landing p {
-			text-align: left;
+			text-align: justify;
+			text-align-last: left;
 			color: #fff;
 			text-shadow: 0 0 0.85em rgba(150, 150, 150, 1);
 		}
@@ -694,80 +713,30 @@
 			color: #fff;
 		}
 
-		#landing h3 {
-			font-size: 2em;
-			font-weight: 100;
-			text-align: right;
-			color: #fff;
-		}
-
-		#landing-left {
+		.landing-box {
 			display: table-cell;
 			height: 100%;
 			width: 32em;
-			padding: 0 0 0 10em;
+			margin: 0 auto;
 			vertical-align: middle;
-			text-align: left;
+			text-align: center;
 		}
 
-			#landing-left p {
-				position: relative;
-				margin: 1em 0;
-				width: 80%;
-			}
-
 			@media screen and (max-width: 1200px) {
-				#landing-left {
-					padding: 3em;
+				.landing-box {
 				}
 			}
 
 			@media screen and (max-width: 736px) {
-				#landing-left {
+				.landing-box {
+				}
+			}
+
+			@media screen and (max-width: 512px) {
+				.landing-box {
+					width: 100%;
 					padding: 2em;
 				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing-left {
-					padding: 1em;
-				}
-			}
-
-		#landing-right {
-			display: table-cell;
-			height: 100%;
-			width: 35em;
-			padding: 0 10em 0 0;
-			vertical-align: middle;
-			text-align: right;
-		}
-
-			@media screen and (max-width: 1200px) {
-				#landing-right {
-					padding: 3em;
-				}
-			}
-
-			@media screen and (max-width: 736px) {
-				#landing-right {
-					padding: 2em;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				#landing-right {
-					padding: 1em;
-				}
-			}
-
-			#landing-right h3 {
-				text-shadow: 0 0 1em rgba(150, 150, 150, 1);
-				margin-bottom: 0;
-			}
-
-			#landing-right h3 a:hover {
-				color: #A7DBFF;
 			}
 
 /* /adventure BASIC */
@@ -4303,6 +4272,59 @@
 		border-bottom: transparent;
 	}
 
+/* /masculinity */
+
+#masculinity {
+	color: #151515;
+	background: url(../../img/masculinity/IMG_0683-JCR-900-grad-web.jpg) no-repeat top left -100px;
+	background-size: 900px auto;
+}
+
+	.masculinity-intro {
+		min-height: 600px;
+		margin-bottom: -3em;
+	}
+
+		.masculinity-intro h1 {
+				width: 100%;
+				margin-left: 593px;
+				padding-top: 2em;
+				font-size: 4em;
+				font-weight: 900;
+				text-align: left;
+				text-transform: uppercase;
+				letter-spacing: 0.2em;
+			}
+
+		.masculinity-intro p {
+				position: relative;
+				margin-left: 580px;
+				padding: 0 4em 0 1em;
+				font-family: 'Roboto', sans-serif;
+				text-align: justify;
+				text-align-last: left;
+				color: #151515;
+			}
+
+		.masculinity-intro h3 {
+			margin-left: 580px;
+			padding: 0 1em;
+			color: #151515;
+		}
+
+	a {
+		color: #151515;
+		text-decoration: underline;
+	}
+
+		a:hover {
+			color: #990099;
+		}
+
+			#masculinity a:hover {
+				color: #FF69B4;
+			}
+
 /* /freelancing TYPE */
 
 #freelancing-links {
@@ -4965,7 +4987,7 @@
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	background: url('../../img/joto/IMG_5328-JCR-1920-web.jpg') no-repeat fixed center;
+	background: url('../../img/masculinity/masculinity-header-1200-bw-web.jpg') no-repeat fixed center;
 }
 
 	#joto .text {

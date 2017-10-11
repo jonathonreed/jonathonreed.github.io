@@ -1,0 +1,863 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Bungee|Bungee+Inline|Bungee+Hairline");
+
+/* TABLE OF CONTENTS 
+	
+	|--	GENERAL	--|
+		RESET
+		BODY
+		LAYOUT
+		TYPE
+
+	|-- PLUGINS	--|
+		FONTAWESOME
+		SLIDESHOW
+
+	|-- PAGES	--|
+		LANDING
+		NOW
+		ADVENTURE
+		F16
+		MASCULINITY
+		FREELANCING
+	
+*/
+
+/* RESET */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+	pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+	small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, 
+	label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+	embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, 
+	mark, audio, video {
+		margin: 0;
+		padding: 0;
+		vertical-align: baseline;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+		-webkit-text-size-adjust: none;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+/* BODY											 */
+
+	html, body {
+		background-color: #fff;
+	}
+
+	body.is-loading-0 *, body.is-loading-0 *:before, body.is-loading-0 *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+/* LAYOUT */
+
+	#table {
+		display: table;
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	#table .cell {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	iframe {
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* WIDTH */
+	
+		#width100 {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		#width80 {
+			width: 80%;
+			margin: 5em auto;
+		}
+
+		#width60 {
+			width: 60%;
+			margin: 5em auto;
+		}
+
+		#width40 {
+			width: 40%;
+			margin: 0 auto;
+		}
+
+	/* MARGIN */
+
+		.verticalmargin5em {
+			margin: 5em auto;
+		}
+
+/* TYPE */
+
+	html {
+		font-size: 16pt;
+	}
+
+	@media screen and (max-width: 1680px) {
+
+		html {
+			font-size: 12pt;
+		}
+
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		html {
+			font-size: 12pt;
+		}
+
+	}
+
+	body, input, select, textarea {
+		color: #151515;
+		font-family: "Roboto", Helvetica, sans-serif;
+		font-size: 1em;
+		font-weight: 400;
+		line-height: 1.65;
+	}
+
+	a {
+		border-bottom: none;
+		color: inherit;
+		-moz-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		-webkit-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		-ms-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		text-decoration: none;
+	}
+
+		a:hover {
+			border-bottom-color: transparent;
+		}
+
+	strong, b {
+		font-weight: 400;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	/* TEXT STYLING */
+
+		/* COLOUR */
+
+			.white {
+				color: #fff;
+			}
+
+			.offblack {
+				color: #151515;
+			}
+
+		/* WEIGHT */
+
+			.heavy {
+				font-weight: 900;
+			}
+			
+			.light {
+				font-weight: 300;
+			}
+
+		/* STYLE */
+
+			.uppercase {
+				text-transform: uppercase;
+			}
+
+		/* ALIGNMENT */
+	
+			.alignjustify {
+				text-align: justify;
+				text-align-last: justify;
+			}
+
+			.alignjustifyparagraph {
+				text-align: justify;
+				text-align-last: left;
+			}
+
+			.alignleft {
+				text-align: left;
+			}
+
+			.alignright {
+				text-align: right;
+			}
+
+			.aligncenter {
+				text-align: center;
+			}
+
+		/* LETTER SPACING */
+
+			.letterspacing025em {
+				letter-spacing: 0.25em;
+			}
+
+			.letterspacing02em {
+				letter-spacing: 0.2em;
+			}
+
+			.letterspacing015em {
+				letter-spacing: 0.15em;
+			}
+
+			.letterspacing01em {
+				letter-spacing: 0.1em;
+			}
+
+	p {
+		margin: 1em auto;
+		font-weight: 300;
+		text-align: justify;
+		text-align-last: left;
+	}
+
+		p a {
+			text-decoration: underline;
+		}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 auto;
+		font-weight: 400;
+		line-height: 1.25;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	/* HEADER 1 */
+
+		h1 {
+			font-size: 2.5em;
+			font-weight: 700;
+		}
+
+			h1.size4em {
+				font-size: 4em;
+			}
+
+			h1.size10em {
+				font-size: 10em;
+			}
+
+				@media screen and (max-width: 1100px) {
+					h1.size10em {
+						font-size: 14vw;
+					}
+				}
+
+			h1.size20em {
+				font-size: 20em;
+			}
+
+				@media screen and (max-width: 1000px) {
+					h1.size20em {
+						font-size: 30vw;
+					}
+				}
+
+	/* HEADER 2 */
+
+		h2 {
+			font-size: 2em;
+			letter-spacing: 0.1em;
+		}
+
+	/* HEADER 3 */
+
+		h3 {
+			font-size: 1em;
+			font-weight: 900;
+			text-transform: uppercase;
+			letter-spacing: 0.15em;
+		}
+
+			h3.size135em {
+				font-size: 1.35em;
+			}
+
+	/* UNUSED HEADERS */
+
+		h4 {
+			font-size: 0.9em;
+		}
+
+		h5 {
+			font-size: 0.8em;
+		}
+
+		h6 {
+			font-size: 0.7em;
+		}
+
+	/* BLOCKQUOTE */
+
+		blockquote {
+			padding-left: 1.25em;
+			border-left: solid 0.35em #ddd;
+			font-style: italic;
+			font-weight: 300;
+		}
+
+			blockquote a {
+				text-decoration: underline;
+			}
+
+	/* LIST */
+
+		ol {
+			margin: 0 0 1.25em 0;
+			padding-left: 1.25em;
+			list-style: decimal;
+		}
+
+		ol li {
+			padding-left: 0.25em;
+		}
+
+		ul {
+			margin: 0 0 1.25em 0;
+			padding-left: 1em;
+			text-align: center;
+			list-style: disc;
+		}
+
+		ul li {
+			display: block;
+			padding-left: 0.5em;
+		}
+
+	/* UNUSED TEXT STYLES 
+
+		sub {
+			position: relative;
+			top: 0.5em;
+			font-size: 0.8em;
+		}
+
+		sup {
+			position: relative;
+			top: -0.5em;
+			font-size: 0.8em;
+		}
+
+		code {
+			margin: 0 0.25em;
+			padding: 0.25em 0.65em;
+			border: solid 1px #ccc;
+			border-radius: 4px;
+			font-family: "Courier New", monospace;
+			font-size: 0.9em;
+		}
+
+		pre {
+			margin: 0 0 1.25em 0;
+			font-family: "Courier New", monospace;
+			font-size: 0.9em;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		pre code {
+			display: block;
+			padding: 1em 1.5em;
+			overflow-x: auto;
+		}
+
+		i.light {
+			opacity: .5;
+			font-style: normal;
+		}
+
+	*/
+
+/* FONTAWESOME */
+
+	.icon {
+		position: relative;
+		border-bottom: none;
+		text-decoration: none;
+	}
+
+		.icon:before {
+			font-family: FontAwesome;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+	ul.icons {
+		padding-left: 0;
+		cursor: default;
+		list-style: none;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+		}
+
+			ul.icons li:last-child {
+				padding-right: 0;
+			}
+
+			ul.icons li .icon:before {
+				font-size: 1.5rem;
+			}
+
+/* SLIDESHOW */
+
+	.slideshow-container {
+		max-width: 100%;
+		position: relative;
+		margin: auto;
+	}
+
+	.mySlides {
+		display: none;
+	}
+
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -1.4em;
+		padding: 1em;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.4em;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		opacity: 0.5;
+	}
+
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.5);
+		color: #fff;
+		opacity: 1;
+	}
+
+	.dots {
+		position: absolute;
+		bottom: 0.5em;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.dot {
+		cursor: pointer;
+		display: inline-block;
+		height: 0.8em;
+		width: 0.8em;
+		margin: 0 0.1em;
+		padding: 0;
+		background-color: transparent;
+		border-radius: 50%;
+		border: 1px #fff solid;
+		transition: background-color 0.6s ease;
+		opacity: 0.5;
+	}
+
+	.dot:hover {
+		opacity: 1;
+	}
+
+	.active {
+		background-color: #fff;
+		opacity: 1;
+	}
+
+/* LANDING PAGE */
+
+	#landing {
+		display: table;
+		position: relative;
+		height: 100vh;
+		width: 32em;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+		#landing a:hover {
+			color: #A7DBFF;
+		}
+
+		#landing h1 {
+			text-shadow: 0 0 1.5em rgba(150, 150, 150, 1);
+		}
+
+		#landing p {
+			text-shadow: 0 0 0.85em rgba(150, 150, 150, 1);
+		}
+
+		#landing ul {
+			text-align: left;
+		}
+
+	.landing-box {
+		display: table-cell;
+		height: 100%;
+		width: 32em;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+		@media screen and (max-width: 1200px) {
+			.landing-box {
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.landing-box {
+			}
+		}
+
+		@media screen and (max-width: 512px) {
+			.landing-box {
+				width: 100%;
+				padding: 2em;
+			}
+		}
+
+/* GENERIC PAGE */
+
+	#generic a:hover {
+		color: #0083d5;
+	}
+
+/* ADVENTURE PAGE */
+
+	#adventure {
+	}
+
+		#adventure a:hover {
+			color: #ff9b0d;
+		}
+
+	.adventure-menu {
+		padding: 1em;
+	}
+
+		.adventure-menu a {
+			color: #ddd;
+		}
+
+	.adventure-header {
+		width: 100%;
+		height: 45em;
+		max-height: 1280px;
+		background: url(../../img/adventure/IMG_5608-JCR-1920-grad-web.jpg) no-repeat top center;
+		background-size: cover;
+		margin-top: 1em;
+	}
+
+		.adventure-header h1 {
+			color: #ff9b0d;
+			padding-top: 0em;
+		}
+
+				@media screen and (max-width: 550px) {
+					.adventure-intro h1 {
+						padding-top: 1em;
+					}
+				}
+
+		.link-box {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+			.link-box h3 {
+				color: #ff9b0d;
+				text-align: -webkit-center;
+			}
+
+				.link-box h3 a:hover {
+					background-color: #ff9b0d;
+					color: #fff !important;
+				}
+				
+	.adventure-box {
+		display: table-cell;
+		width: 100vw;
+		min-width: 100vh;
+		height: 25em;
+		max-height: 1280px;
+		padding: 1em;
+		vertical-align: bottom;
+		opacity: 0.5;
+		-moz-transition: 0.1s ease-out;
+		-webkit-transition: 0.1s ease-out;
+		-ms-transition: 0.1s ease-out;
+		transition: 0.1s ease-out;
+	}
+
+		.adventure-box:hover {
+			opacity: 1;
+		}
+
+	.box-01 {
+		background: url(../../img/adventure/IMG_6821-JCR-1920-web.jpg) no-repeat center left;
+		background-size: cover;
+	}
+
+	.box-02 {
+		background: url(../../img/adventure/IMG_7702-JCR-1920-web.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	/* F16 */
+
+	#f16 {
+	}
+
+	#f16 a:hover {
+		color: #3ca0d3;
+	}
+
+	.f16-header {
+		margin: 0px auto;
+		width: 100%;
+		overflow: hidden;
+	}
+
+		f16-header h1 {
+			padding: 0.35em 0 0.5em 0.2em;
+			font-family: 'Bungee Inline';
+			font-size: 7em;
+			color: #f86767;
+			font-weight: 400;
+			line-height: 1em;
+		}
+
+			@media screen and (max-width: 1200px) {
+				.f16-header h1 {
+					padding: 0.5em 0 0.5em 0.2em;
+					font-family: "Bungee";
+					font-size: 5.5em;
+				}
+			}
+
+			@media screen and (max-width: 740px) {
+				.f16-header h1 {
+					padding: 0.5em 0 0.25em 0.2em;
+					font-family: "Bungee";
+					font-size: 4em;
+				}
+			}
+
+			@media screen and (max-width: 540px) {
+				.f16-header h1 {
+					padding: 0.5em 0 0.5em 0.2em;
+					font-family: "Bungee";
+					font-size: 2.5em;
+				}
+			}
+
+		.f16-header h3 {
+			margin: -0.75em auto 1.25em auto;
+			font-family: 'Bungee Hairline';
+			font-size: 2.75em;
+			color: #3ca0d3;
+			font-weight: 300;
+		}
+
+			@media screen and (max-width: 1200px) {
+				.f16-header h3 {
+				}
+			}
+
+			@media screen and (max-width: 740px) {
+				.f16-header h3 {
+					font-size: 1.75em;
+				}
+			}
+
+			@media screen and (max-width: 540px) {
+				.f16-header h3 {
+					margin-bottom: 1em;
+					font-size: 1.75em;
+				}
+			}
+
+	iframe.f16 {
+		width:100%;
+		height:600px;
+		margin-bottom:1em;
+	}
+
+	#f16-embed {
+		display: block;
+		margin: 1em auto;
+		width: 900px;
+		text-align: center;
+	}
+
+		@media screen and (min-width: 900px) {
+			#f16-embed {
+			width: 900px;
+			}
+		}
+
+		@media screen and (min-width: 600px) and (max-width: 900px) {
+			#f16-embed {
+			width: 600px;
+			}
+		}
+
+		@media screen and (min-width: 300px) and (max-width: 600px) {
+			#f16-embed {
+			width: 300px;
+			}
+		}
+
+/* MASCULINITY PAGE */
+
+	#masculinity {
+		background: url(../../img/masculinity/IMG_0683-JCR-900-grad-web.jpg) no-repeat top left -100px;
+		background-size: 900px auto;
+	}
+
+		@media screen and (max-width: 620px) {
+			#masculinity {
+				background: url(../../img/masculinity/IMG_0683-JCR-900-grad-web.jpg) no-repeat top left -200px;
+				background-size: 900px auto;
+			}
+		}
+
+		#masculinity a {
+			color: #151515;
+		}
+
+			#masculinity a:hover {
+				color: #FF69B4;
+			}
+
+	.masculinity-intro {
+		min-height: 600px;
+		margin-left: 590px;
+	}
+
+		@media screen and (max-width: 1000px) {
+			.masculinity-intro {
+				width: 60%;
+				margin: 0 auto;
+				padding: 0 1em 0 1em;
+			}
+		}
+
+		.masculinity-intro h1 {
+			width: 100%;
+			padding-top: 2em;
+		}
+
+			@media screen and (max-width: 620px) {
+				.masculinity-intro h1 {
+					font-size: 8vw;
+					padding: 632px 0 0;
+				}
+			}
+
+			@media screen and (min-width: 620px) and (max-width: 1000px) {
+				.masculinity-intro h1 {
+					padding: 0.5em 0 7.6em;
+				}
+			}
+
+			@media screen and (min-width: 1000px) and (max-width: 1100px) {
+				.masculinity-intro h1 {
+					font-size: 5vw;
+				}
+			}
+
+		.masculinity-intro p {		
+			padding: 0 4em 0 0;
+		}
+
+			@media screen and (max-width: 1000px) {
+				.masculinity-intro p {
+					padding: 0;
+				}
+			}
+
+/* FREELANCING */
+
+.freelancing-header {
+	width: 100%;
+	height: 100vh;
+	min-height: 40em;
+	background: url(../../img/freelancing/IMG_0481-1920-web.jpg) no-repeat top center;
+	background-size: cover;
+}
+
+	.freelancing-header h1 {
+		padding: 0.5em;
+        color: transparent;
+        -webkit-text-stroke-width: 3px;
+       	-webkit-text-stroke-color: #ff9b0d;
+    	font-size: 8em;
+		line-height: 1;
+    }
+
+		@media screen and (max-width: 800px) {
+			.freelancing-header h1 {
+				font-size: 14vw;
+			}
+		}
+
+		.freelancing-header h1 span:hover {
+			color: #ff9b0d;
+		}

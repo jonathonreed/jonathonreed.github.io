@@ -9,183 +9,114 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link rel="stylesheet" href="../../assets/css/roboto.css" />
+<link rel="stylesheet" href="../../assets/css/newroboto.css" />
 <script src="https://use.fontawesome.com/b0b2f6ebf5.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.css' rel='stylesheet' />
 
 <link href="https://fonts.googleapis.com/css?family=|Bungee+Inline|Bungee+Hairline" rel="stylesheet">
 
 <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
-<script type="text/javascript" src="../../assets/js/instafeed.min.js"></script>
 <script type='text/javascript' src='https://500px.com/embed.js'></script>
 
 </head>
 
-<body class="override-links-f16">
+<body id="f16">
 
-<!-- Main -->
-<div id="main">
-
-	<!-- Header -->
-	<div id="adventure-wrapper">
-	<header id="adventure-header" class="alt">
-		<a href="../" class="adventure logo-f16"><strong>Adventure</strong><span>by Jonathon Reed</span></a>
-	</header>
-	</div>
-
-	<header id="f16-header">
-		<h1>American Southwest</h1>
-		<h3>Fall 2016</h3>
-		<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jonathonreed.18haj81n/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoiam9uYXRob25yZWVkIiwiYSI6ImNpc2c3Zjc4ZTAxcGIyeXZvbnV3eWNmMzIifQ.DUHfFfoG0m24UGVe-q7w6A'></iframe>
-	</header>
+<!-- MENU -->
+<div class="adventure-menu">
 	
-	<section id="f16-thumbnails">
-		<article>
-			<p>12,000 km. 44 days. 12 national parks. 3 bucket list items. 2 travellers. Crossing the Great Plains to the San Juan Mountains of the southern Rockies, across the Colorado Plateau to the Sierra Nevada of California. There are a lot of things this trip could be; the beginning of a career in adventure-based videography, a wake-up call for my sleeping passion for outdoor rock climbing, a taste of challenge to slake my thirst for adventure.</p>
-			<blockquote>&ldquo;There&rsquo;s a certain exhilaration in an open map. It&rsquo;s in the memories. Road lines bring to mind highway sunsets and interstate wind, topo bench marks make me think of mountain landscapes, and so on. And it&rsquo;s in the potential—a map can take you anywhere.&rdquo; — <a href="http://blog.jonathonreed.com/post/139022333307/open-roads-and-wild-pines">A post on my blog, 9 February 2016</a></blockquote>
-			<p>Evidently I could wax eloquent about wanderlust and my love for the wilderness. We both could. But I&rsquo;ll save that for journalling in the canyons of the Utah desert or underneath Yosemite&rsquo;s sequoia trees. So I&rsquo;ll leave it at that.</p>
-			<p>I set up this webpage to create a structure for experimental documentation in practice for <a href="http://astheravenfli.es">As the Raven Flies</a>, a duo cross-Canada bike tour in 2017 for Canada&rsquo;s 150th anniversary. Depending on satellites and batteries, the plan is to post photos on <a href="http://instagram.com/jonathonreed">Instagram</a> and <a href="http://500px.com/jonathonreed">500px</a>, write trip reports on <a href="https://jonathonreed.exposure.co">Exposure</a> and embed elements on this page. Once a marker on the map above turns red, you can click it for links and photos from that location.</p>
-		</article>
-	</section>
-
-	<section id="f16-thumbnails">
-	<iframe src="https://jonathonreed.exposure.co/sand-like-fire/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:0.5em;"></iframe>
-
-	<p></p>
-				
-	<iframe src="https://jonathonreed.exposure.co/mountain-silence/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:0.5em;"></iframe>
-
-	<p></p>
-
-	<iframe src="https://jonathonreed.exposure.co/invisible-rivers/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:0.5em;"></iframe>
-
-	<p></p>
-
-	<iframe src="https://jonathonreed.exposure.co/golden-stone/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:0.5em;"></iframe>
-
-	<p></p>
-
-	<iframe src="https://jonathonreed.exposure.co/sandstone-skies/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:0.5em;"></iframe>
-
-	<p></p>
-
-	<iframe src="https://jonathonreed.exposure.co/canyon-sanctuary/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:0.5em;"></iframe>
-
-	<p></p>
-
-	<iframe src="https://jonathonreed.exposure.co/blue-valley-red-sky/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:0.5em;"></iframe>
-
-	<p></p>
-
-	<iframe src="https://jonathonreed.exposure.co/desert-farewell/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:0.5em;"></iframe>
-
-	<p></p>
-
-	<iframe src="https://jonathonreed.exposure.co/mountain-farewell/embed/cover?embed=true" style="width:75%;height:600px;margin-bottom:5em;"></iframe>
-
-	<p></p>
-	</section>
-
-	<section id="f16-embed">
-		<article>
-			<div class='pixels-photo narrow'>
-  				<p>
-    				<img src='https://drscdn.500px.org/photo/173355339/m%3D900/7695e4b2d11e74108c79a0bfbffc0207' alt='Sunset above Green River by Jonathon Reed on 500px.com'>
-  				</p>
-  				<a href='https://500px.com/photo/173355339/sunset-above-green-river-by-jonathon-reed' alt='Sunset above Green River by Jonathon Reed on 500px.com'></a>
-			</div>
-  		</article>
-  	</section>
-
-  	<section id="f16-embed">
-		<article>
-			<div class='pixels-photo'>
-  				<p>
-    				<img src='https://drscdn.500px.org/photo/176196111/m%3D900/bd395432e74c5368f5b0d8e998fe0219' alt='First sunset on the south rim of Yosemite by Jonathon Reed on 500px.com'>
-  				</p>
-  				<a href='https://500px.com/photo/176196111/first-sunset-on-the-south-rim-of-yosemite-by-jonathon-reed' alt='First sunset on the south rim of Yosemite by Jonathon Reed on 500px.com'></a>
-			</div>
-  		</article>
-	</section>
-
-	<section id="f16-embed">
-		<article>
-			<div class='pixels-photo'>
-  				<p>
-    				<img src='https://drscdn.500px.org/photo/176324321/m%3D900/230e54e16841467bfd64b26e0a296dd4' alt='Alone with Half Dome and the sun by Jonathon Reed on 500px.com'>
-				</p>
-				<a href='https://500px.com/photo/176324321/alone-with-half-dome-and-the-sun-by-jonathon-reed' alt='Alone with Half Dome and the sun by Jonathon Reed on 500px.com'></a>
-			</div>
-  		</article>
-  	</section>
-
-  	<section id="f16-embed">
-		<article>
-			<div class='pixels-photo'>
-  				<p>
-    				<img src='https://drscdn.500px.org/photo/176838023/m%3D900/60aed835ef6a6c8994174028fa9f59d6' alt='Sunrise from the summit of Half Dome by Jonathon Reed on 500px.com'>
-  				</p>
-				<a href='https://500px.com/photo/176838023/sunrise-from-the-summit-of-half-dome-by-jonathon-reed' alt='Sunrise from the summit of Half Dome by Jonathon Reed on 500px.com'></a>
-			</div>
-  		</article>
-  	</section>
+	<h3><a href="../index.html">Back to jonathonreed.com/adventure</a></h3>
 	
-	<section id="f16-embed">
-		<article>
-			<div class='pixels-photo'>
-  				<p>
-    				<img src='https://drscdn.500px.org/photo/186173789/m%3D900/632f2042edcfffff1c19f3f3e4f6d1a1' alt='Taking in the sunrise from the North Rim by Jonathon Reed on 500px.com'>
-  				</p>
-				<a href='https://500px.com/photo/186173789/taking-in-the-sunrise-from-the-north-rim-by-jonathon-reed' alt='Taking in the sunrise from the North Rim by Jonathon Reed on 500px.com'></a>
-			</div>
-  		</article>
-  	</section>
+</div>
 	
-<script type='text/javascript' src='https://500px.com/embed.js'></script>
-
-	<div id="instafeed" class="centre">
-		<script type="text/javascript">
-			var userFeed = new Instafeed({
-			get: 'user',
-			userId: '6173400',
-			filter: function(image) {
-			return image.tags.indexOf('americansouthwest') >= 0;
-			},
-			sortBy: 'most-recent',
-			limit: 64,
-			resolution: 'standard_resolution',
-			template: '<a href="{{link}}"><img src="{{image}}" /></a>',
-			clientId: '4afcaf6c4dcf485ba519ecdbdbdc0918',
-			accessToken: '6173400.1677ed0.5e783764cc604ceca602eca01bf3812d',
-			});
-			userFeed.run();
-		</script>
-	</div>
-
-	<section id="f16-links">
-		<ul class="icons">
-			<li><a href="http://500px.com/jonathonreed" target="_blank" class="icon fa-500px"><span class="label">500px</span></a></li>
-			<li><a href="http://instagram.com/jonathonreed" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="mailto:jonathonreed@xplornet.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-		</ul>
-	</section>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<ul class="copyright">
-			<li>Jonathon Reed &copy; 2016<br><a href="../">jonathonreed.com/adventure</a></li>
-		</ul>
-	</footer>
+<!-- HEADER -->
+	
+<div class="f16-header">
+	
+	<h1 class="uppercase letterspacing02em aligncenter">American Southwest</h1>
+	<h3 class="aligncenter">Fall 2016</h3>
+	<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/jonathonreed.18haj81n/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoiam9uYXRob25yZWVkIiwiYSI6ImNpc2c3Zjc4ZTAxcGIyeXZvbnV3eWNmMzIifQ.DUHfFfoG0m24UGVe-q7w6A'></iframe>
 
 </div>
+	
+<!-- CONTENT -->
 
+<div id="width60">
+	
+	<p>12,000 km. 44 days. 12 national parks. 3 bucket list items. 2 travellers. Crossing the Great Plains to the San Juan Mountains of the southern Rockies, across the Colorado Plateau to the Sierra Nevada of California. There are a lot of things this trip was; the beginning of a career in adventure-based videography, a wake-up call for my sleeping passion for outdoor rock climbing, a taste of challenge to slake my thirst for adventure.</p>
+	<blockquote class="alignjustifyparagraph">&ldquo;There&rsquo;s a certain exhilaration in an open map. It&rsquo;s in the memories. Road lines bring to mind highway sunsets and interstate wind, topo bench marks make me think of mountain landscapes, and so on. And it&rsquo;s in the potential—a map can take you anywhere.&rdquo; — <a href="http://blog.jonathonreed.com/post/139022333307/open-roads-and-wild-pines">A post on my blog, 9 February 2016</a></blockquote>
+	<p>Evidently I could wax eloquent about wanderlust and my love for the wilderness. But I&rsquo;ll save that for my journal pages from the canyons of the Utah desert or underneath Yosemite&rsquo;s sequoia trees.</p>
+	<p>I set up this webpage to create a practice structure for practice documentation for a cross-Canada cycle expedition for Canada&rsquo;s 150th anniversary  in 2017. Depending on satellites and batteries aross the USA, the plan was to post photos on <a href="http://instagram.com/jonathonreed">Instagram</a> and <a href="https://500px.com/jonathonreed/galleries/american-southwest">500px</a>, write trip reports on <a href="https://jonathonreed.exposure.co/categories/american-southwest">Exposure</a> and embed elements on this page. Once a marker on the map above turned red, it became clickable with links and photos from that location.</p>
+	<p>There was an Instagram feed but it broke. I can&rsquo;t fix the map scroll because Mapbox Studio got updated.</p>
+	
+</div>
+	
+<!-- EMBEDS -->
+
+<div id="width60">
+
+	<iframe src="https://jonathonreed.exposure.co/sand-like-fire/embed/cover?embed=true" class="f16"></iframe>
+	<iframe src="https://jonathonreed.exposure.co/mountain-silence/embed/cover?embed=true" class="f16"></iframe>
+	<iframe src="https://jonathonreed.exposure.co/invisible-rivers/embed/cover?embed=true" class="f16"></iframe>	<iframe src="https://jonathonreed.exposure.co/golden-stone/embed/cover?embed=true" class="f16"></iframe>	<iframe src="https://jonathonreed.exposure.co/sandstone-skies/embed/cover?embed=true" class="f16"></iframe>	<iframe src="https://jonathonreed.exposure.co/canyon-sanctuary/embed/cover?embed=true" class="f16"></iframe><iframe src="https://jonathonreed.exposure.co/blue-valley-red-sky/embed/cover?embed=true" class="f16"></iframe>	<iframe src="https://jonathonreed.exposure.co/desert-farewell/embed/cover?embed=true" class="f16"></iframe>	<iframe src="https://jonathonreed.exposure.co/mountain-farewell/embed/cover?embed=true" class="f16"></iframe>
+	
+</div>
+
+<div id="f16-embed">
+	<div class='pixels-photo'>
+	<p>
+		<img src='https://drscdn.500px.org/photo/173355339/m%3D900/v2?webp=true&sig=69a09f9b2b747c62c523d273641c7a3f3e4c3dea42d958f9c90d3eef883fd796' alt='Sunset above Green River by Jonathon Reed on 500px.com'>
+	</p>
+	<a href='https://500px.com/photo/173355339/sunset-above-green-river-by-jonathon-reed' alt='Sunset above Green River by Jonathon Reed on 500px.com'></a>
+	</div>
+</div>
+<div id="f16-embed">
+	<div class='pixels-photo'>
+	<p>
+		<img src='https://drscdn.500px.org/photo/176196111/m%3D900/bd395432e74c5368f5b0d8e998fe0219' alt='First sunset on the south rim of Yosemite by Jonathon Reed on 500px.com'>
+	</p>
+	<a href='https://500px.com/photo/176196111/first-sunset-on-the-south-rim-of-yosemite-by-jonathon-reed' alt='First sunset on the south rim of Yosemite by Jonathon Reed on 500px.com'></a>
+	</div>
+</div>
+<div id="f16-embed">
+	<div class='pixels-photo'>
+	<p>
+		<img src='https://drscdn.500px.org/photo/176324321/m%3D900/230e54e16841467bfd64b26e0a296dd4' alt='Alone with Half Dome and the sun by Jonathon Reed on 500px.com'>
+	</p>
+	<a href='https://500px.com/photo/176324321/alone-with-half-dome-and-the-sun-by-jonathon-reed' alt='Alone with Half Dome and the sun by Jonathon Reed on 500px.com'></a>
+	</div>	
+</div>	
+<div id="f16-embed">
+	<div class='pixels-photo'>
+	<p>
+		<img src='https://drscdn.500px.org/photo/176838023/m%3D900/60aed835ef6a6c8994174028fa9f59d6' alt='Sunrise from the summit of Half Dome by Jonathon Reed on 500px.com'>
+	</p>
+	<a href='https://500px.com/photo/176838023/sunrise-from-the-summit-of-half-dome-by-jonathon-reed' alt='Sunrise from the summit of Half Dome by Jonathon Reed on 500px.com'></a>
+	</div>
+</div>
+<div id="f16-embed">
+	<div class='pixels-photo'>
+		<p>
+			<img src='https://drscdn.500px.org/photo/186173789/m%3D900/632f2042edcfffff1c19f3f3e4f6d1a1' alt='Taking in the sunrise from the North Rim by Jonathon Reed on 500px.com'>
+		</p>
+		<a href='https://500px.com/photo/186173789/taking-in-the-sunrise-from-the-north-rim-by-jonathon-reed' alt='Taking in the sunrise from the North Rim by Jonathon Reed on 500px.com'></a>
+	</div>
+</div>
+	
+<!-- CREDIT -->
+	
+<div id="width60">
+
+	<p><a href="../freelancing/">Original Story Design Co.</a> &copy; 2017</p>
+	
+</div>
+	
 <!-- Scripts -->
-<script src="../assets/js/jquery.min.js"></script>
-<script src="../assets/js/jquery.scrolly.min.js"></script>
-<script src="../assets/js/jquery.scrollex.min.js"></script>
-<script src="../assets/js/skel.min.js"></script>
-<script src="../assets/js/util.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/skel.min.js"></script>
+<script src="../../assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="../assets/js/main.js"></script>
+<script src="../../assets/js/main.js"></script>
 
 </body>
 
