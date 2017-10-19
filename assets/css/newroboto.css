@@ -195,6 +195,11 @@
 				font-weight: 300;
 			}
 
+			i.light {
+				opacity: .5;
+				font-style: normal;
+			}
+
 		/* STYLE */
 
 			.uppercase {
