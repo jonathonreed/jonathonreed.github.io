@@ -1,0 +1,61 @@
+.marker-cluster-small {
+	background-color: rgba(205, 51, 51, 0.6);
+	}
+.marker-cluster-small div {
+	background-color: rgba(205, 51, 51, 0.6);
+	}
+
+.marker-cluster-medium {
+	background-color: rgba(38, 70, 109, 0.6);
+	}
+.marker-cluster-medium div {
+	background-color: rgba(38, 70, 109, 0.6);
+	}
+
+.marker-cluster-large {
+	background-color: rgba(57, 80, 51, 0.6);
+	}
+.marker-cluster-large div {
+	background-color: rgba(57, 80, 51, 0.6);
+	}
+
+	/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+	background-color: rgb(205, 51, 51);
+	}
+.leaflet-oldie .marker-cluster-small div {
+	background-color: rgb(205, 51, 51);
+	}
+
+.leaflet-oldie .marker-cluster-medium {
+	background-color: rgb(38, 70, 109);
+	}
+.leaflet-oldie .marker-cluster-medium div {
+	background-color: rgb(38, 70, 109);
+	}
+
+.leaflet-oldie .marker-cluster-large {
+	background-color: rgb(57, 80, 51);
+	}
+.leaflet-oldie .marker-cluster-large div {
+	background-color: rgb(57, 80, 51);
+}
+
+.marker-cluster {
+	background-clip: padding-box;
+	border-radius: 20px;
+	}
+.marker-cluster div {
+	width: 30px;
+	height: 30px;
+	margin-left: 5px;
+	margin-top: 5px;
+
+	text-align: center;
+	border-radius: 15px;
+	font: 1.2em "Inconsolata", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	}
+.marker-cluster span {
+	line-height: 30px;
+	}
