@@ -1,0 +1,146 @@
+---
+layout: default
+---
+<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="section-padding--lg mast rellax" data-rellax-speed="-4">
+    <a class="nav nav--white" href="{{ site.baseurl }}/">
+      <i class="fa fa-lg fa-arrow-left"></i>
+      <span>Back to Posts</span>
+    </a>
+    <figure class="absolute-bg mast__img" style="background-image: url('{{ page.image }}');"></figure>
+    <div class="mast__container">
+      <span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+      <h1 itemprop="name headline">{{ page.title }}</h1>
+      {% if page.categories.size > 0 %}
+        <span>Posted in 
+          {% for category in page.categories %}
+            <a class="nav--white" href="{{ site.baseurl }}/category/{{ category | downcase | slugify }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </span>
+      {% endif %}
+      <span></span>
+    </div>
+  </header>
+
+  <section class="section-padding bg-grey" itemprop="articleBody">
+    <div class="post">
+        
+    {% if page.beginning %}<section class="log">
+		<div class="log__card">
+    <center>
+      <div class="content-description">
+      <p>
+        {% if page.beginning %}{{ page.beginning }} to {% if page.middle %}{{ page.middle }} to {% endif %}{{ page.end }}<br>{% endif %}
+        {% if page.territory %}{{ page.territory }}<br>{% endif %}
+        {% if page.distance %}{{ page.distance }}<br>{% endif %}
+        {% if page.weather %}{{ page.weather }}<br>{% endif %}
+      </p>
+	</div>
+    </center>
+		</div>
+  </section>{% endif %}
+        
+      {{ content }}
+    </div>
+  </section>
+
+  <section class="profile">
+    {% if page.author == 'jcr' %}
+      <div class="profile__card">
+        <div class="profile__img">
+          <figure class="absolute-bg" style="background-image: url('{{ site.jcr-profile_img }}');"></figure>
+        </div>
+        <div class="profile__container">
+          <p>{{ site.jcr-profile }}</p>
+          {% if site.jcr-email or site.jcr-social %}
+            <ul class="profile__social">
+              {% if site.jcr-email %}
+                <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.jcr-email }}"></a></li>
+              {% endif %}
+              {% for jcr-social in site.jcr-social %}
+                <li><a class="fa fa-lg fa-{{ jcr-social[0] }}" href="{{ jcr-social[1] }}" target="_blank"></a></li>
+              {% endfor %}
+            </ul>
+          </div>
+      </div>
+      {% endif %}
+    {% endif %}
+    {% if page.author == 'ac' %}
+    <div class="profile__card">
+      <div class="profile__img">
+        <figure class="absolute-bg" style="background-image: url('{{ site.ac-profile_img }}');"></figure>
+      </div>
+      <div class="profile__container">
+        <p>{{ site.ac-profile }}</p>
+        {% if site.ac-email or site.ac-social %}
+          <ul class="profile__social">
+            {% if site.ac-email %}
+              <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.ac-email }}"></a></li>
+            {% endif %}
+            {% for ac-social in site.ac-social %}
+              <li><a class="fa fa-lg fa-{{ ac-social[0] }}" href="{{ ac-social[1] }}" target="_blank"></a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endif %}
+	  {% if page.author == 'chat' %}
+    <div class="profile__card">
+      <div class="profile__img">
+        <figure class="absolute-bg" style="background-image: url('{{ site.chat-profile_img }}');"></figure>
+      </div>
+      <div class="profile__container">
+        <p>{{ site.chat-profile }}</p>
+        {% if site.chat-email or site.chat-social %}
+          <ul class="profile__social">
+            {% if site.chat-email %}
+              <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.chat-email }}"></a></li>
+            {% endif %}
+            {% for chat-social in site.chat-social %}
+              <li><a class="fa fa-lg fa-{{ chat-social[0] }}" href="{{ chat-social[1] }}" target="_blank"></a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endif %}
+      </div>
+    </div>
+  </section>
+
+	<section class="subscribe">
+		<div class="subscribe__card">
+    <center>
+      <div class="content-description">
+      <p>
+        Subscribe to follow along on our 6-month journey across Canada.
+      </p>
+      <div id="mc_embed_signup">
+        <form action="//chairsandtables.us8.list-manage.com/subscribe/post?u=87f9433afeb437ef7994a4495&amp;id=7d01c7600c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_87f9433afeb437ef7994a4495_7d01c7600c" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
+      </div>
+	</div>
+    </center>
+		</div>
+		
+		<div class="disqus">
+		{% include disqus.html %}
+		</div>
+  </section>
+	
+</article>
+
+{% if page.previous.url %}
+  <section class="next">
+    <a class="next__link" href="{{page.previous.url | prepend: site.baseurl }}" style="background-image: url('{{ page.previous.image }}');">
+      <div class="next__container">
+        <span>Read Next</span>
+        <h2>{{page.previous.title}}</h2>
+      </div>
+    </a>
+  </section>
+{% endif %}

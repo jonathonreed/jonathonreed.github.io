@@ -1,0 +1,62 @@
+# Site settings
+email: jcr@chairsandtables.org
+baseurl: "//jonathonreed.com/adventure/atrf/journal"
+paginate: 5
+paginate_path: "/blog/page-:num"
+google_analytics: UA-97711783-2
+
+# SEO settings
+title: As the Raven Flies Journal
+description: 
+url: ""
+twitter_username: 
+default_img: 
+
+# Profile settings
+name: 
+profile_img: 
+profile: 
+social:
+facebook: http://facebook.com/chairsandtablesorg
+twitter: http://twitter.com/chairstablesorg
+instagram: http://instagram.com/chairstablesorg
+
+ac-name: Asad Chishti
+ac-profile_img: http://jonathonreed.com/adventure/atrf/img/journal/IMG_8521-JCR-2000-web.jpg
+ac-profile: Asad is an inventor with his head up in the clouds and his feet down in the dirt.
+ac-social: 
+  facebook: https://www.facebook.com/chishti.asad
+  twitter: http://twitter.com/asad_ch
+  500px: http://500px.com/asad_ch
+  instagram: http://instagram.com/asad_ch
+  
+jcr-name: Jonathon Reed
+jcr-profile_img: http://jonathonreed.com/adventure/atrf/img/journal/IMG_0010-JCR-2000-web.jpg
+jcr-profile: Jonathon is a semi-professional adventurer with roots in education and activism.
+jcr-social:
+  facebook: http://facebook.com/jonathonreed
+  twitter: http://twitter.com/jonathoncomfort
+  500px: http://500px.com/jonathonreed
+  instagram: http://instagram.com/jonathonreed
+  vimeo: http://vimeo.com/jonathonreed
+  
+chat-name: Chairs and Tables
+chat-profile_img: http://jonathonreed.com/adventure/atrf/img/journal/IMG_9553-JCR-1920-web.jpg
+chat-profile: We&rsquo;re Jonathon Reed and Asad Chishti. Chairs and Tables is the name we operate under for collaborative work.
+chat-social:
+  facebook: http://facebook.com/chairsandtablesorg
+  twitter: http://twitter.com/chairstablesorg
+  instagram: http://instagram.com/chairstablesorg
+
+# Build settings
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock", "LICENSE.txt", "README.md", "vendor"]
+include: ["_categories"]
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Sass
+sass:
+  style: compressed
+
+# Gems
+gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]

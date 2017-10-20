@@ -1,0 +1,22 @@
+/* LETTER SPACING */
+
+%letter-spacing {
+	font-family: $font-header;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+/* BLACK COLOR OVERLAY */
+
+%overlay {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+
+	background-color: rgba($color-black, 0.2);
+	transition: background-color 0.4s ease-in-out;
+}
