@@ -1,8 +1,8 @@
 # Site settings
-email: jcr@chairsandtables.org
-baseurl: "//jonathonreed.com/adventure/atrf/journal"
+email: jonathonreed@xplornet.com
+baseurl: ""
 paginate: 5
-paginate_path: "/blog/page-:num"
+paginate_path: "/blog/page/:num"
 google_analytics: UA-97711783-2
 
 # SEO settings
