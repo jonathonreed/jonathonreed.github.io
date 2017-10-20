@@ -7,7 +7,7 @@ date: 2017-05-05
 categories:
   - Masculinity
 description: Smoke and sincerity.
-image: http://astheravenfli.es/journal/img/2017/05/IMG_0776-atrf-jcr-2000-web.jpg
+image: http://jonathonreed.com/adventure/atrf/journal/img/2017/05/IMG_0776-atrf-jcr-2000-web.jpg
 image-sm:
 ---
 
@@ -17,6 +17,6 @@ After he cussed out a sixteen year old we were hanging out with, I asked if they
 
 He gave the other teenager a guileless smile. "We say he's one of the boys."
 
-<img src="http://astheravenfli.es/journal/img/2017/05/IMG_0770-atrf-jcr-2000-web.jpg">
+<img src="http://jonathonreed.com/adventure/atrf/journal/img/2017/05/IMG_0770-atrf-jcr-2000-web.jpg">
 
 In collaboration with <a href="http://nextgenmen.ca" target="blank">Next Gen Men</a>. On Facebook <a href="https://www.facebook.com/chairsandtablesorg/photos/a.440181209457967.1073741828.258601667615923/937374326405317/?type=3&theater" target="blank">here</a>.
