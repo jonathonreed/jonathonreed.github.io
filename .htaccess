@@ -3,7 +3,7 @@
 #Redirect to www location with subdirectory
 RewriteEngine on
 RewriteCond %{REQUEST_URI} ^/updates/(.*)$
-RewriteRule ^(.*)$ http://www.tinyletter.com/jonathonreed/index.html [R=301,NC]
+RewriteRule ^(.*)$ http://www.tinyletter.com/jonathonreed/ [R=301,NC]
 
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks

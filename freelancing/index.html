@@ -29,23 +29,35 @@
 	<span>Design<br></span>
 	<span>Co.</span></h1>
 	
+	<h2>
+		<a href="#content"><img src="../assets/img/down-orange.png"></a>
+	</h2>
+	
 </div>
 	
 <!-- INTRO -->
 	
-<div id="width60">
+<a name="content">
+	
+<div id="width60"  class="verticalpadding5em">
 
-	<p>Multidisciplinary visual storytelling. More to come.</p>
+	<p>Multidisciplinary visual storytelling. More detail to come.</p>
 	<ul class="offblack alignleft icons">
 		<li><a href="http://facebook.com/originalstorydesignco" target="_blank" class="icon fa-facebook-square"><span class="label">Facebook</span></a></li>
 		<li><a href="http://twitter.com/originalstoryco" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 		<li><a href="http://instagram.com/originalstorydesignco/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 	</ul>
-	<h3><a href="../index.html">Back to jonathonreed.com</a> / <a href="../contact/index.html">Contact</a></h3>
+	<h3><a href="../">Back to jonathonreed.com</a> / <a href="../contact/">Contact</a></h3>
 	
 </div>
 	
 <!-- CONTENT -->
+
+<div id="width60" class="bottompadding2em">
+	
+	<h1 class="heavy uppercase alignleft letterspacing01em">Past Projects</h1>
+	
+</div>
 
 <div class="opacity05">
 	
@@ -68,6 +80,7 @@
 	
 		<div class="captiontext">
 		<h2 class="heavy uppercase white">As the Raven Flies</h2>
+		<h3 class="toppadding1em white opacity05">Graphic Design / Web Design / Photography</h3>
 		<p class="white">As the Raven Flies was a 15,000 km cycle expedition across Canada focused on discovering and documenting lesser-heard histories and experiences as part of Canada’s 150th anniversary in 2017. In the months leading up to the cycle tour, I designed the project’s visual identity for use in a dedicated website and Kickstarter campaign.</p>
 		<h3 class="white"><a href="../adventure/atrf/">Website</a> / <a href="https://www.behance.net/gallery/57892521/As-the-Raven-Flies" target="_blank">View on Behance</a></h3>
 		</div>
@@ -76,11 +89,13 @@
 	
 </div>
 	
-<div id="width60">
+<div id="width60"  class="verticalpadding5em">
 	
 	<p><a href="">Original Story Design Co.</a> &copy; 2017</p>
 	
 </div>
+	
+</a>
 
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -112,6 +127,16 @@
     slider.play(); 
     slider.pause();    
   });
+</script>
+	
+<script>
+$('a[href^="#"]').click(function () {
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
+
+    return false;
+});
 </script>
 
 </body>

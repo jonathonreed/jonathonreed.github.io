@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Bungee|Bungee+Inline|Bungee+Hairline");
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Bungee|Bungee+Inline|Bungee+Hairline");
 
 /* TABLE OF CONTENTS 
 	
@@ -107,7 +107,7 @@
 
 		#width60 {
 			width: 60%;
-			margin: 5em auto;
+			margin: 0 auto;
 		}
 
 		#width40 {
@@ -121,19 +121,33 @@
 			margin: 5em auto;
 		}
 
+	/* PADDING */
+
+		.verticalpadding5em {
+			padding: 5em 0;
+		}
+
+		.bottompadding2em {
+			padding: 0 0 2em 0;
+		}
+
+		.toppadding1em {
+			padding: 1em 0 0 0;
+		}
+
 	/* EFFECTS */
 
-	.opacity05 {
-		opacity: 0.5;
-		-moz-transition: 0.1s ease-out;
-		-webkit-transition: 0.1s ease-out;
-		-ms-transition: 0.1s ease-out;
-		transition: 0.1s ease-out;
-	}
+		.opacity05 {
+			opacity: 0.5;
+			-moz-transition: 0.1s ease-out;
+			-webkit-transition: 0.1s ease-out;
+			-ms-transition: 0.1s ease-out;
+			transition: 0.1s ease-out;
+		}
 
-	.opacity05:hover {
-		opacity: 1;
-	}
+			.opacity05:hover {
+				opacity: 1;
+			}
 
 /* TYPE */
 
@@ -884,6 +898,28 @@
 				-ms-transition: 0.1s ease-out;
 				transition: 0.1s ease-out;
 			}
+	
+		.freelancing-header h2 {
+			position: absolute;
+			bottom: 1em;
+			width: 100%;
+			margin: 0 auto;
+			color: #ff9b0d;
+			text-align: center;
+			opacity: 0.5;
+			-webkit-transition: opacity 0.35s linear 0s;
+			transition: opacity 0.35s linear 0s;
+		}
+
+			.freelancing-header h2:hover {
+				opacity: 1;
+			}
+
+				@media screen and (max-height: 650px) {
+					.freelancing-header h2 {
+						display: none;
+					}
+				}
 
 	#projectcaption {
 		width: 100%;
