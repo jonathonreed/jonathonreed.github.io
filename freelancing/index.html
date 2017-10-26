@@ -11,6 +11,10 @@
 
 	<link rel="stylesheet" href="../assets/css/newroboto.css" />
 	<script src="https://use.fontawesome.com/b0b2f6ebf5.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="../assets/css/lightslider.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="../assets/js/lightslider.js"></script>
 
 </head>
 
@@ -28,13 +32,87 @@
 </div>
 	
 <!-- INTRO -->
-
+	
 <div id="width60">
 
-	<p>Update on its way.</p>
+	<p>Multidisciplinary visual storytelling. More to come.</p>
+	<ul class="offblack alignleft icons">
+		<li><a href="http://facebook.com/originalstorydesignco" target="_blank" class="icon fa-facebook-square"><span class="label">Facebook</span></a></li>
+		<li><a href="http://twitter.com/originalstoryco" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		<li><a href="http://instagram.com/originalstorydesignco/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+	</ul>
 	<h3><a href="../index.html">Back to jonathonreed.com</a> / <a href="../contact/index.html">Contact</a></h3>
 	
 </div>
+	
+<!-- CONTENT -->
+
+<div class="opacity05">
+	
+	<ul id="autoWidth" class="cS-hidden">
+		<li class="atrf-01">
+			<img src="../img/freelancing/atrf-logo-400-web.jpg">
+		</li>
+		<li class="atrf-02">
+			<img src="../img/freelancing/IMG_8704-JCR-600-72-web.jpg">
+		</li>
+		<li class="atrf-03">
+			<img src="../img/freelancing/atrf-poster-400-web.jpg">
+		</li>
+		<li class="atrf-04">
+			<img src="../img/freelancing/preview-journal-400-web.jpg">
+		</li>
+	</ul>
+	
+	<div id="projectcaption" class="atrf">
+	
+		<div class="captiontext">
+		<h2 class="heavy uppercase white">As the Raven Flies</h2>
+		<p class="white">As the Raven Flies was a 15,000 km cycle expedition across Canada focused on discovering and documenting lesser-heard histories and experiences as part of Canada’s 150th anniversary in 2017. In the months leading up to the cycle tour, I designed the project’s visual identity for use in a dedicated website and Kickstarter campaign.</p>
+		<h3 class="white"><a href="../adventure/atrf/">Website</a> / <a href="https://www.behance.net/gallery/57892521/As-the-Raven-Flies" target="_blank">View on Behance</a></h3>
+		</div>
+		
+	</div>
+	
+</div>
+	
+<div id="width60">
+	
+	<p><a href="">Original Story Design Co.</a> &copy; 2017</p>
+	
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#lightSlider").lightSlider(); 
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#autoWidth').lightSlider({
+			autoWidth:true,
+			slideMargin: 0,
+			pager: false,
+			loop:true,
+			onSliderLoad: function() {
+				$('#autoWidth').removeClass('cS-hidden');
+			} 
+		});  
+	});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var slider = $("#lightSlider").lightSlider();
+    slider.goToSlide(3);
+    slider.goToPrevSlide();
+    slider.goToNextSlide();
+    slider.getCurrentSlideCount();
+    slider.refresh();
+    slider.play(); 
+    slider.pause();    
+  });
+</script>
 
 </body>
 
