@@ -121,6 +121,10 @@
 			margin: 5em auto;
 		}
 
+		.bottommargin2em {
+			margin: 0 0 2em 0;
+		}
+
 	/* PADDING */
 
 		.verticalpadding5em {
@@ -930,6 +934,10 @@
 			background-color: #878787;
 		}
 
+		.wpp {
+			background-color: #2d526d;
+		}
+
 		.captiontext {
 			width: 60%;
 			margin: 1em auto;
@@ -945,4 +953,18 @@
 			.atrf-02 { width:600px; }
 			.atrf-03 { width:667px; }
 			.atrf-04 { width:667px; }
+		}
+
+	.wpp-01 { width:1137px; padding: 0; }
+	.wpp-02 { width:600px; padding: 0; }
+	.wpp-03 { width:600px; padding: 0; }
+	.wpp-04 { width:600px; padding: 0; }
+	.wpp-05 { width:600px; padding: 0; }
+
+		@media (max-width: 768px) {
+			.wpp-01 { width:1137px; }
+			.wpp-02 { width:600px; }
+			.wpp-03 { width:600px; }
+			.wpp-04 { width:600px; }
+			.wpp-04 { width:600px; }
 		}
