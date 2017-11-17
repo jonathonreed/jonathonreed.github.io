@@ -127,6 +127,10 @@
 
 	/* PADDING */
 
+		.toppadding5em {
+			padding: 5em 0 0 0;
+		}
+
 		.verticalpadding5em {
 			padding: 5em 0;
 		}
@@ -137,6 +141,13 @@
 
 		.toppadding1em {
 			padding: 1em 0 0 0;
+		}
+
+	/* SPACE */
+
+		.2em {
+			display: block;
+			height: 2em;
 		}
 
 	/* EFFECTS */
@@ -693,7 +704,7 @@
 
 	.box-02 {
 		background: url(../../img/adventure/IMG_7702-JCR-1920-web.jpg) no-repeat center center;
-		background-size: cover;
+		background-size: cover;;
 	}
 
 	/* F16 */
