@@ -139,24 +139,32 @@
 
 	/* PADDING */
 
+		.verticalpadding5em {
+			padding: 5em 0;
+		}
+
+		.toppadding1em {
+			padding-top: 1em;
+		}
+
+		.toppadding3em {
+			padding-top: 3em;
+		}
+
 		.toppadding5em {
 			padding-top: 5em;
 		}
 
-		.bottompadding5em {
-			padding-bottom: 5em;
-		}
-
-		.verticalpadding5em {
-			padding: 5em 0;
+		.bottompadding0em {
+			padding-bottom: 0em;
 		}
 
 		.bottompadding2em {
 			padding-bottom: 2em;
 		}
 
-		.toppadding1em {
-			padding-top: 1em;
+		.bottompadding5em {
+			padding-bottom: 5em;
 		}
 
 	/* SPACE */
