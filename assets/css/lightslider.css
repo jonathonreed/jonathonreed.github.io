@@ -76,30 +76,33 @@
 
 /* Pager */
 .lSSlideOuter .lSPager.lSpg {
-    margin: 10px 0 0;
-    padding: 0;
+    position: relative;
+	margin-top: -30px !important;
+    padding-bottom: 30px;
     text-align: center;
 }
 .lSSlideOuter .lSPager.lSpg > li {
     cursor: pointer;
     display: inline-block;
+	background-color: transparent;
     padding: 0 5px;
 }
 .lSSlideOuter .lSPager.lSpg > li a {
-    background-color: #222222;
+    background-color: transparent;
+	border: 1px #fff solid;
     border-radius: 30px;
     display: inline-block;
-    height: 8px;
+    height: 10px;
     overflow: hidden;
     text-indent: -999em;
-    width: 8px;
+    width: 10px;
     position: relative;
     z-index: 99;
     -webkit-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
-    background-color: #428bca;
+    background-color: #fff;
 }
 .lSSlideOuter .media {
     opacity: 0.8;
