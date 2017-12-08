@@ -973,6 +973,10 @@
 			background-color: #2d526d;
 		}
 
+		.tqu {
+			background-color: #333333;
+		}
+
 		.captiontext {
 			width: 60%;
 			margin: 1em auto;
@@ -1001,7 +1005,33 @@
 			.wpp-02 { width:600px; }
 			.wpp-03 { width:600px; }
 			.wpp-04 { width:600px; }
-			.wpp-04 { width:600px; }
+			.wpp-05 { width:600px; }
+		}
+
+	.tqu-01 { width:400px; padding: 0; }
+	.tqu-02 { width:280px; padding: 0; }
+	.tqu-03 { width:259px; padding: 0; }
+	.tqu-04 { width:522px; padding: 0; }
+	.tqu-05 { width:243px; padding: 0; }
+	.tqu-06 { width:600px; padding: 0; }
+	.tqu-07 { width:600px; padding: 0; }
+	.tqu-08 { width:600px; padding: 0; }
+	.tqu-09 { width:600px; padding: 0; }
+	.tqu-10 { width:600px; padding: 0; }
+	.tqu-11 { width:600px; padding: 0; }
+
+		@media (max-width: 768px) {
+			.tqu-01 { width:400px; }
+			.tqu-02 { width:280px; }
+			.tqu-03 { width:259px; }
+			.tqu-04 { width:522px; }
+			.tqu-05 { width:243px; }
+			.tqu-06 { width:600px; }
+			.tqu-07 { width:600px; }
+			.tqu-08 { width:600px; }
+			.tqu-09 { width:600px; }
+			.tqu-10 { width:600px; }
+			.tqu-11 { width:600px; }
 		}
 
 .portraits {width: 900px; padding: 0;}
