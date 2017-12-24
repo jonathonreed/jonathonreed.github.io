@@ -1416,6 +1416,10 @@ label {
 			margin: 0 auto 5em auto;
 		}
 
+		#page p.center {
+			text-align-last: center;
+		}
+
 		#page p.white {
 			color: #ffffff;
 		}
