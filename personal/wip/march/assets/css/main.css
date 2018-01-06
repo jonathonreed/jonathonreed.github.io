@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rokkitt:900,400,300|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Rokkitt:900,400,300|Open+Sans:300');
 
 /* TABLE OF CONTENTS 
 	
@@ -100,7 +100,7 @@ h3 {
 
 p {
 	margin-bottom: 1em;
-	font-family: Muli;
+	font-family: Open Sans;
 	font-weight: 300;
 	line-height: 1.2;
 	text-align: justify;
@@ -166,7 +166,8 @@ p.last {
 		}
 
 			.black-red a {
-				color: #fe3e00;
+				color: #FA1D2F;
+				text-decoration: none;
 			}
 
 			.black-red a:hover {
