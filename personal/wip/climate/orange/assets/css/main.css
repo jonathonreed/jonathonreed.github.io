@@ -94,23 +94,23 @@
 		font-style: italic;
 	}
 
-h3 {
-	font-family: Muli;
-	font-weight: 600;
-}
+	h3 {
+		font-family: Muli;
+		font-weight: 600;
+	}
 
-p {
-	margin-bottom: 1em;
-	font-family: Muli;
-	font-weight: 300;
-	line-height: 1.2;
-	text-align: justify;
-	text-align-last: left;
-}
+	p {
+		margin-bottom: 1em;
+		font-family: Muli;
+		font-weight: 300;
+		line-height: 1.2;
+		text-align: justify;
+		text-align-last: left;
+	}
 
-p.last {
-	margin-bottom: 0;
-}
+		p.last {
+			margin-bottom: 0;
+		}
 
 	/* SPECIFIC STYLING */
 
@@ -118,12 +118,16 @@ p.last {
 			text-align: center;
 		}
 
-		.fontsize3em {
+		.fontsize25em {
 			font-size: 2.5em;
 		}
 
 		.fontsize5em {
 			font-size: 5em;
+		}
+
+		.fontsize6em {
+			font-size: 6em;
 		}
 
 		.fontsize10em {
@@ -132,6 +136,10 @@ p.last {
 
 		.white-red {
 			color: #fff;
+			-moz-transition: color 0.1s ease-out;
+			-webkit-transition: color 0.1s ease-out;
+			-ms-transition: color 0.1s ease-out;
+			transition: color 0.1s ease-out;
 		}
 
 			.white-red:hover {
@@ -140,6 +148,10 @@ p.last {
 
 			.white-red a {
 				color: #fff;
+				-moz-transition: color 0.1s ease-out;
+				-webkit-transition: color 0.1s ease-out;
+				-ms-transition: color 0.1s ease-out;
+				transition: color 0.1s ease-out;
 			}
 
 			.white-red a:hover {
@@ -148,6 +160,10 @@ p.last {
 
 		.red-black {
 			color: #fe3e00;
+			-moz-transition: color 0.1s ease-out;
+			-webkit-transition: color 0.1s ease-out;
+			-ms-transition: color 0.1s ease-out;
+			transition: color 0.1s ease-out;
 		}
 
 			.red-black:hover {
@@ -156,6 +172,10 @@ p.last {
 
 			.red-black a {
 				color: #fe3e00;
+				-moz-transition: color 0.1s ease-out;
+				-webkit-transition: color 0.1s ease-out;
+				-ms-transition: color 0.1s ease-out;
+				transition: color 0.1s ease-out;
 			}
 
 			.red-black a:hover {
@@ -164,10 +184,18 @@ p.last {
 
 		.black-red {
 			color: #151515;
+			-moz-transition: color 0.1s ease-out;
+			-webkit-transition: color 0.1s ease-out;
+			-ms-transition: color 0.1s ease-out;
+			transition: color 0.1s ease-out;
 		}
 
 			.black-red a {
 				color: #fe3e00;
+				-moz-transition: color 0.1s ease-out;
+				-webkit-transition: color 0.1s ease-out;
+				-ms-transition: color 0.1s ease-out;
+				transition: color 0.1s ease-out;
 			}
 
 			.black-red a:hover {
@@ -185,27 +213,16 @@ p.last {
 		width: 100vw;
 	}
 
-	.arrowdown {
-		position: absolute;
-		bottom: 0.5em;
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-	}
+	/* SPECIFIC STYLING */
 
-/* WIDTH */
+		.width60 {
+			width: 60%;
+			margin: 0 auto;
+		}
 
-.width60 {
-	width: 60%;
-	margin: 0 auto;
-}
-
-/* MARGINS */
-
-.marginbottom5em {
-	margin-bottom: 5em;
-}
-
+		.marginbottom7em {
+			margin-bottom: 7em;
+		}
 
 /* SPECIFIC PAGES */
 
@@ -259,44 +276,120 @@ p.last {
 			}
 		}
 
+	.arrowdown {
+		position: absolute;
+		bottom: 0.5em;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
 /* MENU */
+/* SOURCE https://codepen.io/EvyatarDa/pen/waKXMd */
 
-div.container
-{
+	div.container {
+		padding: 2.5em 3em;
+		background-color: #fe3e00;
+		font-family: Muli;
+		font-size: 1.25em;
+		font-weight: 700;
+		text-align: center;
+		color: #fff;
+	}
+
+	div.container a.menu {
+		position: relative;
+		margin: 0 1em;
+		padding: 0.5em 1em;
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+		z-index: 0;
+	}
+
+	div.topbottombordersin a:before, div.topbottombordersin a:after {
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		height: 2px;
+		background: #FFF;
+		content: "";
+		opacity: 0;
+		transition: all 0.3s;
+	}
+
+	div.topbottombordersin a:before {
+		top: 0px;
+		transform: translateY(-10px);
+	}
+
+	div.topbottombordersin a:after {
+		bottom: 0px;
+		transform: translateY(10px);
+	}
+
+	div.topbottombordersin a:hover:before, div.topbottombordersin a:hover:after {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+/* FOOTER */
+
+	div.footer {
+		display: table;
+		width: 100vw;
+		padding: 2.5em 0;
+		background-color: #fe3e00;
+		font-family: Muli;
+		font-size: 1.25em;
+		font-weight: 700;
+		color: #fff;
+	}
+
+div.footer .cellleft {
+	display: table-cell;
+	height: 100%;
+	width: 20%;
 	margin: 0 auto;
-	padding: 2.5em 3em 4.5em;
-	font-family: Muli;
-	font-size: 1.25em;
-	font-weight: 700;
-	text-align: center;
-	color: #fe3e00;
+	padding-left: 30%;
+	text-align: left;
+	vertical-align: middle;
 }
 
-div.container a.menu
-{
-    position: relative;
-    margin: 0 1em;
-    padding: 1em;
-	color: #fe3e00;
-	text-decoration: none;
-	cursor: pointer;
-	z-index: 0;
+div.footer .cellright {
+	display: table-cell;
+	height: 100%;
+	width: 20%;
+	margin: 0 auto;
+	padding-right: 30%;
+	text-align: right;
+	vertical-align: middle;
 }
 
-div.pullDown a:before
-{
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    top: 0px;
-    content: '';
-    background: rgba(254, 62, 0, 0.45);
-    opacity: 0.3;
-    transition: all 0.3s;
-}
+	div.footer a.footer {
+		position: relative;
+		display: block;
+		padding: 0.35em 1em;
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+		z-index: 0;
+	}
 
-div.pullDown a:hover:before
-{
-    height: 100%;
-}
+	div.footer a.social {
+		position: relative;
+		display: inline;
+		padding: 0.2em;
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+		z-index: 0;
+	}
+
+	div.footer a:hover {
+		opacity: 0.75;
+		-moz-transition: opacity 0.1s ease-out;
+		-webkit-transition: opacity 0.1s ease-out;
+		-ms-transition: opacity 0.1s ease-out;
+		transition: opacity 0.1s ease-out;
+	}
