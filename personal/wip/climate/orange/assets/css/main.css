@@ -169,9 +169,11 @@
 			transition: color 0.1s ease-out;
 		}
 
+			/* 
 			.white-red:hover {
 				color: #fe3e00;
 			}
+			*/
 
 			.white-red a {
 				color: #fff;
@@ -418,7 +420,7 @@
 		height: 100%;
 		width: 20%;
 		margin: 0 auto;
-		padding-left: 30%;
+		padding-left: 25%;
 		text-align: left;
 		vertical-align: middle;
 	}
@@ -439,7 +441,7 @@
 		height: 100%;
 		width: 20%;
 		margin: 0 auto;
-		padding-right: 30%;
+		padding-right: 25%;
 		text-align: right;
 		vertical-align: middle;
 	}
