@@ -602,6 +602,14 @@
 		overflow: hidden;
 	}
 
+@media screen and (max-width: 35em) {
+	
+	#landing {
+		width: 100%;
+	}
+	
+}
+
 		#landing a:hover {
 			color: #A7DBFF;
 		}
@@ -632,14 +640,21 @@
 			}
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 750px) {
 			.landing-box {
 			}
 		}
 
-		@media screen and (max-width: 512px) {
+		@media screen and (max-width: 600px) {
 			.landing-box {
 				width: 100%;
+				padding: 2em;
+			}
+		}
+
+		@media screen and (max-width: 350px) {
+			.landing-box {
+				width: 80%;
 				padding: 2em;
 			}
 		}
