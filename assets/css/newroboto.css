@@ -344,6 +344,12 @@
 			font-weight: 700;
 		}
 
+		@media screen and (max-width: 350px) {
+			h1 {
+				font-size: 2em;
+			}
+		}
+
 			h1.size4em {
 				font-size: 4em;
 			}
@@ -599,16 +605,14 @@
 		height: 100vh;
 		width: 32em;
 		margin: 0 auto;
-		overflow: hidden;
 	}
 
-@media screen and (max-width: 35em) {
-	
-	#landing {
-		width: 100%;
-	}
-	
-}
+		@media screen and (max-width: 35em) {
+			#landing {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
 
 		#landing a:hover {
 			color: #A7DBFF;
@@ -629,7 +633,7 @@
 	.landing-box {
 		display: table-cell;
 		height: 100%;
-		width: 32em;
+		width: 100%;
 		margin: 0 auto;
 		vertical-align: middle;
 		text-align: center;
@@ -645,8 +649,9 @@
 			}
 		}
 
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 35em) {
 			.landing-box {
+				max-width: 100%;
 				width: 100%;
 				padding: 2em;
 			}
@@ -654,8 +659,9 @@
 
 		@media screen and (max-width: 350px) {
 			.landing-box {
-				width: 80%;
-				padding: 2em;
+				max-width: 100%;
+				width: 100%;
+				padding: 1em;
 			}
 		}
 
