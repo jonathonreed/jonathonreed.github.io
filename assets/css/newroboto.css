@@ -738,6 +738,14 @@
 		transition: 0.1s ease-out;
 	}
 
+@media screen and (max-width: 800px) {
+	.adventure-box {
+		min-width: 100%;
+		max-width: 100%;
+		width: 100%:
+	}
+}
+
 		.adventure-box:hover {
 			opacity: 1;
 		}
