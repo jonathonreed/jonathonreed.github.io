@@ -961,7 +961,7 @@
 				}
 			}
 
-			@media screen and (max-width: 750px) {
+			@media screen and (max-width: 825px) {
 				.freelancing-header h1 {
 					font-size: 5.5em;
 				}
