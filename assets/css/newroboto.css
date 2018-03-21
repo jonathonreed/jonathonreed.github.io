@@ -123,6 +123,7 @@
 			@media screen and (max-width: 900px) {
 				.width900px {
 					width: 100%;
+					max-width: 100%;
 				}
 			}
 
@@ -942,10 +943,11 @@
 		min-height: 40em;
 		background: url(../../img/freelancing/IMG_0481-1920-web.jpg) no-repeat top center;
 		background-size: cover;
+		word-wrap: break-word;
 	}
 
 		.freelancing-header h1 {
-			padding: 0.5em;
+			padding: 0.5em 0.5em 2em 0.5em;
 			color: transparent;
 			-webkit-text-stroke-width: 3px;
 			-webkit-text-stroke-color: #ff9b0d;
@@ -953,9 +955,21 @@
 			line-height: 1;
 		}
 
-			@media screen and (max-width: 800px) {
+			@media screen and (min-width: 1200px) {
 				.freelancing-header h1 {
-					font-size: 14vw;
+					font-size: 10em;
+				}
+			}
+
+			@media screen and (max-width: 750px) {
+				.freelancing-header h1 {
+					font-size: 5.5em;
+				}
+			}
+
+			@media screen and (max-height: 800px) {
+				.freelancing-header h1 {
+					font-size: 4.5em;
 				}
 			}
 
@@ -1063,4 +1077,14 @@
 			.tqu-11 { width:600px; }
 		}
 
-.portraits {width: 900px; padding: 0;}
+.portraits {
+	display: inline-block;
+	max-width: 900px;
+	padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+	ul.noMargin {
+		display: none;
+	}
+}
