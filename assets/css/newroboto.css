@@ -1034,12 +1034,16 @@
 	.atrf-02 { width:600px; padding: 0; }
 	.atrf-03 { width:667px; padding: 0; }
 	.atrf-04 { width:667px; padding: 0; }
+	.atrf-05 { width:259px; padding: 0; }
+	.atrf-06 { width:600px; padding: 0; }
 
 		@media (max-width: 768px) {
 			.atrf-01 { width:400px; }
 			.atrf-02 { width:600px; }
 			.atrf-03 { width:667px; }
 			.atrf-04 { width:667px; }
+			.atrf-05 { width:259px; }
+			.atrf-06 { width:600px; }
 		}
 
 	.wpp-01 { width:1137px; padding: 0; }
