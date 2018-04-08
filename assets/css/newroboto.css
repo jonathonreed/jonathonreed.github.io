@@ -159,6 +159,10 @@
 			padding-bottom: 0rem;
 		}
 
+		.padding-bottom-1rem {
+			padding-bottom: 1rem;
+		}
+
 		.padding-bottom-2rem {
 			padding-bottom: 2rem;
 		}
@@ -896,7 +900,7 @@
 		}
 
 			#masculinity a:hover {
-				color: #FF69B4;
+				color: #8f6e8b;
 			}
 
 		#masculinity img {
@@ -912,7 +916,7 @@
 	}
 
 		.masculinity-header h1 {
-			color: #151515;
+			color: #8f6e8b;
 			padding-top: 0rem;
 		}
 
@@ -1097,3 +1101,40 @@
 			display: none;
 		}
 	}
+
+/* SPEAKING PAGE */
+
+
+	#speaking {
+	}
+
+		#speaking a {
+			color: #151515;
+		}
+
+			#speaking a:hover {
+				color: #828e81;
+			}
+
+		#speaking img {
+			width: 100%;
+		}
+
+	.speaking-header {
+		width: 100%;
+		height: 45rem;
+		max-height: 1280px;
+		background: url(../../img/speaking/IMG_8876-JCR-1920-72-web.jpg) no-repeat bottom center;
+		background-size: cover;
+	}
+
+		.speaking-header h1 {
+			color: #828e81;
+			padding-top: 0rem;
+		}
+
+			@media screen and (max-width: 550px) {
+				.speaking-header h1 {
+					padding-top: 3rem;
+				}
+			}
