@@ -958,9 +958,15 @@
 				}
 			}
 
-			@media screen and (max-width: 400px) and (max-height: 800px) {
+			@media screen and (max-width: 400px) {
 				.freelancing-header h1 {
 					font-size: 4.5em;
+				}
+			}
+
+			@media screen and (max-height: 800px) {
+				.freelancing-header h1 {
+					font-size: 7.5em;
 				}
 			}
 
@@ -1101,6 +1107,26 @@
 			display: none;
 		}
 	}
+
+	.logo-gallery {
+		width: 95%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+		.logo-gallery img {
+			filter: gray;
+			-webkit-filter: grayscale(1);
+			-moz-transition: all 0.1s ease-out;
+			-webkit-transition: all 0.1s ease-out;
+			-ms-transition: all 0.1s ease-out;
+			transition: all 0.1s ease-out;
+		}
+
+			.logo-gallery img:hover {
+				filter: none;
+				-webkit-filter: grayscale(0);
+			}
 
 /* SPEAKING PAGE */
 
