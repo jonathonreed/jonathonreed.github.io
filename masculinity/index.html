@@ -11,6 +11,8 @@
 
 	<link rel="stylesheet" href="../assets/css/newroboto.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </head>
 
@@ -20,17 +22,25 @@
 	
 <div class="masculinity-header">
 	
-	<h1 class="size-8rem heavy uppercase align-center letter-spacing-05rem">Masculinity</h1>
+	<div class="masculinity-box">
+	<h1 class="size-4rem heavy uppercase align-center letter-spacing-1rem">Masculinity</h1>
+	</div>
+	
+	<h2>
+		<a href="#content"><img src="../assets/img/down-white.png"></a>
+	</h2>
 	
 </div>
 
 <!-- CONTENT -->
+	
+<a name="content">
 
 <div id="width-60" class="padding-vertical-5rem">
 
 	<p>I have a degree in outdoor education and years of experience working with young people. I&rsquo;ve worked as a head counsellor at a summer camp, taught in schools, volunteered in at-risk youth mentoring programs and coordinated a festival&rsquo;s youth program. I&rsquo;ve facilitated slam poetry workshops. I&rsquo;ve intervened in suicide attempts. You get it.</p>
-	<p>Throughout my professional experience I&rsquo;ve studied gender and masculinity, and I&rsquo;ve seen firsthand the consequences of hegemonic masculinity. Things like isolation, bravado, violence and misogyny. Because of this, I believe that raising boys in ways that are more connected and nurturing is a critical step towards improving the mental health of boys and men, as well as ending violence against women. This doesn&rsquo;t mean undermining boys&rsquo; masculine identities. It means expanding their definitions of manhood.</p>
-	<p>As a young man who is skilled at building strong, authentic relationships with boys, and versed in gender theory related to masculinities, I believe that I have a valuable role to play in the movement for gender justice. Not a unique one, of course. But a valuable one.</p>
+	<p>Throughout my professional experience I&rsquo;ve studied gender and masculinity, and I&rsquo;ve seen firsthand the effects of quote-unquote toxic masculinity. Things like isolation, bravado, violence and misogyny. Because of this, I believe that raising boys in ways that are more connected and nurturing is a critical step towards improving the mental health of boys and men, as well as ending violence against women. This doesn&rsquo;t mean undermining boys&rsquo; masculine identities. It means expanding their definitions of manhood.</p>
+	<p>As a young man who is skilled at building strong, authentic relationships with boys, and versed in gender theory related to masculinities, I believe that I have a valuable role to play in the movement for gender justice.</p>
 	<h3 class="padding-bottom-2rem"><a href="../">Back to jonathonreed.com</a> / <a href="../contact/">Contact</a></h3>
 	
 	<a href="http://breakingtheboycode.com" target="_blank"><img src="../img/masculinity/btbc-logo-1000-web.png"></a>
@@ -46,7 +56,7 @@
 	<h2 class="heavy uppercase">Speaking and Workshops</h2>
 	<p>In various places I&rsquo;ve been asked to share my knowledge and skills with fellow educators, summer camp staff as well as with boys themselves. My availability depends on other freelancing- and adventure-based work I&rsquo;m pursuing, but offering leadership in training peers and young people is something that is definitely important to me.</p>
 	<p>I&rsquo;ve run inservice trainings discussing masculinity within outdoor education, focusing mainly on the impact of traditional masculinity on boys&rsquo; experiences with education, emotional literacy, sports and homophobia. As part of my role as head counsellor I&rsquo;ve facilitated staff training sessions on masculinity culture at summer camp, as well as activities for boys ages 10-16, discussing the &lsquo;mask&rsquo; of masculinity and the importance of emotional connection.</p>
-	<p>These are just a couple examples. I&rsquo;m flexible. Visit <a href="../speaking/">jonathonreed.com/speaking</a> or contact me if you&rsquo;re interested in discussing further.</p>
+	<p>These are just a couple examples. I&rsquo;m flexible. Contact me if you&rsquo;re interested in discussing further.</p>
 
 	<h2 class="heavy uppercase">Writing</h2>
 	<p class="final">My writing about masculinity has been featured on Medium, The Good Men Project and Ravishly. Subjects have included boyhood masculinity, homophobia, transgender youth, feminism and gender justice. I write on a <a href="https://medium.com/breaking-the-boy-code" target="_blank">Medium publication</a> as part of the Breaking the Boy Code project.</p>
@@ -61,4 +71,18 @@
 	
 </div>
 	
+</a>
+	
+<script>
+$('a[href^="#"]').click(function () {
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
+
+    return false;
+});
+</script>	
+
 </body>
+	
+</html>
