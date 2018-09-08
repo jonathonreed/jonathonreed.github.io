@@ -907,24 +907,34 @@
 		}
 
 	.masculinity-header {
-		width: 100%;
+		display: table;
+		position: relative;
 		height: 100vh;
-		max-height: 1280px;
+		width: 100vw;
+		margin: 0 auto;
 		background: url(../../img/masculinity/IMG_0496-HDR-JCR-1920-web.jpg) no-repeat top center;
 		background-size: cover;
 	}
 
 		.masculinity-header h1 {
-			color: #fff;
-			padding-top: 0rem;
-			text-align: center;
-			text-align-last: center;
+			color: #ff9b0d;
+			padding: 0 2rem;
+			font-size: 10rem;
+			text-align: justify;
+			text-align-last: justify;
 			word-wrap: break-word;
+			opacity: 0.3;
 		}
 
-			@media screen and (max-width: 550px) {
+			@media screen and (max-width: 775px) {
 				.masculinity-header h1 {
-					padding-top: 3rem;
+					font-size: 8rem;
+				}
+			}
+
+			@media screen and (max-width: 500px) {
+				.masculinity-header h1 {
+					font-size: 6rem;
 				}
 			}
 
@@ -935,13 +945,9 @@
 		margin: 0 auto;
 		color: #ff9b0d;
 		text-align: center;
-		opacity: 0.5;
+		opacity: 0.3;
 		-webkit-transition: opacity 0.35s linear 0s;
 		transition: opacity 0.35s linear 0s;
-	}
-
-	.masculinity-header img {
-		max-width: 32px;
 	}
 
 		.masculinity-header h2:hover {
@@ -954,22 +960,18 @@
 				}
 			}
 	
-	.masculinity-box {
-		top: 9rem;
-		position: relative;
-		border: 6px #fff solid;
-		height: 26rem;
-		width: 42rem;
-		margin: 0 auto;
-		text-align: center;
-		text-align-last: center;
+	.masculinity-header img {
+		max-width: 32px;
 	}
-
-		@media screen and (max-width: 700px) {
-			.masculinity-box {
-				width: 90%;
-			}
-		}
+	
+	.masculinity-box {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
 
 /* FREELANCING PAGE */
 
