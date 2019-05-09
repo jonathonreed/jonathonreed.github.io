@@ -323,8 +323,8 @@
 				letter-spacing: 0.25rem;
 			}
 
-			.letter-spacing-05rem {
-				letter-spacing: 0.5rem;
+			.letter-spacing-03rem {
+				letter-spacing: 0.3rem;
 			}
 
 			.letter-spacing-1rem {
@@ -522,12 +522,18 @@
 
 	ul.icons {
 		padding-left: 0;
+		font-weight: 300;
 		cursor: default;
 		list-style: none;
 	}
 
+		ul.masculinity {
+			margin-bottom: -0.5rem;
+		}
+
 		ul.icons li {
 			display: inline-block;
+			font-size: 1.3rem;
 			padding: 0 1rem 0 0;
 		}
 
@@ -906,35 +912,56 @@
 			width: 100%;
 		}
 
-	.masculinity-header {
-		display: table;
-		position: relative;
-		height: 100vh;
-		width: 100vw;
+	.masculinity-box {
+		width: 80%;
 		margin: 0 auto;
-		background: url(../../img/masculinity/IMG_0496-HDR-JCR-1920-web.jpg) no-repeat top center;
-		background-size: cover;
+		text-align: center;
 	}
 
-		.masculinity-header h1 {
-			color: #ff9b0d;
-			padding: 0 2rem;
-			font-size: 10rem;
-			text-align: justify;
-			text-align-last: justify;
+	.masculinity-header {
+		max-width: 50rem;
+		width: 75%;
+		margin: 5rem auto 0 auto;
+		padding: 0;
+		background: url(../../img/masculinity/IMG_4398-JCR-3300-300-web.jpg) no-repeat;
+		background-position: center -2.25rem;
+		background-size: 50rem;
+	}
+
+		.masculinity-header h1.masculinity-text {
+			margin: 0 auto;
+			padding: 0;
+			background: #fff;
+			color: #000;
+			font-size: 9.75rem;
+			text-align: center;
+			text-align-last: center;
 			word-wrap: break-word;
-			opacity: 0.3;
+			line-height: 0.8;
+			mix-blend-mode: lighten;
 		}
 
-			@media screen and (max-width: 775px) {
-				.masculinity-header h1 {
+			@media screen and (max-width: 620px) {
+				.masculinity-header h1.masculinity-text {
+					padding: 1rem;
+					background: transparent;
+					color: #fff;
 					font-size: 8rem;
+
 				}
 			}
 
-			@media screen and (max-width: 500px) {
-				.masculinity-header h1 {
-					font-size: 6rem;
+			@media screen and (max-width: 590px) {
+				.masculinity-header {
+					width: 100%;
+					max-width: 100%;
+				}
+				
+				.masculinity-header h1.masculinity-text {
+					min-height: 20rem;
+					font-size: 6.5rem;
+					line-height: 1;
+					vertical-align: middle;
 				}
 			}
 
@@ -964,14 +991,6 @@
 		max-width: 32px;
 	}
 	
-	.masculinity-box {
-		display: table-cell;
-		height: 100%;
-		width: 100%;
-		margin: 0 auto;
-		vertical-align: middle;
-		text-align: center;
-	}
 
 /* FREELANCING PAGE */
 
