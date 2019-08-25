@@ -56,7 +56,7 @@ body {
 } */
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 	font-style: normal;
 }
@@ -1032,7 +1032,7 @@ label {
 	padding: 0.75em 0.5 0 0.5;
 	background-color: #cd3333;
 	color: #ffffff;
-	font-family: 'Open Sans';
+	font-family: 'Source Sans Pro';
 	font-weight: 300;
 	font-size: 1em;
 	text-align: center;
@@ -1056,7 +1056,7 @@ label {
 		padding: 0.75em 0.5 0 0.5;
 		background-color: #cd3333;
 		color: #ffffff;
-		font-family: 'Open Sans';
+		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		font-size: 1em;
 		text-align: center;
@@ -1880,7 +1880,7 @@ label {
 		clear:left;
 		width:100%;
 		padding: 2em 0 2em 0;
-		font-family: 'Open Sans';
+		font-family: 'Source Sans Pro';
 		font-size: 1em;
 	}
 
@@ -1905,7 +1905,7 @@ label {
 		-moz-border-radius: 0px;
 		border-radius: 0px;
 		background-color: #fff;
-		font-family: 'Open Sans';
+		font-family: 'Source Sans Pro';
 		font-size: 1em;
 		color: #343434;
 		vertical-align: top;
@@ -1935,7 +1935,7 @@ label {
 		-moz-border-radius: 0px;
 		border-radius: 0px;
 		background-color: transparent;
-		font-family: 'Open Sans';
+		font-family: 'Source Sans Pro';
 		font-weight: 400;
 		font-size: 1em;
 		color: #ffffff;
