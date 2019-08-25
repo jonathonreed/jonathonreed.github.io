@@ -56,7 +56,9 @@ body {
 } */
 
 body {
-	font-family: "Open Sans";
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
 a {
@@ -103,7 +105,7 @@ nav {
 		display: inline-block;
 		padding-top: 0;
 		font-family: 'Inconsolata';
-		font-weight: 700;
+		font-weight: 400;
 		text-transform: uppercase;
 	}
 
@@ -366,7 +368,7 @@ nav {
 	height: 14em;
 	width: 100%;
 	margin: 0 auto;
-	font-family: "Oswald";
+	font-family: 'Oswald';
 	font-size: 1.5em;
 	text-transform: uppercase;
 	z-index:20;
