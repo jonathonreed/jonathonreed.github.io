@@ -51,7 +51,7 @@
 		list-style: none;
 	}
 
-/* BODY											 */
+/* BODY */
 
 	html, body {
 		background-color: #fff;
@@ -133,6 +133,10 @@
 			margin: 5rem auto;
 		}
 
+		.margin-top-neg3rem {
+			margin-top: -6rem;
+		}
+
 		.margin-bottom-2rem {
 			margin: 0 0 2rem 0;
 		}
@@ -184,6 +188,10 @@
 			.opacity-05:hover {
 				opacity: 1;
 			}
+
+		.background-white {
+			background: #fff;
+		}
 
 /* TYPE */
 
@@ -697,8 +705,12 @@
 		}
 
 	.adventure-menu {
-		padding: 1rem;
+		padding-left: 1rem;
 	}
+
+		.adventure-menu h3 {
+			line-height: 3rem;
+		}
 
 		.adventure-menu a {
 			color: #eee;
@@ -794,6 +806,11 @@
 
 	.box-02 {
 		background: url(../../img/adventure/IMG_7702-JCR-1920-web.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	.box-03 {
+		background: url(../../img/adventure/IMG_9590-JCR-1920-web.jpg) no-repeat center center;
 		background-size: cover;
 	}
 
@@ -898,6 +915,122 @@
 
 		@media screen and (min-width: 300px) and (max-width: 600px) {
 			#f16-embed {
+			width: 300px;
+			}
+		}
+
+	/* 66N PAGE */
+
+	#north {
+	}
+
+	#north a:hover {
+		color: #3ca0d3;
+	}
+
+	.north-header {
+		margin: 0px auto;
+		width: 100%;
+		height: 100%;
+		background: #fff url('../../img/adventure/IMG_9590-JCR-1920-web.jpg') no-repeat center;
+	}
+
+		.north-header h1 {
+			padding: 5rem 0;
+			font-family: 'Rubik Mono One', sans-serif;
+			font-size: 10rem;
+			color: #c83406;
+			font-weight: 400;
+			line-height: 1;
+		}
+
+			@media screen and (max-width: 1000px) {
+				.north-header h1 {
+					padding: 6rem 0;
+					font-size: 8rem;
+				}
+			}
+
+			@media screen and (max-width: 740px) {
+				.north-header h1 {
+					padding: 7rem 0;
+					font-size: 6rem;
+				}
+			}
+
+			@media screen and (max-width: 540px) {
+				.north-header h1 {
+					padding: 2rem 0;
+					font-size: 5rem;
+				}
+			}
+
+			@media screen and (max-height: 500px) {
+				.north-header h1 {
+					padding: 3rem 0;
+					font-size: 8rem;
+				}
+			}
+
+		.north-header h3 {
+			position: absolute;
+			bottom: 6rem;
+			width: 100%;
+			margin: 0 auto;
+			font-family: 'Rubik Mono One', sans-serif;
+			text-align: center;
+			font-size: 1.5rem;
+			color: #fff;
+			font-weight: 300;
+			letter-spacing: 1rem;
+		}
+
+			@media screen and (min-height: 500px) {
+				.north-header h3.north-h3-vertical {
+					display: block;
+				}
+				.north-header h3.north-h3-horizontal {
+					display: none;
+				}	
+			}
+
+			@media screen and (max-height: 500px) {
+				.north-header h3.north-h3-vertical {
+					display: none;
+				}
+				.north-header h3.north-h3-horizontal {
+					display: block;
+					bottom: 7.5rem;
+				}	
+			}
+
+	iframe.north {
+		width: 100%;
+		height: 600px;
+		margin-bottom: 1rem;
+	}
+
+	#north-embed {
+		display: block;
+		margin: 1em auto;
+		width: 900px;
+		text-align: center;
+	}
+
+		@media screen and (min-width: 900px) {
+			#north-embed {
+			width: 900px;
+			}
+		}
+
+		@media screen and (min-width: 600px) and (max-width: 900px) {
+			#north-embed {
+			width: 600px;
+			}
+		}
+
+		@media screen and (min-width: 300px) and (max-width: 600px) {
+			#north-embed {
 			width: 300px;
 			}
 		}
