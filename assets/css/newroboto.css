@@ -888,6 +888,14 @@
 				}
 			}
 
+.f16-header .map-overlay {
+	opacity: .5;
+}
+
+.f16-header .map-overlay:hover {
+	opacity: 1;
+}
+
 	iframe.f16 {
 		width: 100%;
 		height: 600px;
