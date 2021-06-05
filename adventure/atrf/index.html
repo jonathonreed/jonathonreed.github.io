@@ -93,9 +93,13 @@ ga('send', 'pageview');
 	
 <script>
 	
-L.mapbox.accessToken = 'pk.eyJ1Ijoiam9uYXRob25yZWVkIiwiYSI6ImNpc2c3Zjc4ZTAxcGIyeXZvbnV3eWNmMzIifQ.DUHfFfoG0m24UGVe-q7w6A';
-var mapLeaflet = L.mapbox.map('map-leaflet', 'mapbox.light')
-.setView([51, -75], 4.5);
+mapboxgl.accessToken = 'pk.eyJ1Ijoiam9uYXRob25yZWVkIiwiYSI6ImNpc2c3Zjc4ZTAxcGIyeXZvbnV3eWNmMzIifQ.DUHfFfoG0m24UGVe-q7w6A';
+var map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [51, -75], // starting position [lng, lat]
+zoom: 4.5 // starting zoom
+});
 
 
 var route = omnivore.kml('./assets/map/atrf-route.xml', null, L.geoJson(null, {
@@ -106,7 +110,6 @@ var route = omnivore.kml('./assets/map/atrf-route.xml', null, L.geoJson(null, {
 		};
 	}
 }));
-
 	
 route.on('ready', function() {
         mapLeaflet.fitBounds(route.getBounds());
