@@ -7,12 +7,12 @@
 	
 <meta charset='utf-8' />
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<meta property="og:image" content="http://jonathonreed.me/adventure/atrf/img/thumb/with-logo/IMG_9701-logo-2000-72-web.jpg" />
+<meta property="og:image" content="http://jonathonreed.com/adventure/atrf/img/thumb/with-logo/IMG_9701-logo-2000-72-web.jpg" />
 	
 <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon.ico">
 	
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
 	
 <!-- LEAFLET FOR KML -->
 <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
@@ -92,15 +92,12 @@ ga('send', 'pageview');
 <div id='map-leaflet' class='map'></div>
 	
 <script>
+	
+L.mapbox.accessToken = 'pk.eyJ1Ijoiam9uYXRob25yZWVkIiwiYSI6ImNpc2c3Zjc4ZTAxcGIyeXZvbnV3eWNmMzIifQ.DUHfFfoG0m24UGVe-q7w6A';
+var mapLeaflet = L.mapbox.map('map-leaflet')
+.setView([51, -75], 4.5)
+.addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'));
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoiam9uYXRob25yZWVkIiwiYSI6ImNpc2c3Zjc4ZTAxcGIyeXZvbnV3eWNmMzIifQ.DUHfFfoG0m24UGVe-q7w6A';
-
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/jonathonreed/cj1dys2vp000p2roy4s0j3x9d',
-  center: [51, -75],
-  zoom: 4.5
-});
 
 var route = omnivore.kml('./assets/map/atrf-route.xml', null, L.geoJson(null, {
 	style: function(layer) {
