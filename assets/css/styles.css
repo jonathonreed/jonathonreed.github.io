@@ -614,7 +614,7 @@
 		}
 
 		#landing a:hover {
-			color: #A7DBFF;
+			opacity:0.75;
 		}
 
 		#landing h1 {
@@ -675,16 +675,16 @@
 	#adventure {
 	}
 
-		#adventure a:hover {
-			color: #ff9b0d;
-		}
-
 	.adventure-quote {
 		width: 80%;
         height: 20vh;
         margin: 0 auto -9rem;
         color: #ff9b0d;
 	}
+
+        .adventure-quote a:hover {
+			opacity: 0.75;
+		}
 
         @media screen and (min-width: 1250px) {
             .adventure-quote h1 {
