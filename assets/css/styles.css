@@ -1,0 +1,786 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Bungee|Bungee+Inline|Bungee+Hairline");
+
+/* TABLE OF CONTENTS 
+	
+	|--	GENERAL	--|
+		RESET
+		BODY
+		LAYOUT
+		TYPE
+
+	|-- PLUGINS	--|
+		FONTAWESOME
+		SLIDESHOW
+
+	|-- PAGES	--|
+		LANDING
+		NOW
+		ADVENTURE
+		F16
+		MASCULINITY
+		FREELANCING
+	
+*/
+
+/* RESET */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+	pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+	small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, 
+	label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+	embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, 
+	mark, audio, video {
+		margin: 0;
+		padding: 0;
+		vertical-align: baseline;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+		-webkit-text-size-adjust: none;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+/* BODY */
+
+	html, body {
+		background-color: #fff;
+	}
+
+	body.is-loading-0 *, body.is-loading-0 *:before, body.is-loading-0 *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+/* LAYOUT */
+
+	#table {
+		display: table;
+		position: relative;
+		height: 100vh;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	#table .cell {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	iframe {
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* WIDTH */
+	
+		#width-100 {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		#width-80 {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		#width-60 {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		#width-40 {
+			width: 40%;
+			margin: 0 auto;
+		}
+
+		.width-900px {
+			width: 900px;
+			margin: 0 auto;
+		}
+
+			@media screen and (max-width: 900px) {
+				.width-900px {
+					width: 100%;
+					max-width: 100%;
+				}
+			}
+
+	/* MARGIN */
+
+		.margin-vertical-5rem {
+			margin: 5rem auto;
+		}
+
+		.margin-top-neg3rem {
+			margin-top: -6rem;
+		}
+
+		.margin-bottom-2rem {
+			margin: 0 0 2rem 0;
+		}
+
+	/* PADDING */
+
+		.padding-vertical-5rem {
+			padding: 5rem 0;
+		}
+
+		.padding-top-1rem {
+			padding-top: 1rem;
+		}
+
+		.padding-top-3rem {
+			padding-top: 3rem;
+		}
+
+		.padding-top-5rem {
+			padding-top: 5rem;
+		}
+
+		.padding-bottom-0rem {
+			padding-bottom: 0rem;
+		}
+
+		.padding-bottom-1rem {
+			padding-bottom: 1rem;
+		}
+
+		.padding-bottom-2rem {
+			padding-bottom: 2rem;
+		}
+
+		.padding-bottom-5rem {
+			padding-bottom: 5rem;
+		}
+
+	/* EFFECTS */
+
+		.opacity-05 {
+			opacity: 0.5;
+			-moz-transition: 0.1s ease-out;
+			-webkit-transition: 0.1s ease-out;
+			-ms-transition: 0.1s ease-out;
+			transition: 0.1s ease-out;
+		}
+
+			.opacity-05:hover {
+				opacity: 1;
+			}
+
+		.background-white {
+			background: #fff;
+		}
+
+/* TYPE */
+
+	html {
+		font-size: 16pt;
+	}
+
+	@media screen and (max-width: 1680px) {
+		html {
+			font-size: 12pt;
+		}
+	}
+
+	@media screen and (max-width: 1280px) {
+		html {
+			font-size: 12pt;
+		}
+	}
+
+	body, input, select, textarea {
+		color: #151515;
+		font-family: "Roboto", Helvetica, sans-serif;
+		font-size: 1em;
+		font-weight: 400;
+		line-height: 1.65;
+	}
+
+	p {
+		margin: 1em auto;
+		font-weight: 300;
+		text-align: justify;
+		text-align-last: left;
+	}
+
+		p a {
+			text-decoration: underline;
+		}
+
+		p.final {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+	a {
+		border-bottom: none;
+		color: inherit;
+		-moz-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		-webkit-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		-ms-transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		transition: color 0.1s ease-out, border-bottom-color 0.1s ease-out;
+		text-decoration: none;
+	}
+
+		a:hover {
+			border-bottom-color: transparent;
+		}
+
+	strong, b {
+		font-weight: 400;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 auto;
+		font-weight: 400;
+		line-height: 1.25;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	/* TEXT STYLING */
+
+		/* COLOUR */
+
+			.white {
+				color: #fff;
+			}
+
+			.offblack {
+				color: #151515;
+			}
+
+		/* WEIGHT */
+
+			.heavy {
+				font-weight: 900;
+			}
+			
+			.light {
+				font-weight: 300;
+			}
+
+			i.light {
+				opacity: 0.5;
+				font-style: normal;
+			}
+
+		/* STYLE */
+
+			.uppercase {
+				text-transform: uppercase;
+			}
+
+		/* ALIGNMENT */
+	
+			.align-justify {
+				text-align: justify;
+				text-align-last: justify;
+			}
+
+			.align-justify-paragraph {
+				text-align: justify;
+				text-align-last: left;
+			}
+
+			.align-left {
+				text-align: left;
+			}
+
+			.align-right {
+				text-align: right;
+			}
+
+			.align-center {
+				text-align: center;
+			}
+
+		/* LETTER SPACING */
+
+			.letter-spacing-025rem {
+				letter-spacing: 0.25rem;
+			}
+
+			.letter-spacing-03rem {
+				letter-spacing: 0.3rem;
+			}
+
+			.letter-spacing-1rem {
+				letter-spacing: 1rem;
+			}
+
+	/* HEADER 1 */
+
+		h1 {
+			font-size: 2.5rem;
+			font-weight: 700;
+		}
+
+		@media screen and (max-width: 350px) {
+			h1 {
+				font-size: 2rem;
+			}
+		}
+
+			h1.size-4rem {
+				font-size: 4rem;
+			}
+
+				@media screen and (max-width: 650px) {
+					h1.size-4rem {
+						font-size: 4rem;
+					}
+				}
+
+
+			h1.size-8rem {
+				font-size: 8rem;
+			}
+
+				@media screen and (max-width: 1100px) {
+					h1.size-8rem {
+						font-size: 10vw;
+					}
+				}
+
+			h1.size-10rem {
+				font-size: 10em;
+			}
+
+				@media screen and (max-width: 1100px) {
+					h1.size-10rem {
+						font-size: 14vw;
+					}
+				}
+
+			h1.size-20rem {
+				font-size: 20em;
+			}
+
+				@media screen and (max-width: 1000px) {
+					h1.size-20rem {
+						font-size: 30vw;
+					}
+				}
+
+	/* HEADER 2 */
+
+		h2 {
+			font-size: 2rem;
+			letter-spacing: 0.1rem;
+		}
+
+	/* HEADER 3 */
+
+		h3 {
+			font-size: 1rem;
+			font-weight: 900;
+			text-transform: uppercase;
+			letter-spacing: 0.15rem;
+		}
+
+			h3.size-135rem {
+				font-size: 1.35rem;
+			}
+
+	/* UNUSED HEADERS */
+
+		h4 {
+			font-size: 0.9rem;
+		}
+
+		h5 {
+			font-size: 0.8rem;
+		}
+
+		h6 {
+			font-size: 0.7rem;
+		}
+
+	/* BLOCKQUOTE */
+
+		blockquote {
+			padding-left: 1.25rem;
+			border-left: solid 0.5rem #eee;
+			font-weight: 300;
+		}
+
+			blockquote a {
+				text-decoration: underline;
+			}
+
+	/* LIST */
+
+		ol {
+			margin: 0 0 1rem 0;
+			padding-left: 1.25rem;
+			list-style: decimal;
+		}
+
+		ol li {
+			padding-left: 0.25rem;
+		}
+
+		ul {
+			margin: 0 0 1rem 0;
+			padding-left: 1rem;
+			text-align: center;
+			list-style: disc;
+		}
+
+		ul li {
+			display: block;
+			padding-left: 0.5rem;
+		}
+
+	/* UNUSED TEXT STYLES 
+
+		sub {
+			position: relative;
+			top: 0.5rem;
+			font-size: 0.8rem;
+		}
+
+		sup {
+			position: relative;
+			top: -0.5rem;
+			font-size: 0.8rem;
+		}
+
+		code {
+			margin: 0 0.25rem;
+			padding: 0.25rem 0.65rem;
+			border: solid 1px #ccc;
+			border-radius: 4px;
+			font-family: "Courier New", monospace;
+			font-size: 0.9rem;
+		}
+
+		pre {
+			margin: 0 0 1.25rem 0;
+			font-family: "Courier New", monospace;
+			font-size: 0.9rem;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		pre code {
+			display: block;
+			padding: 1rem 1.5rem;
+			overflow-x: auto;
+		}
+
+		i.light {
+			opacity: .5;
+			font-style: normal;
+		}
+
+	*/
+
+/* FONTAWESOME */
+
+	ul.icons {
+		padding-left: 0;
+		font-weight: 300;
+		cursor: default;
+		list-style: none;
+	}
+
+		ul.masculinity {
+			margin-bottom: -0.5rem;
+		}
+
+		ul.icons li {
+			display: inline-block;
+			font-size: 1.3rem;
+			padding: 0 1rem 0 0;
+		}
+
+			ul.icons li:last-child {
+				padding-right: 0;
+			}
+
+/* SLIDESHOW */
+
+	.slideshow-container {
+		max-width: 100%;
+		position: relative;
+		margin: auto;
+	}
+
+	.mySlides {
+		display: none;
+	}
+
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -1.4rem;
+		padding: 1rem;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.4rem;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		opacity: 0.5;
+	}
+
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.5);
+		color: #fff;
+		opacity: 1;
+	}
+
+	.dots {
+		position: absolute;
+		bottom: 0.5rem;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	.dot {
+		cursor: pointer;
+		display: inline-block;
+		height: 0.8rem;
+		width: 0.8rem;
+		margin: 0 0.1rem;
+		padding: 0;
+		background-color: transparent;
+		border-radius: 50%;
+		border: 1px #fff solid;
+		transition: background-color 0.6s ease;
+		opacity: 0.5;
+	}
+
+	.dot:hover {
+		opacity: 1;
+	}
+
+	.active {
+		background-color: #fff;
+		opacity: 1;
+	}
+
+/* LANDING PAGE */
+
+	#landing {
+		display: table;
+		position: relative;
+		height: 100vh;
+		width: 26rem;
+		margin: 0 auto;
+	}
+
+		@media screen and (max-width: 35rem) {
+			#landing {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+
+		#landing a:hover {
+			color: #A7DBFF;
+		}
+
+		#landing h1 {
+			text-shadow: 0 0 5rem rgba(150, 150, 150, 1);
+		}
+
+		#landing p {
+			text-shadow: 0 0 0.85rem rgba(150, 150, 150, 1);
+		}
+
+		#landing ul {
+			text-align: left;
+		}
+
+	.landing-box {
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+		@media screen and (max-width: 1200px) {
+			.landing-box {
+			}
+		}
+
+		@media screen and (max-width: 750px) {
+			.landing-box {
+			}
+		}
+
+		@media screen and (max-width: 35em) {
+			.landing-box {
+				max-width: 100%;
+				width: 100%;
+				padding: 2rem;
+			}
+		}
+
+		@media screen and (max-width: 350px) {
+			.landing-box {
+				max-width: 100%;
+				width: 100%;
+				padding: 1rem;
+			}
+		}
+
+/* GENERIC PAGE */
+
+	#generic a:hover {
+		color: #0083d5;
+	}
+
+/* ADVENTURE PAGE */
+
+	#adventure {
+	}
+
+		#adventure a:hover {
+			color: #ff9b0d;
+		}
+
+	.adventure-quote {
+		width: 80%;
+        height: 20vh;
+        margin: 0 auto -9rem;
+        color: #ff9b0d;
+	}
+
+        @media screen and (min-width: 1250px) {
+            .adventure-quote h1 {
+                padding-top: 7rem;
+            }
+        }
+
+        @media screen and (max-width: 1250px) and (min-width: 1000px) {
+            .adventure-quote h1 {
+                padding-top: 5rem;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .adventure-quote h1 {
+                padding-top: 1rem;
+            }
+        }
+
+	.adventure-header {
+		width: 100%;
+		height: 80vh;
+		max-height: 1280px;
+		background: url(../../img/adventure/IMG_5608-JCR-1920-grad-web.jpg) no-repeat top center;
+		background-size: cover;
+        padding-bottom: 9rem;
+	}
+
+		.link-box {
+			width: 60%;
+			margin: 0 auto;
+			text-align: justify;
+			text-align-last: justify;
+		}
+
+				@media screen and (max-width: 900px) {
+					.link-box {
+						text-align-last: center;
+					}
+				}
+
+			.link-box h3 {
+				color: #ff9b0d;
+				text-align: -webkit-center;
+			}
+
+				.link-box h3 a:hover {
+					background-color: #ff9b0d;
+					color: #fff !important;
+				}
+				
+	.adventure-box {
+		display: table-cell;
+		width: 100vw;
+		min-width: 100vh;
+		height: 25rem;
+		max-height: 1280px;
+		padding: 1rem;
+		vertical-align: bottom;
+		opacity: 0.5;
+		-moz-transition: 0.1s ease-out;
+		-webkit-transition: 0.1s ease-out;
+		-ms-transition: 0.1s ease-out;
+		transition: 0.1s ease-out;
+	}
+
+		@media screen and (max-width: 800px) {
+			.adventure-box {
+				min-width: 100%;
+				max-width: 100%;
+				width: 100%:
+			}
+		}
+
+		.adventure-box:hover {
+			opacity: 1;
+		}
+
+	.box-01 {
+		background: url(../../img/adventure/IMG_6821-JCR-1920-web.jpg) no-repeat center left;
+		background-size: cover;
+	}
+
+	.box-02 {
+		background: url(../../img/adventure/IMG_7702-JCR-1920-web.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	.box-03 {
+		background: url(../../img/adventure/IMG_9590-JCR-1920-web.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+    .box-04 {
+		background: url(../../img/adventure/IMG_9279-HDR-1920-web.jpg) no-repeat center center;
+		background-size: cover;
+	}
